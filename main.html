@@ -6,11 +6,13 @@
   
   <link rel="stylesheet" type="text/css" href="css/system/main.css" />
   <link rel="stylesheet" type="text/css" href="css/app/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/app/MesureCode.css" />
   <script type="text/javascript" src="js/system/jquery.js"></script>
   <script type="text/javascript" src="js/system/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/system/jquery.form.min.js"></script>
   <script type="text/javascript" src="js/system/Handies.js"></script>
   <script type="text/javascript" src="js/system/UISystem.js"></script>
+  <script type="text/javascript" src="js/system/dom.js"></script>
 
 </head>
 <body>
@@ -114,6 +116,11 @@
      -->
     <textarea id="music_score_code" placeholder="Code music-score ici">c d e</textarea>
   
+    <div id="mesures_code"><!--  
+      Pour mettre les mesures de code
+    --></div>
+    <button onclick="MesureCode.createNew.call(MesureCode)">➕</button>
+    <button onclick="MesureCode.removeCurrent.call(MesureCode)">➖</button>
   </section>
 
   <div class="right">
@@ -140,5 +147,6 @@
   <script type="text/javascript" src="js/app/UI.js" defer></script>
   <script type="text/javascript" src="js/app/Score.js" defer></script>
   <script type="text/javascript" src="js/app/KeyEvent.js" defer></script>
+  <script type="text/javascript" src="js/app/MesureCode.js" defer></script>
 </body>
 </html>

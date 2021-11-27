@@ -27,6 +27,7 @@ $(document).ready(e => {
      * secondes
      */
     Score.loopUpdates()
+    MesureCode.createNew()
   } catch(err){
     console.log("Erreur au cours du chargement", err)
   }
