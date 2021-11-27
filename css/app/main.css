@@ -30,3 +30,8 @@ form#music_score_form, form#music_score_form * {
 div#options {
   margin: 1em 0;
 }
+
+.libelle {
+  margin-right: 0.2em;
+  color: #999;
+}

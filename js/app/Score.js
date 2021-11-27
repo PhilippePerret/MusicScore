@@ -27,20 +27,39 @@ get tune(){
 
 get metrique(){
   var m = document.querySelector('#metrique').value
+  if ( m == '' ) return null 
   if ( m == 'xxx' ) m = document.querySelector('#other_metrique').value
   return m
 }
+
+get mesure(){
+  var m = document.querySelector('#first_mesure').value
+  return m == '' ? null : m
+}
+
+get page(){
+  var m = document.querySelector('#page').value
+  return m == '' ? null : m
+}
+
+get proximity(){
+  var m = document.querySelector('#proxmity')
+  return m == '' ? null : m
+}
+
 /**
  * Pour finaliser le code
  * 
  */
 get codeFinal(){
   var c = []
+  this.page && c.push('-- page ' + this.page)
   this.cbPiano.checked  && c.push('--piano')
   this.cbStems.checked  && c.push('--stem')
   this.cbBarre.checked  && c.push('--barres')
   c.push('--tune ' + this.tune)
-  c.push('--rythme ' + this.metrique)
+  this.metrique && c.push('--time ' + this.metrique)
+  this.mesure && c.push('--mesure ' + this.mesure)
   c.push(this.champCodeInteractif.value)
   c = c.join("\n")
   return c

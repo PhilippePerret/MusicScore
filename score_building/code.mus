@@ -1,3 +1,10 @@
 -> visu
---tune C
-c d e
+-- page a4
+--piano
+--stem
+--barres
+--tune F
+--time 3/4
+--mesure 1
+d8 a' f d a' f | d a' f d a' f | d bes' g d bes' g | d bes' g d bes' g | cis, g' e cis g' e | cis bes' g e a g  | f  d f a f a | d a d f d f | b f e d c b  | a gis fis e d' b  | <a c>4\mordent r r |
+d4\mordent r r | d, r r | d'\mordent r r | d, r r | d'\mordent r r | d, r r                                     | d'8 a d f d f | a f a d a d | gis,4 r r   | e gis e           | a8 e' c a e c      |

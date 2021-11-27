@@ -11,10 +11,8 @@ if ( $operation == 'build_score' ) {
   // On lance la commande qui va produire l'image SVG
   $res = shell_exec('ruby ./score_building/scorize.rb 2>&1');
   $done = "Actualisation de la partition";
-} elseif ( $operation == 'open_manuel' ) {
-  // $res = shell_exec('ruby ./scripts/open_manuel.rb 2>&1');
-  $res = shell_exec('open /Users/philippeperret/ICARE_EDITIONS/livres/musique/xDev/scripts/music-score/Manuel.pdf')
-  $done = "Ouverture du manuel";
+} else {
+  $done = "- OPÉRATION INCONNUE -";
 }
 
 
