@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Music Score</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/system/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/app/main.css" />
+  <script type="text/javascript" src="js/system/jquery.js"></script>
+  <script type="text/javascript" src="js/system/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/system/jquery.form.min.js"></script>
+  <script type="text/javascript" src="js/system/Handies.js"></script>
+  <script type="text/javascript" src="js/system/UISystem.js"></script>
+
+</head>
+<body>
+
+  <!-- 
+    Image de la partition
+   -->
+  <img id="score" src="score_building/code/visu.svg" />
+
+  <!-- 
+
+    LA SECTION PRINCIPAL CONTENANT NOTAMMENT LE CHAMP POUR LE CODE
+
+   -->
+  <section id="interactive_section">
+    <!-- 
+      Les options à appliquer à la partition
+     -->
+    <div id="options">OPTIONS
+      Tonalité : <select id="tune">
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+      </select><select id="tune_alteration">
+        <option value="">naturel</option>
+        <option value="b">bémol</option>
+        <option value="#">dièse</option>
+      </select><select id="tune_nature">
+        <option value="">Majeur</option>
+        <option value="m">mineur</option>
+      </select>
+
+      Métrique : <select id="metrique">
+        <option value="C">C</option>
+        <option value="4/4">4/4</option>
+        <option value="2/2">C barré</option>
+        <option value="2/2">2/2</option>
+        <option value="3/4">3/4</option>
+        <option value="3/8">3/8</option>
+        <option value="6/8">6/8</option>
+        <option value="9/8">9/8</option>
+        <option id="xxx">autre…</option>
+      </select><input type="text" id="other_metrique" style="width: 40px;" />
+      <input type="checkbox" id="cb_piano"> <label for="cb_piano" CHECKED>Piano</label>
+      <input type="checkbox" id="cb_barre"> <label for="cb_barre" CHECKED>Barres mesures</label>
+      <input type="checkbox" id="cb_stems"> <label for="cb_stems" CHECKED>Hampes</label>
+
+    </div>
+    
+    <!-- 
+      Le champ de texte dans lequel on met le code
+     -->
+    <textarea id="music_score_code" placeholder="Code music-score ici">c d e</textarea>
+  
+  </section>
+
+  <div class="right">
+    1) Définis les options de la partition 2) définis le code pseudo-lilypond 3) presse ⌘ B pour produire et visualiser la partition 4) lorsque la partition est OK, presse ⌘ D pour obtenir le code final 5) copie-colle le code proposé dans un fichier .mus.
+    <button id="btn_toggle_loop_update" onclick="Score.toggleLoopUpdate.call(Score)">Stopper la boucle d'actualisation de la partition</button>
+    <button id="btn_manuel" onclick="App.openManuel.call(App)">Manuel</button>
+    <a href="Manuel.pdf" target="_blank">Manuel PDF</a>
+  </div>
+
+  <!-- 
+    Formulaire soumis pour actualisation de l'image
+   -->
+  <form id="music_score_form">
+    <textarea id="music_score_code_in_form" name="music_score_code"></textarea>
+    <input type="hidden" name="operation" id="operation" value="" />
+  </form>
+
+  <footer>
+  </footer>
+  <div id="message" class="hidden" onclick="UI.hideMessage.call(UI)"></div>
+
+  <script type="text/javascript" src="config.js" defer></script>
+  <script type="text/javascript" src="js/app/App.js" defer></script>
+  <script type="text/javascript" src="js/app/data.js" defer></script>
+  <script type="text/javascript" src="js/app/UI.js" defer></script>
+  <script type="text/javascript" src="js/app/Score.js" defer></script>
+  <script type="text/javascript" src="js/app/KeyEvent.js" defer></script>
+</body>
+</html>

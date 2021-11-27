@@ -1,0 +1,59 @@
+body {
+  position: relative;
+  font-size:  16pt;
+  font-family: 'Arial Narrow', serif;
+}
+
+.invisible {
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+.right {text-align: right}
+
+button, textarea, input[type="text"] {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+}
+
+select, select option {
+  all: unset;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 4px 12px;
+  border: 1px solid #CCC;
+  pointer: cursor;
+}
+
+footer {
+  position: fixed;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding-left: 1em;
+}
+
+div#message {
+  position: fixed;
+  color: white;
+  left: calc(100%/2 - 200px);
+  width: 400px;
+  top: 0;
+  padding: 8px 12px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 11pt;
+}
+div#message.error {
+  background-color: red;
+}
+div#message.notice {
+  background-color: blue;
+}
+div#message.doaction {
+  background-color: orange;
+}
