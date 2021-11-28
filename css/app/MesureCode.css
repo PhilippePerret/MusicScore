@@ -1,6 +1,8 @@
 div.mesure_code {
   display: inline-block;
   margin-right: 2px;
+  font-family: monospace!important;
+  font-size: 22pt!important;
 }
 
 div.mesure_code input[type="text"].mesure_code {

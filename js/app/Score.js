@@ -34,10 +34,27 @@ get stavesCount(){
     return systemeValue
   }
 }
+get menuSysteme(){
+  return this._menusys || (this._menusys = document.querySelector('#systeme'))
+}
 get systemeValue(){
-  var v = document.querySelector('#systeme').value
+  var v = this.menuSysteme.value
   if ( v == 'xxx' ) v = parseInt(document.querySelector('#systeme_other'),10)
   return v
+}
+set systemeValue(v){
+  var ov = ""
+  switch(v){
+    case 1: v = 'mono'; break
+    case 2: v = 'piano'; break
+    case 3: v = 'trio'; break
+    case 4: v = 'quatuor'; break
+    default:
+      v = 'xxx'
+      ov = v
+  }
+  this.menuSysteme.value = v
+  document.querySelector('#systeme_other').value = ov
 }
 get isMono    (){return this.systemeValue == 'mono'}
 get isPiano   (){return this.systemeValue == 'piano'}
@@ -114,14 +131,14 @@ toggleLoopUpdate(){
   if ( this.isRunning ) {
     this.stopLoopUpdate()
   } else {
-    this.loopUpdates()
+    this.loopUpdate()
   }
 }
 /**
  * La boucle qui actualise l'image toutes les secondes
  * 
  */
-loopUpdates(){
+loopUpdate(){
   console.info("⏳ Activation de la boucle d'actualisation de la partition")
   this.timer = setInterval(this.update.bind(this), 1000)
   this.isRunning = true
