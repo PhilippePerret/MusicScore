@@ -16,6 +16,46 @@ submitCode(){
   });    
 }
 
+/**
+ * Méthode générale principale traitant un code complet donné
+ * 
+ */
+traiteCodeInitial(){
+  const field = document.querySelector('#ini_code')
+  const fullcode = field.value
+  console.log("Je dois traiter le code : ", fullcode)
+  // 
+  // On passe en revue chaque ligne pour définir les options
+  // 
+  var notes   = [] 
+  var options = {}
+  fullcode.split("\n").forEach(line => {
+    line = line.trim()
+    if ( line.substring(0, 2) == '--' ){
+      var [option, valoption] = line.substring(2, line.length).split(' ')
+      console.log("options,valoption = ", option, valoption)
+      switch(option){
+        case'piano': case'solo': case'duo': case'trio': case'quatuor': 
+          valoption = option
+          option    = 'systeme' 
+          break;
+      }
+      if ( valoption == '' ) valoption = true
+      options[option] = valoption
+    } else {
+      notes.push(line)
+    }
+  })
+  notes = notes.join("\n").trim()
+  // console.info("Notes récupérées : ", notes )
+  MesureCode.parse(notes)
+  // 
+  // Traitement des options
+  // 
+  console.info("Options récupérées : ", options)
+  Options.applique(options)
+}
+
 }//AppClass
 
 

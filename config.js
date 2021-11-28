@@ -14,5 +14,7 @@ const CONFIG = {
     , 'proximity':    ""
     , 'cb_barre':     true
     , 'cb_stems':     true
+    , 'tune':         null
+    , 'time':         null
   }
 }

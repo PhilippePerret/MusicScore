@@ -10,6 +10,8 @@ section#interactive_section {
   display: block;
   margin-left: 10%;
   width: calc(80% - 40px);
+  height: 45%;
+  overflow: auto;
 }
 textarea#music_score_code {
   width: 100%;

@@ -33,7 +33,11 @@ static getFullCode(){
  * Méthode qui "parse" le code +code+
  * Parser signifie : le décomposer en systèmes (autant que de lignes)
  * et le découper en mesure, pour reconstruire l'affichage et pouvoir
- * le modifier
+ * le modifier.
+ * 
+ * Cette méthode est appelée par la méthode App.traiteCodeInitial()
+ * qui parse un code complet donné par les outils pour reproduire un
+ * code complet.
  * 
  */
 static parse(code){

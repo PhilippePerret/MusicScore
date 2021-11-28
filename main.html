@@ -61,6 +61,14 @@
       </div>
 
       <div>
+        <div>Prendre le code initial complet :</div>  
+        <textarea id="ini_code" style="width:100%;height:100px;"></textarea>
+        <div class="right">
+          <button onclick="App.traiteCodeInitial.call(App)">Traiter</button>
+        </div>
+      </div>
+
+      <div>
         
           <button onclick="MesureCode.resetAll.call(MesureCode)">Tout effacer</button>
 
@@ -131,7 +139,7 @@
          -->
         <tr>
           <td>
-            <span class="libelle">Tonalité</span><select id="tune">
+            <span class="libelle">Tonalité</span><select id="tune_note">
               <option value="C">C</option>
               <option value="D">D</option>
               <option value="E">E</option>
@@ -150,7 +158,7 @@
           </td>
 
           <td>
-            <span class="libelle">Métrique</span><select id="metrique">
+            <span class="libelle">Métrique</span><select id="time">
               <option value="">---</option>
               <option value="OFF">OFF</option>
               <option value="C">C</option>
@@ -162,7 +170,7 @@
               <option value="6/8">6/8</option>
               <option value="9/8">9/8</option>
               <option id="xxx">autre :</option>
-            </select><input type="text" id="other_metrique" class="short" />            
+            </select><input type="text" id="other_time" class="short" />            
           </td>
 
           <td>

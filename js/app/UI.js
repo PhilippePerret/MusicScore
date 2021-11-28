@@ -16,20 +16,13 @@ prepare(){
   // 
   // Réglage des options
   // 
-  Object.keys(Options.default).forEach(keyOption => {
-    const valOption = Options.default[keyOption]
-    const objet = document.querySelector('#'+keyOption)
-    if ( 'string' == typeof valOption ) {
-      objet.value = valOption
-    } else {
-      objet.checked = valOption
-    }
-  })
+  Score.setOptions(Options.default)
   // 
   // Observation de certains champs
   // 
   this.observeSpecialFields()
 }
+
 
 /**
  * Observation de certains champs spéciaux (comme par exemple le

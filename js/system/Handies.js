@@ -3,7 +3,7 @@
 
   MÉTHODES PRATIQUES
   ------------------
-  Version 1.2.0
+  Version 1.3.0
 
 # 1.3.0
   Ajout de la méthode unpx() qui fait l'inverse de px()
@@ -137,6 +137,7 @@ function clip(what, msg){
   msg && message(msg)
   field.remove()
 }
+
 
 /**
 * Pour charger un module du dossier 'js/module'

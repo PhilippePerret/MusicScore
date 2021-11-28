@@ -10,6 +10,67 @@
 
 class ScoreClass {
 
+/**
+ * Réglage des options (du score)
+ * 
+ */
+setOptions(options){
+  Object.keys(options).forEach(keyOption => {
+    console.log("Traitement de la clé %s", keyOption)
+    const valOption = options[keyOption]
+    // 
+    // On ne fait rien si l'option a la valeur null ou indéfinie
+    if ( valOption === null || valOption === undefined ) return 
+    // 
+    // Le traitement peut différer en fonction des options
+    // Il y a ces types :
+    //  - les menus qui attendent une valeur
+    //  - les case à cocher qui sont définies par true ou false
+    //  - les valeurs complexes qui tiennent sur plusieurs menus,
+    //    comme la tonalité par exemple (tune).
+    // 
+    switch(keyOption){
+      case 'tune':
+        // 
+        // Traitement complexe de la tonalité
+        // 
+        this.setTune(valOption)
+        break
+      default:
+        // 
+        // Traitement d'une option "normale"
+        // 
+        const objet = document.querySelector('#'+keyOption)
+        if ( 'string' == typeof valOption ) {
+          objet.value = valOption
+        } else {
+          objet.checked = valOption
+        }
+    }
+  })
+}
+
+/**
+ * Pour régler la tonalité
+ * 
+ */
+setTune(tune){
+  var [note,alt,nature] = tune.split('')
+  if ( alt == 'm' ) {[nature, alt] = ['m','none']}
+  this.menuTuneNote.value = note
+  // console.log("menuTuneAlt = , valeur", this.menuTuneAlt, alt)
+  if ( !alt || alt == '' ){
+    this.menuTuneAlt.selectedIndex = 0
+  } else {
+    this.menuTuneAlt.value  = nature
+  }
+  if ( !nature || nature == '' ){
+    this.menuTuneNat.selectedIndex = 0
+  } else {
+    this.menuTuneNat.value  = nature
+  }
+}
+
 get cbStems(){return document.querySelector('#cb_stems')}
 get cbBarre(){return document.querySelector('#cb_barre')}
 
@@ -66,17 +127,16 @@ get isQuatuor (){return this.systemeValue == 'quatuor'}
  * @return {String} La tonalité
  */
 get tune(){
-  const menuTune = document.querySelector('#tune')
-  const menuTuneAlteration = document.querySelector('#tune_alteration')
-  const menuTuneNature = document.querySelector('#tune_nature')
-  const t = menuTune.value + menuTuneAlteration.value + menuTuneNature.value
-  return t
+  return this.menuTuneNote.value + this.menuTuneAlt.value + this.menuTuneNat.value
 }
+get menuTuneNote(){return document.querySelector('select#tune_note')}
+get menuTuneAlt (){return document.querySelector('select#tune_alteration')}
+get menuTuneNat (){return document.querySelector('select#tune_nature')}
 
 get metrique(){
-  var m = document.querySelector('#metrique').value
+  var m = document.querySelector('select#time').value
   if ( m == '' ) return null 
-  if ( m == 'xxx' ) m = document.querySelector('#other_metrique').value
+  if ( m == 'xxx' ) m = document.querySelector('#other_time').value
   return m
 }
 
