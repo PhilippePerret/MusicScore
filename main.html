@@ -53,6 +53,7 @@
     <div id="tools" class="panneau">
 
       <div>
+        <legend>Snippets</legend>
         <button onclick="Tools.writeInCurrent('double_voix')">Double voix même portée</button>
         <button onclick="Tools.writeInCurrent('debut_reprise')"> |: </button>
         <button onclick="Tools.writeInCurrent('fin_reprise')"> :| </button>
@@ -61,11 +62,16 @@
       </div>
 
       <div>
-        <div>Prendre le code initial complet :</div>  
-        <textarea id="ini_code" style="width:100%;height:100px;"></textarea>
-        <div class="right">
-          <button onclick="App.traiteCodeInitial.call(App)">Traiter</button>
+        <legend>Code final</legend>
+        <div><button onclick="App.produceFinalCode.call(App)">Produire le code final</button></div>
+        <textarea id="final_code" style="width:100%;" placeholder="CODE FINAL"></textarea>
+      </div>
+
+      <div>
+        <div>
+          <button onclick="App.traiteCodeInitial.call(App)">Traiter le code initial complet :</button>
         </div>
+        <textarea id="ini_code" style="width:100%;height:100px;" placeholder="CODE INITIAL"></textarea>
       </div>
 
       <div>
@@ -212,5 +218,6 @@
   <script type="text/javascript" src="js/app/MesureCode.js" defer></script>
   <script type="text/javascript" src="js/app/Tools.js" defer></script>
   <script type="text/javascript" src="js/app/Options.js" defer></script>
+  <script type="text/javascript" src="js/app/ready.js" defer></script>
 </body>
 </html>

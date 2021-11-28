@@ -48,8 +48,9 @@ static parse(code){
   Score.systemeValue = nombrePortees
   for(var iportee = 0, lenP = porteesCode.length; iportee < lenP; ++ iportee){
     var mesuresCode = porteesCode[iportee];
-    console.log("Étude de la mesuresCode : ", mesuresCode)
+    // console.log("Étude de la mesuresCode : ", mesuresCode)
     mesuresCode = mesuresCode.split(' | ')
+    // console.log("Mesures de code : ", mesuresCode)
     for(var imesure = 1, len = mesuresCode.length; imesure <= len; ++imesure){
       let mesure;
       if ( iportee == 0 ) {
@@ -68,6 +69,7 @@ static parse(code){
       // de la portée x
       //
       var c = mesuresCode[imesure - 1].trim()
+      // console.log("Code mesure = ", c)
       mesure.setPorteeCode(1 + iportee, c)
     }
   }
@@ -175,11 +177,11 @@ constructor(id, notes){
 getPorteeCode(xportee) {
   xportee = xportee || 1
   const val = this.obj.querySelector('.mesure_code.portee'+xportee).value
-  console.info("Code de la portée " + xportee + " du système " + this.id, val)
+  // console.info("Code de la portée " + xportee + " du système " + this.id, val)
   return val
 }
 setPorteeCode(xportee, code){
-  console.log("Je dois mettre la portée " + xportee + " à : ", code)
+  // console.log("Je dois mettre la portée " + xportee + " à : ", code)
   this.obj.querySelector('.mesure_code.portee'+xportee).value = code
   this.setWidth()
 }
@@ -193,6 +195,7 @@ setPorteeCode(xportee, code){
  * 
  */
 setWidth(){
+  console.log("-> setWidth")
   // 
   // On prend le texte le plus long
   // 
@@ -204,7 +207,7 @@ setWidth(){
   // 
   // Une valeur minimale
   // 
-  max = 1
+  max || (max = 1);
 
   // 
   // On met tous les champs à la même longueur
@@ -266,6 +269,7 @@ build(){
 }
 
 observe(){
+  console.log("-> observe", this)
   this.eachObjetMesure(mes => {
     mes.addEventListener('blur', this.setWidth.bind(this))
     mes.addEventListener('focus', this.setCurrent.bind(this, mes))
