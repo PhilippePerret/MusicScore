@@ -10,9 +10,40 @@
 
 class ScoreClass {
 
-get cbPiano(){return document.querySelector('#cb_piano')}
 get cbStems(){return document.querySelector('#cb_stems')}
 get cbBarre(){return document.querySelector('#cb_barre')}
+
+
+/**
+ * Retourne le nombre de portées (par système)
+ * 
+ * Par exemple, si c'est un piano, on retourne 2, si c'est un trio
+ * on retourne 3.
+ * 
+ */
+get stavesCount(){
+  if ( this.isPiano ) {
+    return 2
+  } else if ( this.isTrio ) {
+    return 3
+  } else if ( this.isQuatuor ) {
+    return 4
+  } else if ( this.isMono ) {
+    return 1
+  } else {
+    return systemeValue
+  }
+}
+get systemeValue(){
+  var v = document.querySelector('#systeme').value
+  if ( v == 'xxx' ) v = parseInt(document.querySelector('#systeme_other'),10)
+  return v
+}
+get isMono    (){return this.systemeValue == 'mono'}
+get isPiano   (){return this.systemeValue == 'piano'}
+get isDuo     (){return this.systemeValue == 'duo'}
+get isTrio    (){return this.systemeValue == 'trio'}
+get isQuatuor (){return this.systemeValue == 'quatuor'}
 
 /**
  * @return {String} La tonalité
@@ -48,20 +79,21 @@ get proximity(){
 }
 
 /**
- * Pour finaliser le code
+ * @return le code {String} final
  * 
  */
 get codeFinal(){
   var c = []
   this.page && c.push('-- page ' + this.page)
-  this.cbPiano.checked  && c.push('--piano')
+  this.isPiano  && c.push('--piano')
   this.cbStems.checked  && c.push('--stem')
   this.cbBarre.checked  && c.push('--barres')
   c.push('--tune ' + this.tune)
   this.metrique && c.push('--time ' + this.metrique)
   this.mesure && c.push('--mesure ' + this.mesure)
-  c.push(this.champCodeInteractif.value)
+  c.push(MesureCode.getFullCode())
   c = c.join("\n")
+  console.log("Le code complet : ", c)
   return c
 }
 

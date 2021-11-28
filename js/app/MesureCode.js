@@ -12,12 +12,65 @@
 class MesureCode {
 
 /**
- * Méthode appelée par le bouton "+" pour créer une nouvelle 
- * mesure-code.
+ * @return {String} Le code complet
+ * 
  */
-static createNew(){
+static getFullCode(){
+  var c = []
+  for(var xportee = 0; xportee < Score.stavesCount; ++xportee){
+    c.push([])
+    this.each(mes => {
+      var code = mes.porteeCode(parseInt(xportee,10) + 1).trim()
+      if ( code == '' ) return ;
+      c[xportee].push(code)
+    })
+    c[xportee] = c[xportee].join(' | ')
+  }
+  return c.join("\n")
+}
+
+/**
+ * Méthode "tournant" la méthode +method+ sur chaque mesure-code
+ * 
+ * Rappel : une "mesure-code", c'est un ensemble de portées par 
+ * système
+ * 
+ * #exemple
+ *    MesureCode.each(mes => console.log(mes.code))
+ * 
+ */
+static each(method){
+  if ( this.count == 0 ) return
+  this.table_mesures.forEach(mesure => method(mesure))
+}
+
+/**
+ * Méthode appelée par le bouton "+" pour créer une nouvelle 
+ * mesure-code. Ou quand on doit recréer une partition
+ */
+static createNew(data){
   const mesure = new this(this.getNextId());
-  mesure.build()  
+  if (data) mesure.data = data
+  mesure.build()
+  this.add(mesure)
+}
+
+/**
+ * Pour ajouter la mesure-code +mesure+ à la liste Array des mesures
+ *
+ */
+static add(mesure){
+  if (!this.table_mesures) this.table_mesures = []
+  this.table_mesures.push(mesure)
+}
+
+/**
+ * Retourne le nombre de mesures
+ * 
+ */
+static count(){
+  if (!this.lastId) this.lastId = 0;
+  return this.lastId
 }
 
 static getNextId(){
@@ -42,12 +95,29 @@ constructor(id, notes){
 }
 
 /**
+ * Retourne le code de la portée +xportee+ de cette mesure-code
+ * 
+ */
+porteeCode(xportee) {
+  xportee = xportee || 1
+  const val = this.obj.querySelector('.mesure_code.portee'+xportee).value
+  console.info("Code de la portée " + xportee + " du système " + this.id, val)
+  return val
+}
+
+/**
  * Méthode de construction de la mesure-code
  */
 build(){
   const o = DCreate('DIV', {class:'mesure_code'})
-  o.appendChild(DCreate('INPUT', {type:'text', class:'mesure_code main_droite'}))
-  o.appendChild(DCreate('INPUT', {type:'text', class:'mesure_code main_gauche'}))
+  /**
+   * 
+   * On ajoute autant de systèmes qu'il en faut
+   * 
+   */
+  for (var isys = 0; isys < Score.stavesCount; ++isys) {
+    o.appendChild(DCreate('INPUT', {type:'text', class:'mesure_code portee' + (isys + 1)}))
+  }
   this.obj = o
 
   this.constructor.container.appendChild(this.obj)

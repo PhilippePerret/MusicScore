@@ -6,7 +6,7 @@
 
 section#interactive_section {
   position: fixed;
-  bottom: 0;
+  bottom: 4em;
   display: block;
   margin-left: 10%;
   width: calc(80% - 40px);

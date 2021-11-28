@@ -2,6 +2,7 @@
 
 * Reconstituer le code complet à partir des mesures-code
 * Pouvoir donner un code (avec des '|' pour délimiter les mesures) et le transformer en "mesures-code".
+* Pour aggrandir/rappetisser tous les champs ou le champs sélectionné
 * Découpage en petit input.text couvrant une mesure 
   - possibilité de les agrandir/diminuer
   - possibilité d'avoir un champ normal

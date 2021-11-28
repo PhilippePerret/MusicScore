@@ -41,7 +41,16 @@
           <option value="a5">A5</option>
         </select>
 
-        <span class="libelle">1<sup>ère</sup> mesure</span><input type="text" id="first_mesure" value="1" width="40px;" />
+        <span class="libelle">1<sup>ère</sup> mesure</span><input type="text" id="first_mesure" value="1" class="short" />
+
+        <span class="libelle">Système</span><select id="systeme">
+          <option value="mono">Mono</option>
+          <option value="piano" SELECTED>Piano</option>
+          <option value="duo">duo</option>
+          <option value="trio">trio</option>
+          <option value="quatuor">quatuor</option>
+          <option value="xxx">autre :</option>
+        </select><input type="text" name="systemes_other" class="short">
 
         <span class="libelle">Proximité</span><select id="proximity">
           <option value="">---</option>
@@ -97,13 +106,12 @@
           <option value="3/8">3/8</option>
           <option value="6/8">6/8</option>
           <option value="9/8">9/8</option>
-          <option id="xxx">autre…</option>
-        </select><input type="text" id="other_metrique" style="width: 40px;" />
+          <option id="xxx">autre :</option>
+        </select><input type="text" id="other_metrique" class="short" />
 
         <!-- 
           Options checkées
          -->
-        <input type="checkbox" id="cb_piano"> <label class="libelle" for="cb_piano" CHECKED>Piano</label>
         <input type="checkbox" id="cb_barre"> <label class="libelle" for="cb_barre" CHECKED>Barres mesures</label>
         <input type="checkbox" id="cb_stems"> <label class="libelle" for="cb_stems" CHECKED>Hampes</label>
         
@@ -111,13 +119,8 @@
 
     </div>
     
-    <!-- 
-      Le champ de texte dans lequel on met le code
-     -->
-    <textarea id="music_score_code" placeholder="Code music-score ici">c d e</textarea>
-  
     <div id="mesures_code"><!--  
-      Pour mettre les mesures de code
+      Pour mettre les mesures-code de code
     --></div>
     <button onclick="MesureCode.createNew.call(MesureCode)">➕</button>
     <button onclick="MesureCode.removeCurrent.call(MesureCode)">➖</button>

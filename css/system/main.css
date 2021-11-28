@@ -17,6 +17,11 @@ button, textarea, input[type="text"] {
   font-size: inherit;
   font-style: inherit;
 }
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+input[type="text"].short {width: 40px;}
 
 select, select option {
   all: unset;

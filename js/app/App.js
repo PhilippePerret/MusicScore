@@ -5,6 +5,9 @@ class AppClass {
 submitCode(){
   message("Actualisation en cours…", {keep: true})
   $('#music_score_code_in_form').val(Score.codeFinal)
+
+  return // pour ne rien faire pour le moment
+
   $('#music_score_form #operation').val('build_score')
   const form = $('#music_score_form').ajaxSubmit({url:'ajax.php', type:'POST'})
   var xhr = form.data('jqxhr');
