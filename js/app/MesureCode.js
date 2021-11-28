@@ -201,6 +201,10 @@ setWidth(){
     var c = mes.value.trim()
     if ( c.length > max ) max = c.length
   })
+  // 
+  // Une valeur minimale
+  // 
+  max = 1
 
   // 
   // On met tous les champs à la même longueur

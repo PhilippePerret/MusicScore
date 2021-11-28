@@ -5,5 +5,5 @@
 --barres
 --tune F
 --time 3/4
-d8 a' f d a' f | d a' f d a' f | d bes' g d bes' g | d bes' g d bes' g | cis, g' e cis g' e | cis bes' g e a g | f  d f a f a | d a d f d f | b f e d c b | a gis fis e d' b | <a c>4\mordent r r
-d4\mordent r r | d, r r | d'\mordent r r | d, r r | d'\mordent r r | d, r r | d'8 a d f d f | a f a d a d | gis,4 r r | e gis e | a8 e' c a e' c
+d8 a' f d a' f | d a' f d a' f | d bes' g d bes' g | d bes' g d bes' g | cis, g' e cis g' e | cis bes' g e a g | f  d f a f a | d a d f d f | b f e d c b | a gis fis e d' b | <a c>4\mordent r r | <a c>4\mordent r r | a'8 ees d c bes a | g fis e! d c' a | bes\mordent d bes g g'4 | r8 d c bes a\prall g \break | a c a f f'4 | r8 c bes a g\prall f | g bes a g f e | f8
+d4\mordent r r | d, r r | d'\mordent r r | d, r r | d'\mordent r r | d, r r | d'8 a d f d f | a f a d a d | gis,4 r r | e gis e | a8 e' c a e' c | g ees' c g ees' c | fis,4 r r | d fis d | g\mordent r r8 f! | e4\prall r r | f\mordent r r8 e | d4 r8 f e d | e d cis e d cis | d8
