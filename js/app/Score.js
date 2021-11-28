@@ -91,7 +91,7 @@ get page(){
 }
 
 get proximity(){
-  var m = document.querySelector('#proxmity')
+  var m = document.querySelector('#proximity').value
   return m == '' ? null : m
 }
 
@@ -108,6 +108,7 @@ get codeFinal(){
   c.push('--tune ' + this.tune)
   this.metrique && c.push('--time ' + this.metrique)
   this.mesure && c.push('--mesure ' + this.mesure)
+  this.proximity && c.push('--proximity ' + this.proximity)
   c.push(MesureCode.getFullCode())
   c = c.join("\n")
   console.log("Le code complet : ", c)
