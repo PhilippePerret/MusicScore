@@ -1,8 +1,6 @@
 -> visu
 --piano
---barres
---tune A
+--tune C
 --mesure 1
---proximity 50
-a4 b cis d | b cis d e | cis d e fis | << { a b cis } \\ { fis, e d } >>
-a1 | b | cis | <a e' cis'>
+a4 b c d << { a b c } \ { d e f } >> | b c d e
+a1 | b

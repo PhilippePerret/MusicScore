@@ -1,6 +1,17 @@
 'use strict';
 class UIClass {
 
+/**
+ * Méthode principale qui prépare l'interface au chargement de
+ * l'application.
+ * 
+ */
+prepare(){
+  document.querySelectorAll('button.onglet').forEach(aong => {
+    Onglet.instanciate(aong)
+  })
+}
+
   showBoutonsConfirmation(){
     UI.showButtonConfirmer()
     UI.showButtonRenoncer()    

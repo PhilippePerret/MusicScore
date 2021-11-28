@@ -28,102 +28,141 @@
 
    -->
   <section id="interactive_section">
-    <!-- 
-      Les options à appliquer à la partition
-     -->
-    <div id="options">
-      <div>
 
-        <span class="libelle">Page</span><select id="page">
-          <option value="">---</option>
-          <option value="a3">A3</option>
-          <option value="a4">A4</option>
-          <option value="a5">A5</option>
-        </select>
 
-        <span class="libelle">1<sup>ère</sup> mesure</span><input type="text" id="first_mesure" value="1" class="short" />
-
-        <span class="libelle">Système</span><select id="systeme">
-          <option value="mono">Mono</option>
-          <option value="piano" SELECTED>Piano</option>
-          <option value="duo">duo</option>
-          <option value="trio">trio</option>
-          <option value="quatuor">quatuor</option>
-          <option value="xxx">autre :</option>
-        </select><input type="text" id="systeme_other" class="short">
-
-        <span class="libelle">Proximité</span><select id="proximity">
-          <option value="">---</option>
-          <option value="1">1 (notes très proches)</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5 (normal)</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="15">15</option>
-          <option value="20">20</option>
-          <option value="25">25</option>
-          <option value="30">30</option>
-          <option value="35">35</option>
-          <option value="40">40</option>
-          <option value="45">45</option>
-          <option value="50">50 (très espacé)</option>
-        </select>
-
-      </div>
-
-      <div>
-
-        <span class="libelle">Tonalité</span><select id="tune">
-          <option value="C">C</option>
-          <option value="D">D</option>
-          <option value="E">E</option>
-          <option value="F">F</option>
-          <option value="G">G</option>
-          <option value="A">A</option>
-          <option value="B">B</option>
-        </select><select id="tune_alteration">
-          <option value="">naturel</option>
-          <option value="b">bémol</option>
-          <option value="#">dièse</option>
-        </select><select id="tune_nature">
-          <option value="">Majeur</option>
-          <option value="m">mineur</option>
-        </select>
-
-        <span class="libelle">Métrique</span><select id="metrique">
-          <option value="">---</option>
-          <option value="OFF">OFF</option>
-          <option value="C">C</option>
-          <option value="4/4">4/4</option>
-          <option value="2/2">C barré</option>
-          <option value="2/2">2/2</option>
-          <option value="3/4">3/4</option>
-          <option value="3/8">3/8</option>
-          <option value="6/8">6/8</option>
-          <option value="9/8">9/8</option>
-          <option id="xxx">autre :</option>
-        </select><input type="text" id="other_metrique" class="short" />
-
-        <!-- 
-          Options checkées
-         -->
-        <input type="checkbox" id="cb_barre"> <label class="libelle" for="cb_barre" CHECKED>Barres mesures</label>
-        <input type="checkbox" id="cb_stems"> <label class="libelle" for="cb_stems" CHECKED>Hampes</label>
-        
-      </div>
-
-    </div>
-    
     <div id="mesures_code"><!--  
       Pour mettre les mesures-code de code
     --></div>
     <button onclick="MesureCode.createNew.call(MesureCode)">➕</button>
     <button onclick="MesureCode.removeCurrent.call(MesureCode)">➖</button>
+    <button onclick="MesureCode.resetAll.call(MesureCode)">reset</button>
+
+
+    <!--
+      ONGLETS POUR OUVRIR LES PANNEAUX
+     -->
+    <div id="main_onglets">
+      <button id="onglet_options" class="onglet" data-panneau-id="options">options</button>
+      <button id="onglet_tools" class="onglet" data-panneau-id="tools">outils</button>
+    </div>
+
+    <!-- 
+
+      Le PANNEAU DES OUTILS
+
+     -->
+    <div id="tools" class="panneau">
+      <button onclick="Tools.writeInCurrent('double_voix')">Double voix même portée</button>
+    </div>
+
+    <!-- 
+    
+
+      Le PANNEAU DES OPTIONS à appliquer à la partition
+    
+
+     -->
+    <div id="options" class="panneau">
+
+      <table id="table_options">
+        <!-- 
+          Première ligne d'options
+         -->
+        <tr>
+          <td>
+            <!-- Format de page -->
+            <span class="libelle">Page</span><select id="page">
+              <option value="">---</option>
+              <option value="a3">A3</option>
+              <option value="a4">A4</option>
+              <option value="a5">A5</option>
+            </select>
+            <!-- Première mesure -->
+            <span class="libelle">1<sup>ère</sup> mesure</span><input type="text" id="first_mesure" value="1" class="short" />
+          </td>
+          <td>
+            <span class="libelle">Système</span><select id="systeme">
+              <option value="mono">Mono</option>
+              <option value="piano" SELECTED>Piano</option>
+              <option value="duo">duo</option>
+              <option value="trio">trio</option>
+              <option value="quatuor">quatuor</option>
+              <option value="xxx">autre :</option>
+            </select><input type="text" id="systeme_other" class="short">
+          </td>
+          <td>
+            <span class="libelle">Proximité</span><select id="proximity">
+              <option value="">---</option>
+              <option value="1">1 (notes très proches)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (normal)</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+              <option value="40">40</option>
+              <option value="45">45</option>
+              <option value="50">50 (très espacé)</option>
+            </select>
+          </td>
+        </tr>
+        <!-- 
+          Deuxième ligne d'options
+         -->
+        <tr>
+          <td>
+            <span class="libelle">Tonalité</span><select id="tune">
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+            </select><select id="tune_alteration">
+              <option value="">naturel</option>
+              <option value="b">bémol</option>
+              <option value="#">dièse</option>
+            </select><select id="tune_nature">
+              <option value="">Majeur</option>
+              <option value="m">mineur</option>
+            </select>
+          </td>
+
+          <td>
+            <span class="libelle">Métrique</span><select id="metrique">
+              <option value="">---</option>
+              <option value="OFF">OFF</option>
+              <option value="C">C</option>
+              <option value="4/4">4/4</option>
+              <option value="2/2">C barré</option>
+              <option value="2/2">2/2</option>
+              <option value="3/4">3/4</option>
+              <option value="3/8">3/8</option>
+              <option value="6/8">6/8</option>
+              <option value="9/8">9/8</option>
+              <option id="xxx">autre :</option>
+            </select><input type="text" id="other_metrique" class="short" />            
+          </td>
+
+          <td>
+            <input type="checkbox" id="cb_barre"> <label class="libelle" for="cb_barre" CHECKED>Barres mesures</label>
+            <input type="checkbox" id="cb_stems"> <label class="libelle" for="cb_stems" CHECKED>Hampes</label>            
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- 
+        /FIN du Panneau des options
+     -->    
   </section>
 
   <div class="right">
@@ -145,10 +184,12 @@
 
   <script type="text/javascript" src="config.js" defer></script>
   <script type="text/javascript" src="js/app/App.js" defer></script>
+  <script type="text/javascript" src="js/app/Onglet.js" defer></script>
   <script type="text/javascript" src="js/app/data.js" defer></script>
   <script type="text/javascript" src="js/app/UI.js" defer></script>
   <script type="text/javascript" src="js/app/Score.js" defer></script>
   <script type="text/javascript" src="js/app/KeyEvent.js" defer></script>
   <script type="text/javascript" src="js/app/MesureCode.js" defer></script>
+  <script type="text/javascript" src="js/app/Tools.js" defer></script>
 </body>
 </html>

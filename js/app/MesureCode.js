@@ -123,6 +123,15 @@ static removeCurrent(){
   console.info("Je dois apprendre à supprimer la mesure-code courante.")
 }
 
+/**
+ * Quand on clique sur le bouton pour réinitialiser tout
+ * 
+ */
+static resetAll(){
+  this.reset()
+  this.createNew()
+}
+
 static reset(){
   this.container.innerHTML = ""
   this.table_mesures = []
@@ -219,7 +228,42 @@ build(){
 observe(){
   this.eachObjetMesure(mes => {
     mes.addEventListener('blur', this.setWidth.bind(this))
+    mes.addEventListener('focus', this.setCurrent.bind(this, mes))
   })
 }
 
+/**
+ * Pour mettre cette mesure (et ce champ en courant)
+ * 
+ * Pour bien comprendre : cette mesure-code contient chaque portée
+ * du système. Par exemple, elle contient 4 mesures pour un quatuor,
+ * donc 4 champs pour entrer les notes.
+ * Quand on focusse dans un champ on a donc :
+ *    - MesureCode.current      Qui est l'instance mesureCode courante (celle du champ focussé)
+ *    - <cette mesure>.current  Qui est le field de la mesure en question (si vraiment c'est nécessaire, à l'avenir, on pourra imaginer faire une instance.
+ */
+setCurrent(field, ev){
+  this.currentField = field
+  this.constructor.current = this
+  return stopEvent(ev)
 }
+
+/**
+ * Méthode pour ajouter le texte +text+ au champ courant de cette
+ * mesure-code, donc le currentField
+ * 
+ */
+addInCurrentStaff(text){
+  var t = this.getCurrentFieldContent().trim()
+  this.setCurrentFieldTo(t + ' ' + text)
+}
+setCurrentFieldTo(txt){
+  this.currentField.value = txt
+  this.setWidth()
+}
+getCurrentFieldContent(){
+  return this.currentField.value
+}
+
+
+}//class MesureCode

@@ -6,7 +6,7 @@
 
 section#interactive_section {
   position: fixed;
-  bottom: 4em;
+  top: 50%;
   display: block;
   margin-left: 10%;
   width: calc(80% - 40px);
@@ -27,11 +27,24 @@ form#music_score_form, form#music_score_form * {
   display: none;
 }
 
+
 div#options {
   margin: 1em 0;
 }
+div#options table#table_options {}
+div#options table#table_options td {padding: 0.3em}
 
 .libelle {
   margin-right: 0.2em;
   color: #999;
+}
+
+
+div#main_onglets {
+  margin: 1em;
+
+}
+div#main_onglets button {
+  width: 120px;
+  border: none;
 }

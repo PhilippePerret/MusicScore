@@ -23,6 +23,7 @@ const App = new AppClass()
 
 $(document).ready(e => {
   try{
+    UI.prepare()
     /**
      * On lance la boucle qui va actualiser l'image toutes les
      * secondes/
