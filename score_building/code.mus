@@ -1,6 +1,8 @@
 -> visu
+-- page a4
 --piano
+--stem
+--barres
 --tune C
---mesure 1
-a4 b c d << { a b c } \ { d e f } >> | b c d e
+a4 b c d | b c d e
 a1 | b

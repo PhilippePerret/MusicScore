@@ -1,16 +1,16 @@
 VERSION RUBY : 2.6.3
-[0;96mProduction du fichier SVG à partir de l'expression '["a4 b c d << { a b c } \\ { d e f } >> | b c d e", "a1 | b"]...'.
+[0;96mProduction du fichier SVG à partir de l'expression '["a4 b c d | b c d e", "a1 | b"]...'.
 Merci de patienter…[0m
 
-** (process:3008): WARNING **: 09:49:51.646: Unable to create profile directory (Permission denied) (13)
-** Message: 09:49:52.493: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
-** Message: 09:49:52.493: Inkscape va d?marrer avec les pr?f?rences par d?faut.
+** (process:3355): WARNING **: 10:26:50.539: Unable to create profile directory (Permission denied) (13)
+** Message: 10:26:51.112: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
+** Message: 10:26:51.112: Inkscape va d?marrer avec les pr?f?rences par d?faut.
 Les nouvelles pr?f?rences ne seront pas enregistr?es. 
 
-** (org.inkscape.Inkscape:3008): WARNING **: 09:49:52.886: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
+** (org.inkscape.Inkscape:3355): WARNING **: 10:26:51.487: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
 
-** (org.inkscape.Inkscape:3008): WARNING **: 09:49:52.886: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
-2021-11-28 09:49:53.235 inkscape[3008:88121] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+** (org.inkscape.Inkscape:3355): WARNING **: 10:26:51.487: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
+2021-11-28 10:26:51.680 inkscape[3355:100364] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
 [0;92mLe fichier a été produit avec le nom “visu.svg”
 (dans le dossier /Users/philippeperret/Sites/MusicScore/score_building/code/)[0m
 

@@ -35,7 +35,6 @@
     --></div>
     <button onclick="MesureCode.createNew.call(MesureCode)">➕</button>
     <button onclick="MesureCode.removeCurrent.call(MesureCode)">➖</button>
-    <button onclick="MesureCode.resetAll.call(MesureCode)">reset</button>
 
 
     <!--
@@ -52,7 +51,20 @@
 
      -->
     <div id="tools" class="panneau">
-      <button onclick="Tools.writeInCurrent('double_voix')">Double voix même portée</button>
+
+      <div>
+        <button onclick="Tools.writeInCurrent('double_voix')">Double voix même portée</button>
+        <button onclick="Tools.writeInCurrent('debut_reprise')"> |: </button>
+        <button onclick="Tools.writeInCurrent('fin_reprise')"> :| </button>
+        <button onclick="Tools.writeInCurrent('fin_debut_reprise')"> :|: </button>
+        <button onclick="Tools.writeInCurrent('fin')">Fin morceau</button>
+      </div>
+
+      <div>
+        
+          <button onclick="MesureCode.resetAll.call(MesureCode)">Tout effacer</button>
+
+      </div>
     </div>
 
     <!-- 
@@ -78,7 +90,7 @@
               <option value="a5">A5</option>
             </select>
             <!-- Première mesure -->
-            <span class="libelle">1<sup>ère</sup> mesure</span><input type="text" id="first_mesure" value="1" class="short" />
+            <span class="libelle">1<sup>ère</sup> mesure</span><input type="text" id="first_mesure" value="" class="short" />
           </td>
           <td>
             <span class="libelle">Système</span><select id="systeme">
@@ -191,5 +203,6 @@
   <script type="text/javascript" src="js/app/KeyEvent.js" defer></script>
   <script type="text/javascript" src="js/app/MesureCode.js" defer></script>
   <script type="text/javascript" src="js/app/Tools.js" defer></script>
+  <script type="text/javascript" src="js/app/Options.js" defer></script>
 </body>
 </html>

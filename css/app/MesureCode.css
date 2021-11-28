@@ -12,3 +12,10 @@ div.mesure_code input[type="text"].mesure_code {
   width: 180px;
   border: none;
 }
+div.mesure_code div.mesure_number {
+  font-family: Georgia;
+  font-size: 11pt;
+}
+div.mesure_code div.mesure_number:before {
+  content: 'mes. ';
+}

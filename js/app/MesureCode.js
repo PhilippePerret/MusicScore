@@ -114,6 +114,20 @@ static count(){
   return this.lastId
 }
 
+/**
+ * Méthode appelée quand on change le numéro de la première mesure
+ * 
+ */
+static onChangeFirstMesureNumber(ev){
+  this.firstMeasureNumber = UI.getFirstNumber()
+  this.each(mescode => mescode.updateMeasureNumber())
+  return stopEvent(ev)
+}
+
+static get firstMeasureNumber(){return this._firstnum || ( this._firstnum = UI.getFirstNumber())}
+static set firstMeasureNumber(v){this._firstnum = v}
+
+
 static getNextId(){
   if (!this.lastId) this.lastId = 0;
   return ++ this.lastId;
@@ -146,8 +160,8 @@ static get container(){
 // --- INSTANCE ---
 
 constructor(id, notes){
-  this.id = id
-  this.notes = notes
+  this.id     = id
+  this.notes  = notes
 }
 
 /**
@@ -193,6 +207,20 @@ setWidth(){
 }
 
 /**
+ * Méthode pour définir le numéro de mesure de cette mesure-code et
+ * l'afficher au-dessus des champs
+ * 
+ */
+updateMeasureNumber(){
+  this._number = null
+  this.obj.querySelector('.mesure_number').innerHTML = this.number
+}
+get number(){return this._number || (this._number = this.calcNumber())}
+set number(v){this._number = v}
+calcNumber(){
+  return this.id + this.constructor.firstMeasureNumber - 1
+}
+/**
  * Méthode qui boucle sur chaque champ de texte de mesure de
  * cette mesure-code
  * 
@@ -209,6 +237,10 @@ eachObjetMesure(methode){
  */
 build(){
   const o = DCreate('DIV', {class:'mesure_code'})
+  // 
+  // On met le champ pour le numéro de mesure
+  // 
+  o.appendChild(DCreate('DIV', {class:'mesure_number', text: this.number}))
   /**
    * 
    * On ajoute autant de systèmes qu'il en faut

@@ -7,9 +7,52 @@ class UIClass {
  * 
  */
 prepare(){
+  // 
+  // Préparation de l'interface
+  // 
   document.querySelectorAll('button.onglet').forEach(aong => {
     Onglet.instanciate(aong)
   })
+  // 
+  // Réglage des options
+  // 
+  Object.keys(Options.default).forEach(keyOption => {
+    const valOption = Options.default[keyOption]
+    const objet = document.querySelector('#'+keyOption)
+    if ( 'string' == typeof valOption ) {
+      objet.value = valOption
+    } else {
+      objet.checked = valOption
+    }
+  })
+  // 
+  // Observation de certains champs
+  // 
+  this.observeSpecialFields()
+}
+
+/**
+ * Observation de certains champs spéciaux (comme par exemple le
+ * champs qui donne la première mesure)
+ * 
+ */
+observeSpecialFields(){
+  this.firstMesureField.addEventListener('change', MesureCode.onChangeFirstMesureNumber.bind(MesureCode))
+}
+
+/**
+ * Retourne le numéro de première mesure, qu'il soit défini ou non
+ * 
+ */
+getFirstNumber(){
+  let num = this.firstMesureField.value
+  if ( num == '' ){ num = 1 }
+  else { num = parseInt(num, 10) }
+  return num
+}
+
+get firstMesureField(){
+  return this._firstmes || (this._firstmes = document.querySelector('#first_mesure'))
 }
 
   showBoutonsConfirmation(){

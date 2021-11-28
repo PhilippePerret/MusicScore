@@ -48,3 +48,12 @@ div#main_onglets button {
   width: 120px;
   border: none;
 }
+
+div.panneau {
+  border: 1px solid #CCC;
+  padding: 1em;
+  border-radius: 0.6em;
+}
+div.panneau > div {
+  margin-top: 1em;
+}
