@@ -20,9 +20,16 @@ textarea#music_score_code {
   color: white;
 }
 
+div#score_container {
+  width: 90%;
+  max-height: 500px;
+  height: 500px;
+  border: 1px dashed red;
+  overflow: auto;
+  margin: 1em;
+}
 img#score {
-  margin: 2em;
-  height: 400px;
+  width: 100%;
 }
 
 form#music_score_form, form#music_score_form * {

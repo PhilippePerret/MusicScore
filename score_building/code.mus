@@ -3,7 +3,7 @@
 --piano
 --stem
 --barres
---tune F
+--tune Eb
 --time 3/4
-d8 a' f d a' f | d a' f d a' f | d bes' g d bes' g | d bes' g d bes' g | cis, g' e cis g' e | cis bes' g e a g | f  d f a f a | d a d f d f | b f e d c b | a gis fis e d' b | <a c>4\mordent r r | <a c>4\mordent r r | a'8 ees d c bes a | g fis e! d c' a | bes\mordent d bes g g'4 | r8 d c bes a\prall g \break | a c a f f'4 | r8 c bes a g\prall f | g bes a g f e | f8
-d4\mordent r r | d, r r | d'\mordent r r | d, r r | d'\mordent r r | d, r r | d'8 a d f d f | a f a d a d | gis,4 r r | e gis e | a8 e' c a e' c | g ees' c g ees' c | fis,4 r r | d fis d | g\mordent r r8 f! | e4\prall r r | f\mordent r r8 e | d4 r8 f e d | e d cis e d cis | d8
+c'8 d ees g, d' f, | \gr(f8/-) ees d c ees g c | f, ees' d f aes c, | \gr(c8/-) b a g b d f \break | ees c g c e c | f c g' c, aes' c, | d bes f bes d bes | ees bes f' bes, g' bes, \break | c aes g aes c ees | bes g f g bes ees | aes, g f g aes ees | d ees f d bes aes \break | g bes ees bes g bes | aes ees' bes ees c ees | bes ees c ees des ees | c4 ees aes~ \break | aes f d'~ | d bes g'~ | g8 f ees d c d | << { ees2. } \\ { r8 bes g2 } >> :|: | g'8 aes bes g bes f | \gr(f8/-) e d c e g bes | aes f des g e c | bes g aes c f a, | bes d f aes! g f | g ees d c b f' | ees d c ees a, g | fis g a fis d a' | d g, fis c' bes g | c, fis g a ees c | bes d fis g a, fis' | g4 bes2~\mordent | bes8 des e c g' bes
+c4 c' g | aes aes, r | aes' f d | g g, r | c c' bes | aes g f | bes, bes' aes | g f ees | aes c f, | g bes ees, | f aes f | bes bes, d | ees ees, des' | c bes aes | g f ees | aes8 ees' aes g f ees | d f bes aes g f | g bes ees des c bes | aes4 bes bes, | ees4. bes'8 ees4 | ees,4 ees' des | c e, c | f bes, c | f, f' ees! | d bes d | ees ees' d | c a c | d d, c | bes a g | ees' d c | d c d | g,8 d' g bes des f,! | e4 c e

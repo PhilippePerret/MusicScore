@@ -6,7 +6,7 @@
  * 
  */
 const SNIPPETS = {
-    'double_voix': "<< {   } \\ {   } >>"
+    'double_voix': "<< {  } \\\\ {  } >>"
   , 'debut_reprise': "|:"
   , 'fin_reprise': ":|"
   , 'fin_debut_reprise': ":|:"
