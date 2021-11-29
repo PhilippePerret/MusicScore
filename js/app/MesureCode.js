@@ -100,6 +100,7 @@ static createNew(data){
   const mesure = new this(this.getNextId());
   if (data) mesure.data = data
   mesure.build()
+  mesure.focus()
   this.add(mesure)
   return mesure
 }
@@ -209,7 +210,7 @@ setWidth(){
   // 
   // Une valeur minimale
   // 
-  max || (max = 1);
+  max || (max = 8);
 
   // 
   // On met tous les champs à la même longueur
@@ -217,6 +218,14 @@ setWidth(){
   this.eachObjetMesure(mes => {
     mes.style.width = px(max * 18)
   })
+}
+
+/**
+ * Pour se placer dans le premier champ (en haut)
+ * 
+ */
+focus(){
+  this.obj.querySelector('.mesure_code.portee1').focus()
 }
 
 /**
