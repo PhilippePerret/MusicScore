@@ -1,17 +1,6 @@
 VERSION RUBY : 2.6.3
-[0;96mProduction du fichier SVG à partir de l'expression '["c'8 d ees g, d' f, | \\gr(f8/-) ees d c ees g c | f, ees' d f aes c, | \\gr(c8/-) b a g b d f \\break | ees c g c e c | f c g' c, aes' c, | d bes f bes d bes | ees bes f' bes, g' bes, \\break | c aes g aes c ees | bes g f g bes ees | aes, g f g aes ees | d ees f d bes aes \\break | g bes ees bes g bes | aes ees' bes ees c ees | bes ees c ees des ees | c4 ees aes~ \\break | aes f d'~ | d bes g'~ | g8 f ees d c d | << { ees2. } \\\\ { r8 bes g2 } >> :|: | g'8 aes bes g bes f | \\gr(f8/-) e d c e g bes | aes f des g e c | bes g aes c f a, | bes d f aes! g f | g ees d c b f' | ees d c ees a, g | fis g a fis d a' | d g, fis c' bes g | c, fis g a ees c | bes d fis g a, fis' | g4 bes2~\\mordent | bes8 des e c g' bes", "c4 c' g | aes aes, r | aes' f d | g g, r | c c' bes | aes g f | bes, bes' aes | g f ees | aes c f, | g bes ees, | f aes f | bes bes, d | ees ees, des' | c bes aes | g f ees | aes8 ees' aes g f ees | d f bes aes g f | g bes ees des c bes | aes4 bes bes, | ees4. bes'8 ees4 | ees,4 ees' des | c e, c | f bes, c | f, f' ees! | d bes d | ees ees' d | c a c | d d, c | bes a g | ees' d c | d c d | g,8 d' g bes des f,! | e4 c e"]...'.
+[0;96mProduction du fichier SVG à partir de l'expression '["c'8 d ees g, d' f, | \\gr(f8/-) ees d c ees g c | f, ees' d f aes c, | \\gr(c8/-) b a g b d f \\break | ees c g c e c | f c g' c, aes' c, | d bes f bes d bes | ees bes f' bes, g' bes, \\break | c aes g aes c ees | bes g f g bes ees | aes, g f g aes ees | d ees f d bes aes \\break | g bes ees bes g bes | aes ees' bes ees c ees | bes ees c ees des ees | c4 ees aes~ \\break | aes f d'~ | d bes g'~ | g8 f ees d c d | << { ees2. } \\\\ { r8 bes g2 } >> :|: | g'8 aes bes g bes f | \\gr(f8/-) e d c e g bes | aes f des g e c | bes g aes c f a, \\break | bes d f aes! g f | g ees d c b f' | ees d c ees a, g | fis g a fis d a' \\break | d g, fis c' bes g | c, fis g a ees c | bes d fis g a, fis' | g4 bes2~\\mordent \\break | bes8 des e c g' bes, | aes bes c aes f e | f aes b g d' f, | ees f g ees c b \\break | c ees fis d a' c, | b d f aes! g b | d f ees c g b | << { c2. } \\\\ { r8 g ees2 } >> :|", "c4 c' g | aes aes, r | aes' f d | g g, r | c c' bes | aes g f | bes, bes' aes | g f ees | aes c f, | g bes ees, | f aes f | bes bes, d | ees ees, des' | c bes aes | g f ees | aes8 ees' aes g f ees | d f bes aes g f | g bes ees des c bes | aes4 bes bes, | ees4. bes'8 ees4 | ees,4 ees' des | c e, c | f bes, c | f, f' ees! | d bes d | ees ees' d | c a c | d d, c | bes a g | ees' d c | d c d | g,8 d' g bes des f,! | e4 c e | f8 g aes4 r | b, g b | c8 d ees4 r | fis, d fis | g d' ees | aes, f g | c4. g'8 c4"]...'.
 Merci de patienter…[0m
-
-** (process:6313): WARNING **: 14:41:39.998: Unable to create profile directory (Permission denied) (13)
-** Message: 14:41:40.683: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
-** Message: 14:41:40.683: Inkscape va d?marrer avec les pr?f?rences par d?faut.
-Les nouvelles pr?f?rences ne seront pas enregistr?es. 
-
-** (org.inkscape.Inkscape:6313): WARNING **: 14:41:41.122: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
-
-** (org.inkscape.Inkscape:6313): WARNING **: 14:41:41.122: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
-2021-11-29 14:41:42.372 inkscape[6313:213311] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
-[0;92mLe fichier a été produit avec le nom “visu.svg”
-(dans le dossier /Users/philippeperret/Sites/MusicScore/score_building/code/)[0m
+[0;91mImpossible de produire le fichier “visu.svg”…[0m
 
 
