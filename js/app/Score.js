@@ -158,8 +158,11 @@ get proximity(){
 /**
  * @return le code {String} final
  * 
+ * @param params {Hash} 
+ *    :from     Depuis cette mesure (toujours défini, 1 par défaut)
+ *    :to       Jusqu'à cette mesure (idem)
  */
-get codeFinal(){
+getCodeFinal(params){
   var c = []
   this.page && c.push('-- page ' + this.page)
   this.isPiano  && c.push('--piano')
@@ -169,7 +172,7 @@ get codeFinal(){
   this.metrique && c.push('--time ' + this.metrique)
   this.mesure && c.push('--mesure ' + this.mesure)
   this.proximity && c.push('--proximity ' + this.proximity)
-  c.push(MesureCode.getFullCode())
+  c.push(MesureCode.getFullCode(params))
   c = c.join("\n")
   console.log("Le code complet : ", c)
   return c

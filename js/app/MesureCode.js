@@ -15,15 +15,17 @@ class MesureCode {
  * @return {String} Le code complet
  * 
  */
-static getFullCode(){
+static getFullCode(params){
   var c = []
   for(var xportee = 0; xportee < Score.stavesCount; ++xportee){
     c.push([])
-    this.each(mes => {
+    for(var imesure = params.from - 1; imesure < params.to; ++ imesure){
+      const mes = this.table_mesures[imesure]
+      if (!mes) break ; // Numéro de dernière mesure trop grand
       var code = mes.getPorteeCode(parseInt(xportee,10) + 1).trim()
       if ( code == '' ) return ;
       c[xportee].push(code)
-    })
+    }
     c[xportee] = c[xportee].join(' | ')
   }
   return c.join("\n")

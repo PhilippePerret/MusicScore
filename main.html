@@ -65,7 +65,11 @@
 
       <div>
         <legend>Code final</legend>
-        <div><button onclick="App.produceFinalCode.call(App)">Produire le code final</button></div>
+        <div>
+          <button onclick="App.produceFinalCode.call(App)">Produire le code final</button>
+          <span class="libelle">De la mesure</span><input type="text" id="output_from_mesure" class="short" />
+          <span class="libelle">à la mesure</span><input type="text" id="output_to_mesure" class="short" />
+        </div>
         <textarea id="final_code" style="width:100%;" placeholder="CODE FINAL"></textarea>
       </div>
 
