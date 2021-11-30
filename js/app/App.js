@@ -4,16 +4,17 @@ class AppClass {
 
 submitCode(){
   message("Actualisation en cours…", {keep: true})
-  $('#music_score_code_in_form').val(Score.getCodeFinal())
-  $('#music_score_form #operation').val('build_score')
-  const form = $('#music_score_form').ajaxSubmit({url:'ajax.php', type:'POST'})
-  var xhr = form.data('jqxhr');
-  xhr.done(function(ret) {
+  ajax('build_score', Score.getCodeFinal()).then(ret => {
     console.log("Je reviens.")
     console.log("Retour ajax", ret)
     message("Partition actualisée.")
     Score.update()
-  });    
+  })
+  // $('#music_score_form #operation').val('build_score')
+  // const form = $('#music_score_form').ajaxSubmit({url:'ajax.php', type:'POST'})
+  // var xhr = form.data('jqxhr');
+  // xhr.done(function(ret) {
+  // });    
 }
 
 /**

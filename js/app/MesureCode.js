@@ -17,6 +17,7 @@ class MesureCode {
  */
 static getFullCode(params){
   var c = []
+  params = params || {}
   const nombrePortees = Score.stavesCount
   for(var xportee = 0; xportee < nombrePortees; ++xportee){
     c.push([])
