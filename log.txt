@@ -1,16 +1,16 @@
 VERSION RUBY : 2.6.3
-[0;96mProduction du fichier SVG à partir de l'expression '["r16 e g b g e | e'8 b e | dis16 b dis fis dis b", "e8\\mordent e, r | r16 e g b g e | b'8\\mordent b, r"]...'.
+[0;96mProduction du fichier SVG à partir de l'expression '["r16 e g b g e | e'8 b e | dis16 b dis fis dis b | b'8 fis b | g16 fis e d! c b | a16 c e g fis e | fis e d c b a | g b d f e d | e8 fis\\mordent g | d4\\mordent r8 | g fis g", "e8\\mordent e, r | r16 e' g b g e | b'8\\mordent b, r | r16 b' dis fis dis b | e8 g e | c a c | d! fis d | b g b | c16 b a c g c | fis, c' e, c' d, c' | b c a c g c"]...'.
 Merci de patienter…[0m
 
-** (process:5792): WARNING **: 13:58:04.946: Unable to create profile directory (Permission denied) (13)
-** Message: 13:58:05.751: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
-** Message: 13:58:05.751: Inkscape va d?marrer avec les pr?f?rences par d?faut.
+** (process:6207): WARNING **: 14:07:40.544: Unable to create profile directory (Permission denied) (13)
+** Message: 14:07:41.150: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
+** Message: 14:07:41.150: Inkscape va d?marrer avec les pr?f?rences par d?faut.
 Les nouvelles pr?f?rences ne seront pas enregistr?es. 
 
-** (org.inkscape.Inkscape:5792): WARNING **: 13:58:06.166: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
+** (org.inkscape.Inkscape:6207): WARNING **: 14:07:41.553: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
 
-** (org.inkscape.Inkscape:5792): WARNING **: 13:58:06.166: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
-2021-11-30 13:58:06.479 inkscape[5792:213273] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+** (org.inkscape.Inkscape:6207): WARNING **: 14:07:41.553: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
+2021-11-30 14:07:42.157 inkscape[6207:218790] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
 [0;92mLe fichier a été produit avec le nom “visu.svg”
 (dans le dossier /Users/philippeperret/Sites/MusicScore/score_building/code/)[0m
 

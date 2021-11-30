@@ -61,7 +61,10 @@ traiteCodeInitial(fullcode){
   MesureCode.parse(notes)
 }
 
-
+/**
+ * Procédure normale de production du code
+ * 
+ */
 produceFinalCode(){
   const field = document.querySelector('#final_code')
   let from_mes  = document.querySelector('#output_from_mesure').value.trim()
@@ -71,6 +74,41 @@ produceFinalCode(){
   field.value = Score.getCodeFinal({from: from_mes, to:to_mes})
   field.style.height = px(200)
 }
+
+
+/**
+ * Pour forcer la production du code en cas de problème
+ * 
+ */
+forceCodeFinal(){
+  const field = document.querySelector('#final_code')
+  let codePortees = {}
+  // 
+  // On boucle sur les mesures tant qu'on en trouve
+  // 
+  document.querySelectorAll('#mesures_code > div').forEach(div => {
+    div.querySelectorAll('input[type="text"][data-portee]').forEach(input => {
+      var indexPortee = parseInt(input.getAttribute('data-portee'),10)
+      if ( undefined == codePortees[indexPortee] ) {
+        Object.assign(codePortees, { [indexPortee]: []})
+      }
+      codePortees[indexPortee].push(input.value.trim())
+    })
+  })
+  //
+  // On rassemble tout le code
+  // 
+  var code = []
+  for( var iportee in codePortees ) {
+    code.push(codePortees[iportee].join(' | '))
+  }
+  code = code.join("\n")
+  field.value = code 
+  field.style.height = px(200)
+}
+
+
+
 }//AppClass
 
 
