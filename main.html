@@ -19,14 +19,19 @@
 <body>
 
   <!-- 
+    BLOC D'OUTILS SUR MARGE DROITE
+   -->
+  <div id="bloc_tools_right">
+    <div><a href="Manuel.pdf" target="_blank">Manuel PDF</a></div>
+    <button onclick="ImgScore.diminueSize.call(ImgScore)" style="font-size:22px">🔍</button>
+    <button onclick="ImgScore.augmenteSize.call(ImgScore)" style="font-size:32px">🔍</button>
+  </div>
+
+  <!-- 
     Image de la partition
    -->
   <div id="score_container">
     <img id="score" src="score_building/code/visu.svg" />
-  </div>
-  <div class="right">
-    <button onclick="ImgScore.diminueSize.call(ImgScore)" style="font-size:22px">🔍</button>
-    <button onclick="ImgScore.augmenteSize.call(ImgScore)" style="font-size:32px">🔍</button>
   </div>
 
   <!-- 
@@ -200,8 +205,7 @@
   </section>
 
   <div class="right">
-    1) Définis les options de la partition 2) définis le code pseudo-lilypond 3) presse ⌘ B pour produire et visualiser la partition 4) lorsque la partition est OK, presse ⌘ D pour obtenir le code final 5) copie-colle le code proposé dans un fichier .mus.
-    <a href="Manuel.pdf" target="_blank">Manuel PDF</a>
+    1) Set options 2) write pseudo-lilypond code 3) ⌘ B to produce score 4) Outil > Code final 5) copy-paste in a .mus file.
   </div>
 
   <!-- 

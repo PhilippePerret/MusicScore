@@ -55,3 +55,12 @@ div.panneau {
 div.panneau > div {
   margin-top: 1em;
 }
+
+div#bloc_tools_right {
+  position: fixed;
+  right: 0;
+  top: 2em;
+  width: 8%;
+  overflow: hidden;
+
+}
