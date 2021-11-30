@@ -107,8 +107,6 @@ forceCodeFinal(){
   field.style.height = px(200)
 }
 
-
-
 }//AppClass
 
 

@@ -161,7 +161,7 @@ getCodeFinal(params){
   var c = []
   this.page       && c.push('-- page ' + this.page)
   this.isPiano    && c.push('--piano')
-  this.cbStems.checked  && c.push('--stem')
+  this.cbStems.checked  || c.push('--no_stem')
   this.cbBarre.checked  && c.push('--barres')
   c.push('--tune ' + this.tune)
   this.metrique   && c.push('--time ' + this.metrique)

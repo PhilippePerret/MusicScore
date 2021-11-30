@@ -1,16 +1,16 @@
 VERSION RUBY : 2.6.3
-[0;96mProduction du fichier SVG à partir de l'expression '["r16 e g b g e | e'8 b e | dis16 b dis fis dis b | b'8 fis b | g16 fis e d! c b | a16 c e g fis e | fis e d c b a | g b d f e d | e8 fis\\mordent g | d4\\mordent r8 | g fis g", "e8\\mordent e, r | r16 e' g b g e | b'8\\mordent b, r | r16 b' dis fis dis b | e8 g e | c a c | d! fis d | b g b | c16 b a c g c | fis, c' e, c' d, c' | b c a c g c"]...'.
+[0;96mProduction du fichier SVG à partir de l'expression '["r16 e g b g e | e'8 b e | dis16 b dis fis dis b | b'8 fis b | g16 fis e d! c b | a16 c e g fis e | fis e d c b a | g b d f e d | e8 fis\\mordent g | d4\\mordent r8 | g fis g | a16 b c8 r | b a\\prall g | a c, b | g' fis\\prall e | fis a, g \\break | e' fis16 e d cis | fis8 g16 fis e d | cis e d cis b ais | b4.\\mordent", "e8\\mordent e, r | r16 e' g b g e | b'8\\mordent b, r | r16 b' dis fis dis b | e8 g e | c a c | d! fis d | b g b | c16 b a c g c | fis, c' e, c' d, c' | b c a c g c | fis, c' e, c' d, c' | g b d, b' e, b' | fis b e, b' dis, b' | e, b' d!, b' cis, b' | d, b' cis, b' b, b' | cis, b' d, b' e, b' | d, b' e, b' fis b | g8 e fis | b, fis' b"]...'.
 Merci de patienter…[0m
 
-** (process:6207): WARNING **: 14:07:40.544: Unable to create profile directory (Permission denied) (13)
-** Message: 14:07:41.150: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
-** Message: 14:07:41.150: Inkscape va d?marrer avec les pr?f?rences par d?faut.
+** (process:7064): WARNING **: 15:29:13.225: Unable to create profile directory (Permission denied) (13)
+** Message: 15:29:14.636: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
+** Message: 15:29:14.636: Inkscape va d?marrer avec les pr?f?rences par d?faut.
 Les nouvelles pr?f?rences ne seront pas enregistr?es. 
 
-** (org.inkscape.Inkscape:6207): WARNING **: 14:07:41.553: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
+** (org.inkscape.Inkscape:7064): WARNING **: 15:29:15.029: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
 
-** (org.inkscape.Inkscape:6207): WARNING **: 14:07:41.553: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
-2021-11-30 14:07:42.157 inkscape[6207:218790] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+** (org.inkscape.Inkscape:7064): WARNING **: 15:29:15.029: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
+2021-11-30 15:29:15.949 inkscape[7064:254589] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
 [0;92mLe fichier a été produit avec le nom “visu.svg”
 (dans le dossier /Users/philippeperret/Sites/MusicScore/score_building/code/)[0m
 
