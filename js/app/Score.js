@@ -16,7 +16,7 @@ class ScoreClass {
  */
 setOptions(options){
   Object.keys(options).forEach(keyOption => {
-    console.log("Traitement de la clé %s", keyOption)
+    // console.log("Traitement de l'option %s", keyOption)
     const valOption = options[keyOption]
     // 
     // On ne fait rien si l'option a la valeur null ou indéfinie
@@ -63,6 +63,9 @@ get cbBarre(){return document.querySelector('#cb_barre')}
  * 
  */
 get stavesCount(){
+  return this._stavescount || (this._stavescount = this.countStaves())
+}
+countStaves(){
   if ( this.isPiano ) {
     return 2
   } else if ( this.isTrio ) {
@@ -72,7 +75,7 @@ get stavesCount(){
   } else if ( this.isMono ) {
     return 1
   } else {
-    return systemeValue
+    return parseInt(this.systemeValue,10)
   }
 }
 get menuSysteme(){
@@ -86,10 +89,10 @@ get systemeValue(){
 set systemeValue(v){
   var ov = ""
   switch(v){
-    case 1: v = 'mono'; break
-    case 2: v = 'piano'; break
-    case 3: v = 'trio'; break
-    case 4: v = 'quatuor'; break
+    case 1: v = 'mono'    ; break
+    case 2: v = 'piano'   ; break
+    case 3: v = 'trio'    ; break
+    case 4: v = 'quatuor' ; break
     default:
       v = 'xxx'
       ov = v
@@ -176,58 +179,6 @@ getCodeFinal(params){
  */
 update(){
   $('img#score').attr('src', "score_building/code/visu.svg?"+(new Date().getTime()))
-}
-
-/**
- * Pour mettre en route et arrêter la boucle d'actualisation de
- * l'image.
- * 
- */
-toggleLoopUpdate(){
-  if ( this.isRunning ) {
-    this.stopLoopUpdate()
-  } else {
-    this.loopUpdate()
-  }
-}
-/**
- * La boucle qui actualise l'image toutes les secondes
- * 
- */
-loopUpdate(){
-  console.info("⏳ Activation de la boucle d'actualisation de la partition")
-  this.timer = setInterval(this.update.bind(this), 1000)
-  this.isRunning = true
-  this.setButtonToggleName('Stopper')
-}
-
-/**
- * Pour stopper la boucle des actualisation
- * 
- */
-stopLoopUpdate(){
-  console.info("⌛️ Désactivation de la boucle d'actualisation de la partition")
-  if ( this.timer ) {
-    clearInterval(this.timer);
-    delete this.timer
-    this.timer = null
-  } 
-  this.isRunning = false
-  this.setButtonToggleName('Lancer')
-}
-
-setButtonToggleName(name){
-  this.bntToggle.text(name + ' la boucle d’actualisation de la partition')
-}
-
-/**
- * Le champ où l'on tape le code
- */
-get champCodeInteractif(){
-  return this._codefield || (this._codefield = document.querySelector('#music_score_code'))
-}
-get bntToggle(){
-  return this._btntog || (this._btntog = $('#btn_toggle_loop_update'))
 }
 
 }//ScoreClass

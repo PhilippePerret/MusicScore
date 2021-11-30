@@ -23,7 +23,7 @@ applique(opts){
     // console.info("Valeur redéfinie (if any):", newValue)
     allOptions[keyOption] = undefined === newValue ? defValue : newValue
   })
-  console.log("allOptions = ", allOptions)
+  // console.log("allOptions = ", allOptions)
   Score.setOptions(allOptions)
 }
 

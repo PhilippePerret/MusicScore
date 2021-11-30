@@ -3,24 +3,23 @@ $(document).ready(e => {
   try{
     UI.prepare()
     /**
-     * On lance la boucle qui va actualiser l'image toutes les
-     * secondes/
-     * Non: maintenant, ça doit être fait manuellement, ici, on ne
-     * fait que l'initialiser.
+     * Si un code existe déjà dans le fichier 'score_building/code.mus'
+     * on le remonte et on l'affiche. Sinon, on ne met rien, on 
+     * fabrique simplement une mesure (à deux portées)
+     * 
      */
-    Score.toggleLoopUpdate()
-    Score.toggleLoopUpdate()
-    // 
-    // S'il y a un code dans le presse-papier, on l'affiche
-    // Sinon, on crée simplement une mesure-code
-    // 
-    var codePressePapier = "a4 b c d | b c d e \na1 | b"
-    if ( codePressePapier ) {
-      MesureCode.parse(codePressePapier)
-    } else {
-      MesureCode.createNew()
-    }
-
+    ajax('get_code').then(ret => {
+      // console.log("retour ajax = ", ret)
+      if (ret.data) {
+        // 
+        // On retire la première ligne qui est toujours '-> visu'
+        // 
+        ret.data.shift()
+        App.traiteCodeInitial(ret.data.join("\n"))
+      } else {
+        MesureCode.createNew()
+      }
+    })
   } catch(err){
     console.log("Erreur au cours du chargement", err)
   }

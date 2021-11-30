@@ -17,9 +17,10 @@ class MesureCode {
  */
 static getFullCode(params){
   var c = []
-  for(var xportee = 0; xportee < Score.stavesCount; ++xportee){
+  const nombrePortees = Score.stavesCount
+  for(var xportee = 0; xportee < nombrePortees; ++xportee){
     c.push([])
-    for(var imesure = params.from - 1; imesure < params.to; ++ imesure){
+    for(var imesure = (params.from||1) - 1; imesure < (params.to||this.count); ++ imesure){
       const mes = this.table_mesures[imesure]
       if (!mes) break ; // Numéro de dernière mesure trop grand
       var code = mes.getPorteeCode(parseInt(xportee,10) + 1).trim()
@@ -44,10 +45,11 @@ static getFullCode(params){
  */
 static parse(code){
   this.reset()
-  console.log("Je dois parser le code :", code)
+  // console.log("Je dois parser le code :", code)
   const porteesCode = code.split("\n")
   const nombrePortees = porteesCode.length
   Score.systemeValue = nombrePortees
+  // console.info("Score.systemeValue = ", Score.systemeValue)
   for(var iportee = 0, lenP = porteesCode.length; iportee < lenP; ++ iportee){
     var mesuresCode = porteesCode[iportee];
     // console.log("Étude de la mesuresCode : ", mesuresCode)
@@ -198,7 +200,7 @@ setPorteeCode(xportee, code){
  * 
  */
 setWidth(){
-  console.log("-> setWidth")
+  // console.log("-> setWidth")
   // 
   // On prend le texte le plus long
   // 
@@ -248,7 +250,8 @@ calcNumber(){
  * 
  */
 eachObjetMesure(methode){
-  for (var iportee = 1; iportee <= Score.stavesCount; ++iportee) {
+  const nombrePortees = 0 + Score.stavesCount
+  for (var iportee = 1; iportee <= nombrePortees; ++iportee) {
     const omesure = this.obj.querySelector('.mesure_code.portee' + iportee)
     methode(omesure)
   }  
@@ -280,7 +283,7 @@ build(){
 }
 
 observe(){
-  console.log("-> observe", this)
+  // console.log("-> observe", this)
   this.eachObjetMesure(mes => {
     mes.addEventListener('blur', this.setWidth.bind(this))
     mes.addEventListener('focus', this.setCurrent.bind(this, mes))

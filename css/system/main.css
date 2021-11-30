@@ -62,3 +62,5 @@ div#message.notice {
 div#message.doaction {
   background-color: orange;
 }
+
+form#ajax_form {display: none}

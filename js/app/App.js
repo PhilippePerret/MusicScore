@@ -20,10 +20,11 @@ submitCode(){
  * Méthode générale principale traitant un code complet donné
  * 
  */
-traiteCodeInitial(){
-  const field = document.querySelector('#ini_code')
-  const fullcode = field.value
-  console.log("Je dois traiter le code : ", fullcode)
+traiteCodeInitial(fullcode){
+  if ( undefined == fullcode ) {
+    fullcode = document.querySelector('#ini_code').value
+  }
+  // console.log("Je dois traiter le code : ", fullcode)
   // 
   // On passe en revue chaque ligne pour définir les options
   // 
@@ -33,12 +34,12 @@ traiteCodeInitial(){
     line = line.trim()
     if ( line.substring(0, 2) == '--' ){
       var [option, valoption] = line.substring(2, line.length).split(' ')
-      console.log("options,valoption = ", option, valoption)
+      // console.log("option, valoption = ", option, valoption)
       switch(option){
         case'piano': case'solo': case'duo': case'trio': case'quatuor': 
           valoption = option
           option    = 'systeme' 
-          break;
+          break
       }
       if ( valoption == '' ) valoption = true
       options[option] = valoption
@@ -46,14 +47,17 @@ traiteCodeInitial(){
       notes.push(line)
     }
   })
-  notes = notes.join("\n").trim()
-  // console.info("Notes récupérées : ", notes )
-  MesureCode.parse(notes)
   // 
   // Traitement des options
   // 
   console.info("Options récupérées : ", options)
   Options.applique(options)
+  // 
+  // Traitement des notes
+  // 
+  notes = notes.join("\n").trim()
+  // console.info("Notes récupérées : ", notes )
+  MesureCode.parse(notes)
 }
 
 
