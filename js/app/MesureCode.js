@@ -108,6 +108,29 @@ static createNew(data){
 }
 
 /**
+ * Pour détruire la mesure courante
+ * Si elle contient du code, on demande confirmation
+ * 
+ */
+static removeCurrent(){
+  if ( this.current ) {
+    var confirmed = true
+    if ( this.current.isNotEmpty ){
+      confirmed = confirm("Voulez-vous vraiment détruire la mesure "+ this.current.number +" ?")
+    }
+    if ( confirmed ) {
+      this.current.obj.remove()
+      this.table_mesures.splice(this.current.number - 1, 1)
+      this.lastId = 0
+      this.table_mesures.forEach(mes => mes.updateId(this.getNextId()))
+      message("La mesure #" + this.current.number + " a été supprimée.")
+      this.current = null
+    }
+  } else {
+    error("Il faut choisir la mesure à détruire en focussant dans un de ses champs-portée.")
+  }
+}
+/**
  * Pour ajouter la mesure-code +mesure+ à la liste Array des mesures
  *
  */
@@ -144,9 +167,6 @@ static getNextId(){
   return ++ this.lastId;
 }
 
-static removeCurrent(){
-  console.info("Je dois apprendre à supprimer la mesure-code courante.")
-}
 
 /**
  * Quand on clique sur le bouton pour réinitialiser tout
@@ -192,6 +212,18 @@ setPorteeCode(xportee, code){
 }
 
 /**
+ * Retourne TRUE quand il n'y a aucun code
+ * 
+ */
+get isEmpty(){
+  for(var iportee = 1; iportee <= Score.stavesCount; ++iportee){
+    if ( this.getPorteeCode(iportee) != "" ) return false
+  }
+  return true
+}
+get isNotEmpty(){return !this.isEmpty}
+
+/**
  * Méthode qui permet de définir la taille de la mesure en fonction
  * de son contenu (à chasse fixe)
  * Elle est appelée :
@@ -228,6 +260,21 @@ setWidth(){
  */
 focus(porteeIndex = 1){
   this.obj.querySelector('.mesure_code.portee'+porteeIndex).focus()
+}
+
+/**
+ * Mesure pour actualiser l'identifiant de la mesure (par exemple après
+ * une suppression ou une insertion de mesure)
+ * 
+ * Pour bien comprendre : 
+ *    - l'id est le nombre de la mesure-code dans la liste
+ *    - number est le nombre réel de la mesure, en fonction du numéro
+ *      de première mesure défini
+ * 
+ */
+updateId(newId){
+  this.id = newId
+  this.updateMeasureNumber()
 }
 
 /**
@@ -316,11 +363,8 @@ observe(){
  */
 focusNextField(){
   const indexPorteeCourante = parseInt(this.currentField.getAttribute('data-portee'),10)
-  console.log("indexPorteeCourante = " + indexPorteeCourante)
   const isLastPortee = indexPorteeCourante == Score.stavesCount ;
-  console.log("isLastPortee est ", isLastPortee)
   const isLastMesure = this.number == MesureCode.count
-  console.log("isLastMesure est", isLastMesure)
   if ( !isLastPortee ) {
     // 
     // <= Ce n'est pas la dernière portée 
@@ -333,13 +377,12 @@ focusNextField(){
     // => On doit créer une nouvelle mesure
     // 
     MesureCode.createNew()    
-  } else /* */ {
+  } else {
     // 
     // <= Dernière portée de non dernière mesure
     // => Focusser dans la première portée de la mesure suivante
     // 
     const nextMesure = MesureCode.table_mesures[this.number]
-    console.log("nextMesure = ", nextMesure)
     nextMesure.focus()
   }
 }
