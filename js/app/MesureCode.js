@@ -120,7 +120,7 @@ static add(mesure){
  * Retourne le nombre de mesures
  * 
  */
-static count(){
+static get count(){
   if (!this.lastId) this.lastId = 0;
   return this.lastId
 }
@@ -226,8 +226,8 @@ setWidth(){
  * Pour se placer dans le premier champ (en haut)
  * 
  */
-focus(){
-  this.obj.querySelector('.mesure_code.portee1').focus()
+focus(porteeIndex = 1){
+  this.obj.querySelector('.mesure_code.portee'+porteeIndex).focus()
 }
 
 /**
@@ -244,6 +244,13 @@ set number(v){this._number = v}
 calcNumber(){
   return this.id + this.constructor.firstMeasureNumber - 1
 }
+
+
+get isLastMesure(){
+  return this.number == MesureCode.count
+}
+
+
 /**
  * Méthode qui boucle sur chaque champ de texte de mesure de
  * cette mesure-code
@@ -272,7 +279,7 @@ build(){
    * 
    */
   for (var isys = 0; isys < Score.stavesCount; ++isys) {
-    o.appendChild(DCreate('INPUT', {type:'text', class:'mesure_code portee' + (isys + 1)}))
+    o.appendChild(DCreate('INPUT', {type:'text', 'data-portee': (isys + 1), class:'mesure_code portee' + (isys + 1)}))
   }
   this.obj = o
 
@@ -285,9 +292,65 @@ build(){
 observe(){
   // console.log("-> observe", this)
   this.eachObjetMesure(mes => {
-    mes.addEventListener('blur', this.setWidth.bind(this))
+    mes.addEventListener('blur', this.onBlurMesure.bind(this, mes))
     mes.addEventListener('focus', this.setCurrent.bind(this, mes))
   })
+}
+
+/**
+ * Appelée pour se positionner dans le champ suivant
+ * 
+ * Cette méthode a été inaugurée pour palier le fait que le champ
+ * d'adresse se sélectionne quand on est sur le dernier champ
+ * Maintenant, lorsque l'on est sur le dernière champ, c'est une
+ * nouvelle mesure qui est créée.
+ * 
+ * Le comportement est le suivant :
+ *  - si l'on ne se trouve pas sur la dernière portée (en bas), on
+ *    passe à la portée suivante.
+ *  - si l'on se trouve sur la dernière portée (en bas) et qu'il y a
+ *    une mesure suivante, on focusse sur sa première portée
+ *  - si l'on se trouve sur la dernière portée de la dernière mesure,
+ *    on crée une nouvelle mesure.
+ * 
+ */
+focusNextField(){
+  const indexPorteeCourante = parseInt(this.currentField.getAttribute('data-portee'),10)
+  console.log("indexPorteeCourante = " + indexPorteeCourante)
+  const isLastPortee = indexPorteeCourante == Score.stavesCount ;
+  console.log("isLastPortee est ", isLastPortee)
+  const isLastMesure = this.number == MesureCode.count
+  console.log("isLastMesure est", isLastMesure)
+  if ( !isLastPortee ) {
+    // 
+    // <= Ce n'est pas la dernière portée 
+    // => On focusse dans la portée suivante
+    // 
+    this.focus(indexPorteeCourante + 1)
+  } else if ( isLastMesure ) {
+    // 
+    // <= Dernière portée de dernière mesure
+    // => On doit créer une nouvelle mesure
+    // 
+    MesureCode.createNew()    
+  } else /* */ {
+    // 
+    // <= Dernière portée de non dernière mesure
+    // => Focusser dans la première portée de la mesure suivante
+    // 
+    const nextMesure = MesureCode.table_mesures[this.number]
+    console.log("nextMesure = ", nextMesure)
+    nextMesure.focus()
+  }
+}
+
+/**
+ * Méthode appelée quand on quitte une mesure
+ * 
+ */
+onBlurMesure(mesure, ev){
+  this.setWidth()
+  return stopEvent(ev)
 }
 
 /**

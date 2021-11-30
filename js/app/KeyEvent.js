@@ -7,6 +7,15 @@ class KeyboardControlerClass {
 
 commonOnKeyUp(ev){
   // console.log("key event : ", ev)
+  if ( ev.key == 'Tab' ) {
+    /**
+     * La touche tabulation est toujours captée, pour éviter le
+     * comportement par défaut qui sélectionne l'adresse.
+     */
+    // console.log("[UP] Tabulation")
+    ev.preventDefault()
+    MesureCode.current && MesureCode.current.focusNextField()
+  }
 }
 
 commonOnKeyDown(ev){
@@ -20,6 +29,12 @@ commonOnKeyDown(ev){
      */
     App.submitCode()
     return stopEvent(ev)
+  } else if ( ev.key == 'Tab') {
+    /**
+     * La touche tabulation est toujours captée, pour éviter le
+     * comportement par défaut qui sélectionne l'adresse.
+     */
+    ev.preventDefault()
   }
 }
 

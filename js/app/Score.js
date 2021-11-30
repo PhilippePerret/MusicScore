@@ -169,7 +169,7 @@ getCodeFinal(params){
   this.proximity  && c.push('--proximity ' + this.proximity)
   c.push(MesureCode.getFullCode(params))
   c = c.join("\n")
-  console.log("Le code complet : ", c)
+  // console.log("Le code complet : ", c)
   return c
 }
 
