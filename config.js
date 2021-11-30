@@ -9,7 +9,7 @@ const CONFIG = {
    */
   default_options: {
       'page':         'a4'
-    , 'first_mesure': ''
+    , 'mesure':       ''
     , 'systeme':      'piano'
     , 'proximity':    ""
     , 'cb_barre':     true

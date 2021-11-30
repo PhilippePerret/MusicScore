@@ -45,7 +45,7 @@ getFirstNumber(){
 }
 
 get firstMesureField(){
-  return this._firstmes || (this._firstmes = document.querySelector('#first_mesure'))
+  return this._firstmes || (this._firstmes = document.querySelector('#mesure'))
 }
 
   showBoutonsConfirmation(){

@@ -50,26 +50,6 @@ setOptions(options){
   })
 }
 
-/**
- * Pour régler la tonalité
- * 
- */
-setTune(tune){
-  var [note,alt,nature] = tune.split('')
-  if ( alt == 'm' ) {[nature, alt] = ['m','none']}
-  this.menuTuneNote.value = note
-  // console.log("menuTuneAlt = , valeur", this.menuTuneAlt, alt)
-  if ( !alt || alt == '' ){
-    this.menuTuneAlt.selectedIndex = 0
-  } else {
-    this.menuTuneAlt.value  = nature
-  }
-  if ( !nature || nature == '' ){
-    this.menuTuneNat.selectedIndex = 0
-  } else {
-    this.menuTuneNat.value  = nature
-  }
-}
 
 get cbStems(){return document.querySelector('#cb_stems')}
 get cbBarre(){return document.querySelector('#cb_barre')}
@@ -123,15 +103,24 @@ get isDuo     (){return this.systemeValue == 'duo'}
 get isTrio    (){return this.systemeValue == 'trio'}
 get isQuatuor (){return this.systemeValue == 'quatuor'}
 
+
+/**
+ * Pour régler la tonalité
+ * 
+ */
+setTune(tune){
+  var [note,alt] = tune.split('')
+  this.menuTuneNote.value = note
+  this.menuTuneAlt.value  = alt
+}
 /**
  * @return {String} La tonalité
  */
 get tune(){
-  return this.menuTuneNote.value + this.menuTuneAlt.value + this.menuTuneNat.value
+  return this.menuTuneNote.value + this.menuTuneAlt.value
 }
 get menuTuneNote(){return document.querySelector('select#tune_note')}
 get menuTuneAlt (){return document.querySelector('select#tune_alteration')}
-get menuTuneNat (){return document.querySelector('select#tune_nature')}
 
 get metrique(){
   var m = document.querySelector('select#time').value
@@ -141,8 +130,11 @@ get metrique(){
 }
 
 get mesure(){
-  var m = document.querySelector('#first_mesure').value
+  var m = document.querySelector('#mesure').value
   return m == '' ? null : m
+}
+setMesure(v){
+  document.querySelector('#mesure').value = v
 }
 
 get page(){
@@ -164,14 +156,14 @@ get proximity(){
  */
 getCodeFinal(params){
   var c = []
-  this.page && c.push('-- page ' + this.page)
-  this.isPiano  && c.push('--piano')
+  this.page       && c.push('-- page ' + this.page)
+  this.isPiano    && c.push('--piano')
   this.cbStems.checked  && c.push('--stem')
   this.cbBarre.checked  && c.push('--barres')
   c.push('--tune ' + this.tune)
-  this.metrique && c.push('--time ' + this.metrique)
-  this.mesure && c.push('--mesure ' + this.mesure)
-  this.proximity && c.push('--proximity ' + this.proximity)
+  this.metrique   && c.push('--time ' + this.metrique)
+  this.mesure     && c.push('--mesure ' + this.mesure)
+  this.proximity  && c.push('--proximity ' + this.proximity)
   c.push(MesureCode.getFullCode(params))
   c = c.join("\n")
   console.log("Le code complet : ", c)
