@@ -9,6 +9,9 @@
  * 
  */
 
+// Largeur pour un caractère dans les champs de mesure
+const WIDTH_PER_CHAR = 13
+
 class MesureCode {
 
 /**
@@ -245,13 +248,13 @@ setWidth(){
   // 
   // Une valeur minimale
   // 
-  max || (max = 8);
+  max || (max = 10);
 
   // 
   // On met tous les champs à la même longueur
   // 
   this.eachObjetMesure(mes => {
-    mes.style.width = px(max * 18)
+    mes.style.width = px(max * WIDTH_PER_CHAR)
   })
 }
 
