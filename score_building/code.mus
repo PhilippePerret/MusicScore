@@ -2,7 +2,7 @@
 --page a4
 --piano
 --barres
---staves_vspace 9
+--staves_vspace 11
 --tune C
 \stemUp b' g' | fis8. e16 d4 \stemNeutral
 << { 3{b'8 d \up \stemDown g} \stemUp \down 3{bes,8 e \stemDown \up g } } \\ { g,8 r cis, r } >> | << { 3{a'8 d \up fis } \down 3{c!8 d \up a'} } \\ { d,, r fis r } >>
