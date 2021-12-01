@@ -13,38 +13,59 @@ class Onglet {
  * 
  */
 static instanciate(bouton){
-  const onglet_id = bouton.id.split('_')[1]
+  const onglet_id = bouton.getAttribute('data-panneau-id')
   const onglet = new this({id:onglet_id, bouton:bouton})
   onglet.prepare()
 }
 
+/**
+ * Préparation des onglets/panneaux
+ * 
+ */
+static prepare(){
+  document.querySelectorAll('button.onglet').forEach(aong => {
+    Onglet.instanciate(aong)
+  })
+}
 
 constructor(data){
-  this.data   = data;
-  this.id     = data.id
-  this.bouton = data.bouton
+  this.id       = data.id
+  this.data     = data;
+  this.bouton   = data.bouton
+  this.isClosed = true
 }
 
 prepare(){
-  this.panneau.classList.add('hidden')
   this.bouton.addEventListener('click', this.onClickOnglet.bind(this))
 }
 
 onClickOnglet(ev){
-  if ( this.constructor.current ) {
+  if ( this.constructor.current && this.constructor.current.id != this.id) {
     this.constructor.current.closePanneau.call(this.constructor.current)
   }
-  this.openPanneau()
+  this.togglePanneau()
   return stopEvent(ev)
+}
+
+togglePanneau(){
+  if (this.isClosed) {
+    this.openPanneau()
+  } else {
+    this.closePanneau()
+  }
 }
 
 openPanneau(){
   this.constructor.current = this
-  this.panneau.classList.remove('hidden')
+  this.panneau.classList.remove('closed')
+  this.isClosed = false
+  this.bouton.classList.add('activated')
 }
 closePanneau(){
   this.constructor.current = null
-  this.panneau.classList.add('hidden') 
+  this.panneau.classList.add('closed') 
+  this.isClosed = true
+  this.bouton.classList.remove('activated')
 }
 
 

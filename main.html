@@ -19,16 +19,42 @@
 <body>
 
   <!-- 
+
     BLOC D'OUTILS SUR MARGE DROITE
+   
    -->
   <div id="bloc_tools_right">
     <div><a href="Manuel.pdf" target="_blank">Manuel PDF</a></div>
     <button onclick="ImgScore.diminueSize.call(ImgScore)" style="font-size:22px">🔍</button>
     <button onclick="ImgScore.augmenteSize.call(ImgScore)" style="font-size:32px">🔍</button>
+
+    <div id="bottom_tools">
+      <!-- Les outils du bas de la colonne droite d'outils -->
+      
+      <!--
+        ONGLETS POUR OUVRIR LES PANNEAUX
+       -->
+      <div id="main_onglets">
+        <button id="onglet_options" class="onglet" data-panneau-id="options">Options</button>
+        <button id="onglet_tools" class="onglet" data-panneau-id="tools">Outils</button>
+        <button id="onglet-quick_aide" class="onglet" data-panneau-id="quick_aide">Quick Help</button>
+      </div>
+
+      <div>
+        <!-- 
+          Boutons "+" et "-" pour ajouter et supprimer des mesures
+         -->
+        <button onclick="MesureCode.createNew.call(MesureCode)">➕</button>
+        <button onclick="MesureCode.removeCurrent.call(MesureCode)">➖</button>
+      </div>
+
+    </div><!-- #bottom_tools -->
+
   </div>
 
+
   <!-- 
-    Image de la partition
+    Image(s) de la partition
    -->
   <div id="score_container">
     <img id="score" src="score_building/code/visu.svg" />
@@ -45,24 +71,25 @@
     <div id="mesures_code"><!--  
       Pour mettre les mesures-code de code
     --></div>
-    <button onclick="MesureCode.createNew.call(MesureCode)">➕</button>
-    <button onclick="MesureCode.removeCurrent.call(MesureCode)">➖</button>
 
+  </section>
 
-    <!--
-      ONGLETS POUR OUVRIR LES PANNEAUX
-     -->
-    <div id="main_onglets">
-      <button id="onglet_options" class="onglet" data-panneau-id="options">options</button>
-      <button id="onglet_tools" class="onglet" data-panneau-id="tools">outils</button>
-    </div>
+  <!-- 
+
+      SECTION DES PANNEAUX
+
+   -->
+
+  <section id="panneaux">
 
     <!-- 
 
       Le PANNEAU DES OUTILS
 
      -->
-    <div id="tools" class="panneau">
+    <div id="tools" class="panneau closed">
+      
+      <legend>Outils</legend>
 
       <div>
         <legend>Snippets</legend>
@@ -107,7 +134,9 @@
     
 
      -->
-    <div id="options" class="panneau">
+    <div id="options" class="panneau closed">
+
+      <legend>Options</legend>
 
       <table id="table_options">
         <!-- 
@@ -205,11 +234,24 @@
     <!-- 
         /FIN du Panneau des options
      -->    
-  </section>
 
-  <div class="right">
-    1) Set options 2) write pseudo-lilypond code 3) ⌘ B to produce score 4) Outil > Code final 5) copy-paste in a .mus file.
-  </div>
+    <div id="quick_aide" class="panneau closed">
+
+      <legend>Aide rapide</legend>
+
+      <h2>Synopsis général</h2>
+      <ol>
+        <li>Régler les options de la partition à l'aide du bouton “Options”</li>
+        <li>Écrire le pseudo-code Lilypond dan se servant du bouton “+” pour ajouter des mesures (ou simplement en jouant la touche tabulation)</li>
+        <li>Forcer l'actualisation de la partition à l'aide de ⌘ B</li>
+        <li>Demander le code final dans le panneau “Outils” en cliquant le bouton “Produire le code final”</li>
+        <li>Copier-coller le code dans un fichier .mus (par exemple 'score.mus'</li>
+        <li>Ouvrir un Terminal au dossier de ce fichier</li>
+        <li>Jouer <code>scorize ./score.mus</code> pour produire l'image ou les images de la partition.</li>
+      </ol>
+    </div>
+
+  </section>
 
   <!-- 
     Formulaire soumis pour actualisation de l'image

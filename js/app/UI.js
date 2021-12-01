@@ -10,9 +10,7 @@ prepare(){
   // 
   // Préparation de l'interface
   // 
-  document.querySelectorAll('button.onglet').forEach(aong => {
-    Onglet.instanciate(aong)
-  })
+  Onglet.prepare()
   // 
   // Réglage des options
   // 

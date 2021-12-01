@@ -2,6 +2,8 @@ body {
   position: relative;
   font-size:  16pt;
   font-family: 'Arial Narrow', serif;
+  margin: 0;
+  padding: 0;
 }
 
 .invisible {
