@@ -240,10 +240,17 @@ setWidth(){
   // 
   // On prend le texte le plus long
   // 
+  // On en profite aussi pour voir si la mesure est complètement
+  // définie (i.e. toutes ses portées contient du code)
+  // 
   var max = 0
+  this.complete = true; // pour savoir si toutes les portées sont définies
   this.eachObjetMesure(mes => {
     var c = mes.value.trim()
     if ( c.length > max ) max = c.length
+    else if ( c.length == 0 ) {
+      this.complete = false
+    }
   })
   // 
   // Une valeur minimale
@@ -345,6 +352,7 @@ observe(){
   this.eachObjetMesure(mes => {
     mes.addEventListener('blur', this.onBlurMesure.bind(this, mes))
     mes.addEventListener('focus', this.setCurrent.bind(this, mes))
+    mes.addEventListener('change',this.onChangeMesure.bind(this,mes))
   })
 }
 
@@ -394,9 +402,33 @@ focusNextField(){
 /**
  * Méthode appelée quand on quitte une mesure
  * 
+ * Lorsqu'on quitte une mesure, on doit :
  */
 onBlurMesure(mesure, ev){
+  return stopEvent(ev)
+}
+
+/**
+ * Si le contenu d'une mesure a changé, il faut :
+ *    - adapter sa largeur à son contenu (en tenant compte de toutes
+ *      les portées de la mesure)
+ *    - actualiser la partition (sauf option contraires) si toutes 
+ *      les portées de la mesure sont définies 
+ * 
+ * @param {DOMElement} mesure La mesure en tant qu'objet du DOM
+ * 
+ */
+onChangeMesure(mesure, ev){
   this.setWidth()
+
+  // 
+  // Si la mesure est complète (toutes ses portées remplies) on doit
+  // actualiser la partition. 
+  // Noter qu'il faut le faire après setWidth car c'est setWidth qui
+  // définit la valeur the this.complete
+  // 
+  Options.auto_update_after_change && this.complete && App.submitCode()
+
   return stopEvent(ev)
 }
 

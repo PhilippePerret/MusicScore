@@ -1,9 +1,8 @@
 -> visu
 -- page a4
 --piano
---stem
 --barres
 --tune G
 --time 3/8
-r16 e g b g e | e'8 b e | dis16 b dis fis dis b | b'8 fis b | g16 fis e d! c b | a16 c e g fis e | fis e d c b a | g b d f e d | e8 fis\mordent g | d4\mordent r8 | g fis g | a16 b c8 r | b a\prall g | a c, b | g' fis\prall e | fis a, g \break | e' fis16 e d cis | fis8 g16 fis e d | cis e d cis b ais | b4.\mordent
-e8\mordent e, r | r16 e' g b g e | b'8\mordent b, r | r16 b' dis fis dis b | e8 g e | c a c | d! fis d | b g b | c16 b a c g c | fis, c' e, c' d, c' | b c a c g c | fis, c' e, c' d, c' | g b d, b' e, b' | fis b e, b' dis, b' | e, b' d!, b' cis, b' | d, b' cis, b' b, b' | cis, b' d, b' e, b' | d, b' e, b' fis b | g8 e fis | b, fis' b
+a b c d | d c b a | a a a a | b b b b
+a1 | e | a | g
