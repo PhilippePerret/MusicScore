@@ -15,6 +15,12 @@ static close(ongid){
   this.onglets[ongid].closePanneau()
 }
 
+static closeIfCurrent(){
+  if ( this.current ) {
+    this.current.closePanneau()
+  }
+}
+
 /**
  * Méthode pour instancier un onglet, avec le bouton (<button>) +bouton+
  * qui contient notamment un identifiant "onglet_<id instance onglet>"

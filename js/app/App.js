@@ -37,7 +37,6 @@ traiteCodeInitial(fullcode){
     line = line.trim()
     if ( line.substring(0, 2) == '--' ){
       var [option, valoption] = line.substring(2, line.length).split(' ')
-      // console.log("option, valoption = ", option, valoption)
       switch(option){
         case'piano': case'solo': case'duo': case'trio': case'quatuor':
           console.info("Option %s rencontrée", option)
@@ -46,7 +45,7 @@ traiteCodeInitial(fullcode){
           break
       }
       if ( valoption == '' ) valoption = true
-      console.log("L'option '%s' est mise à %s", option, valoption)
+      // console.log("L'option '%s' est mise à %s", option, valoption)
       options[option] = valoption
     } else {
       notes.push(line)
@@ -55,7 +54,7 @@ traiteCodeInitial(fullcode){
   // 
   // Traitement des options
   // 
-  // console.info("Options récupérées : ", options)
+  console.info("Options récupérées : ", options)
   Options.applique(options)
   // 
   // Traitement des notes

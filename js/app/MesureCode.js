@@ -190,7 +190,6 @@ static reset(){
   this.container.innerHTML = ""
   this.table_mesures = []
   this.lastId = 0
-  Options.applique(CONFIG.default_options)
 }
 
 
@@ -357,9 +356,21 @@ observe(){
   // console.log("-> observe", this)
   this.eachObjetMesure(mes => {
     mes.addEventListener('blur', this.onBlurMesure.bind(this, mes))
-    mes.addEventListener('focus', this.setCurrent.bind(this, mes))
+    mes.addEventListener('focus', this.onFocusPortee.bind(this, mes))
     mes.addEventListener('change',this.onChangeMesure.bind(this,mes))
   })
+}
+
+/**
+ * Appelée quand on focusse dans une portée
+ * 
+ * Note : on ferme l'éventuel panneau ouvert.
+ * 
+ */
+onFocusPortee(mes, ev){
+  this.setCurrent(mes)
+  Onglet.closeIfCurrent()
+  return stopEvent(ev)
 }
 
 /**
@@ -448,10 +459,9 @@ onChangeMesure(mesure, ev){
  *    - MesureCode.current      Qui est l'instance mesureCode courante (celle du champ focussé)
  *    - <cette mesure>.current  Qui est le field de la mesure en question (si vraiment c'est nécessaire, à l'avenir, on pourra imaginer faire une instance.
  */
-setCurrent(field, ev){
+setCurrent(field){
   this.currentField = field
   this.constructor.current = this
-  return stopEvent(ev)
 }
 
 /**

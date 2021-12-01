@@ -63,6 +63,7 @@ setProperty(property, value){
       break
     default:
       value = value || ''
+      console.log("Mettre le champ #%s à la valeur '%s'", property, value)
       document.querySelector('#'+property).value = value    
   }
 }
@@ -99,6 +100,7 @@ getProperty(property){
  * @param opts {Hash} Avec en clé l'option et en valeur sa valeur
  */
 applique(opts){
+  console.log("-> Options.applique(opts=)", opts)
   var allOptions = {}
   for(var keyOption in DATA_OPTIONS){
     const dataOption = DATA_OPTIONS[keyOption]
