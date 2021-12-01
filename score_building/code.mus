@@ -1,7 +1,6 @@
 -> visu
 --page a4
---piano
 --barres
---tune undefined
-a b c d | d c b a | a a a a | b b b b
-a1 | e | a | g
+--tune C
+<< { b' g' } \\ { 3{b,,8 d g} 3{bes,8 e g } } >> | << { fis'8. e16 d4 } \\ { 3{a,,8 d fis } 3{c!,8 d a'} } >> |
+g8 r cis r | d, r fis r |

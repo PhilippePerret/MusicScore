@@ -7,14 +7,24 @@
  */
 class Onglet {
 
+static get(onglet_id){
+  return this.onglets[onglet_id]
+}
+
+static close(ongid){
+  this.onglets[ongid].closePanneau()
+}
+
 /**
  * Méthode pour instancier un onglet, avec le bouton (<button>) +bouton+
  * qui contient notamment un identifiant "onglet_<id instance onglet>"
  * 
  */
 static instanciate(bouton){
+  if (undefined == this.onglets) this.onglets = {};
   const onglet_id = bouton.getAttribute('data-panneau-id')
   const onglet = new this({id:onglet_id, bouton:bouton})
+  Object.assign(this.onglets, {[onglet_id]: onglet})
   onglet.prepare()
 }
 

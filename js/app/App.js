@@ -5,10 +5,9 @@ class AppClass {
 submitCode(){
   message("Actualisation en cours…", {keep: true})
   ajax('build_score', Score.getCodeFinal()).then(ret => {
-    console.log("Je reviens.")
     console.log("Retour ajax", ret)
-    message("Partition actualisée.")
     Score.update()
+    message("Partition actualisée.")
   })
   // $('#music_score_form #operation').val('build_score')
   // const form = $('#music_score_form').ajaxSubmit({url:'ajax.php', type:'POST'})
@@ -40,12 +39,14 @@ traiteCodeInitial(fullcode){
       var [option, valoption] = line.substring(2, line.length).split(' ')
       // console.log("option, valoption = ", option, valoption)
       switch(option){
-        case'piano': case'solo': case'duo': case'trio': case'quatuor': 
+        case'piano': case'solo': case'duo': case'trio': case'quatuor':
+          console.info("Option %s rencontrée", option)
           valoption = option
           option    = 'systeme' 
           break
       }
       if ( valoption == '' ) valoption = true
+      console.log("L'option '%s' est mise à %s", option, valoption)
       options[option] = valoption
     } else {
       notes.push(line)
@@ -54,7 +55,7 @@ traiteCodeInitial(fullcode){
   // 
   // Traitement des options
   // 
-  console.info("Options récupérées : ", options)
+  // console.info("Options récupérées : ", options)
   Options.applique(options)
   // 
   // Traitement des notes

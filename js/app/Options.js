@@ -41,6 +41,7 @@ init(){
  * 
  */
 setProperty(property, value){
+  // console.info("On doit mettre la propriété '%s' à %s", property, value)
   const dataProperty = DATA_OPTIONS[property]
   switch(dataProperty.type) {
     case 'checkbox':
@@ -54,6 +55,7 @@ setProperty(property, value){
       if ( menu.querySelector(`option[value="${value}"]`) ) {
         menu.value = value
       } else {
+        console.info("Le menu #%s n'a pas de valeur %s. Je mets other", property, value)
         menu.value = 'xxx'
         document.querySelector('#other_'+property).value = value
       }
@@ -65,6 +67,11 @@ setProperty(property, value){
 }
 getProperty(property){
   const dataProperty = DATA_OPTIONS[property]
+  if (undefined == dataProperty){
+    console.error("La propriété '%s' est indéfinie…", property)
+    error("Propriété " + property + ' indéfinie dans DATA_OPTIONS…')
+    return null
+  }
   switch(dataProperty.type) {
     case 'checkbox':
       return document.querySelector('#cb_'+property).checked

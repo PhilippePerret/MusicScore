@@ -26,10 +26,6 @@ setOptions(options){
   Options.applique(options)
 }
 
-get cbStems(){return document.querySelector('#cb_stems')}
-get cbBarre(){return document.querySelector('#cb_barre')}
-
-
 /**
  * Retourne le nombre de portées (par système)
  * 
@@ -37,9 +33,10 @@ get cbBarre(){return document.querySelector('#cb_barre')}
  * on retourne 3.
  * 
  */
-get stavesCount(){
+get nombrePortees(){
   return this._stavescount || (this._stavescount = this.countStaves())
 }
+set nombrePortees(v){ this._stavescount = v }
 countStaves(){
   if ( this.isPiano ) {
     return 2
@@ -50,26 +47,24 @@ countStaves(){
   } else if ( this.isMono ) {
     return 1
   } else {
-    return parseInt(this.systemeValue,10)
+    return parseInt(this.system,10)
   }
 }
 
-get systemeValue(){ return this.getOption('systeme')}
-set systemeValue(v){
-  Options.setProperty('systeme', v)
-}
-get isMono    (){return this.systemeValue == 'mono'}
-get isPiano   (){return this.systemeValue == 'piano'}
-get isDuo     (){return this.systemeValue == 'duo'}
-get isTrio    (){return this.systemeValue == 'trio'}
-get isQuatuor (){return this.systemeValue == 'quatuor'}
-
+get isMono    (){return this.system == 'mono'}
+get isPiano   (){return this.system == 'piano'}
+get isDuo     (){return this.system == 'duo'}
+get isTrio    (){return this.system == 'trio'}
+get isQuatuor (){return this.system == 'quatuor'}
 
 get tune      (){ return this.getOption('tune')}
-get metrique  (){ return this.getOption('metrique')}
-get mesure    (){ return this.getOption('mesure') }
+get metrique  (){ return this.getOption('time')}
+get mesure    (){ return this.getOption('mesure')}
 get page      (){ return this.getOption('page') }
 get proximity (){ return this.getOption('proximity')}
+get systeme   (){ 
+  return this._systeme || (this._systeme = this.getOption('systeme')) 
+}
 
 getOption(key){
   return Options.getProperty(key)
@@ -83,8 +78,13 @@ getOption(key){
  */
 getCodeFinal(params){
   var c = []
+  this._systeme = null
   this.page       && c.push('--page ' + this.page)
-  this.isPiano    && c.push('--piano')
+  if ( this.isPiano ) {
+    c.push('--piano')
+  } else {
+    // TODO : Il faudra ici traiter les autres valeurs
+  }
   this.getOption('stems')  || c.push('--no_stem')
   this.getOption('barre')  && c.push('--barres')
   this.tune       && c.push('--tune ' + this.tune)

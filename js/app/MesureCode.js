@@ -21,7 +21,7 @@ class MesureCode {
 static getFullCode(params){
   var c = []
   params = params || {}
-  const nombrePortees = Score.stavesCount
+  const nombrePortees = Score.nombrePortees
   for(var xportee = 0; xportee < nombrePortees; ++xportee){
     c.push([])
     for(var imesure = (params.from||1) - 1; imesure < (params.to||this.count); ++ imesure){
@@ -51,11 +51,13 @@ static parse(code){
   this.reset()
   // console.log("Je dois parser le code :", code)
   const porteesCode = code.split("\n")
-  const nombrePortees = porteesCode.length
-  Score.systemeValue  = nombrePortees
-  // console.info("Score.systemeValue = ", Score.systemeValue)
-  for(var iportee = 0, lenP = porteesCode.length; iportee < lenP; ++ iportee){
+  const nombrePortees = Score.nombrePortees = porteesCode.length
+  console.info("Nombre de portées = %i", nombrePortees)
+  for(var iportee = 0; iportee < nombrePortees; ++ iportee){
     var mesuresCode = porteesCode[iportee];
+    while ( mesuresCode.endsWith('|') ){
+      mesuresCode = mesuresCode.substring(0, mesuresCode.length - 1)
+    }
     // console.log("Étude de la mesuresCode : ", mesuresCode)
     mesuresCode = mesuresCode.split(' | ')
     // console.log("Mesures de code : ", mesuresCode)
@@ -221,7 +223,7 @@ setPorteeCode(xportee, code){
  * 
  */
 get isEmpty(){
-  for(var iportee = 1; iportee <= Score.stavesCount; ++iportee){
+  for(var iportee = 1; iportee <= Score.nombrePortees; ++iportee){
     if ( this.getPorteeCode(iportee) != "" ) return false
   }
   return true
@@ -316,7 +318,7 @@ get isLastMesure(){
  * 
  */
 eachObjetMesure(methode){
-  const nombrePortees = 0 + Score.stavesCount
+  const nombrePortees = 0 + Score.nombrePortees
   for (var iportee = 1; iportee <= nombrePortees; ++iportee) {
     const omesure = this.obj.querySelector('.mesure_code.portee' + iportee)
     methode(omesure)
@@ -337,7 +339,7 @@ build(){
    * On ajoute autant de systèmes qu'il en faut
    * 
    */
-  for (var isys = 0; isys < Score.stavesCount; ++isys) {
+  for (var isys = 0; isys < Score.nombrePortees; ++isys) {
     o.appendChild(DCreate('INPUT', {type:'text', 'data-portee': (isys + 1), class:'mesure_code portee' + (isys + 1)}))
   }
   this.obj = o
@@ -376,7 +378,7 @@ observe(){
  */
 focusNextField(){
   const indexPorteeCourante = parseInt(this.currentField.getAttribute('data-portee'),10)
-  const isLastPortee = indexPorteeCourante == Score.stavesCount ;
+  const isLastPortee = indexPorteeCourante == Score.nombrePortees ;
   const isLastMesure = this.number == MesureCode.count
   if ( !isLastPortee ) {
     // 
