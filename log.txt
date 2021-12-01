@@ -2,15 +2,15 @@ VERSION RUBY : 2.6.3
 [0;96mProduction du fichier SVG à partir de l'expression '["a b c d | d c b a | a a a a | b b b b", "a1 | e | a | g"]...'.
 Merci de patienter…[0m
 
-** (process:2420): WARNING **: 06:15:41.142: Unable to create profile directory (Permission denied) (13)
-** Message: 06:15:41.572: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
-** Message: 06:15:41.572: Inkscape va d?marrer avec les pr?f?rences par d?faut.
+** (process:3702): WARNING **: 10:05:17.805: Unable to create profile directory (Permission denied) (13)
+** Message: 10:05:18.773: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
+** Message: 10:05:18.773: Inkscape va d?marrer avec les pr?f?rences par d?faut.
 Les nouvelles pr?f?rences ne seront pas enregistr?es. 
 
-** (org.inkscape.Inkscape:2420): WARNING **: 06:15:41.922: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
+** (org.inkscape.Inkscape:3702): WARNING **: 10:05:19.174: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
 
-** (org.inkscape.Inkscape:2420): WARNING **: 06:15:41.922: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
-2021-12-01 06:15:42.152 inkscape[2420:50498] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+** (org.inkscape.Inkscape:3702): WARNING **: 10:05:19.174: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
+2021-12-01 10:05:19.461 inkscape[3702:116353] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
 [0;92mLe fichier a été produit avec le nom “visu.svg”
 (dans le dossier /Users/philippeperret/Sites/MusicScoreWriter/score_building/code/)[0m
 

@@ -122,7 +122,7 @@
 
       <div>
         
-          <button onclick="MesureCode.resetAll.call(MesureCode)">Tout effacer</button>
+        <button onclick="MesureCode.resetAll.call(MesureCode)">Tout effacer</button>
 
       </div>
     </div>
@@ -211,7 +211,7 @@
           <td>
             <span class="libelle">Métrique</span><select id="time">
               <option value="">---</option>
-              <option value="OFF">OFF</option>
+              <option value="OFF">OFF (ne pas afficher)</option>
               <option value="C">C</option>
               <option value="4/4">4/4</option>
               <option value="2/2">C barré</option>
@@ -233,12 +233,15 @@
 
 
       <div>
-        <input type="checkbox" name="auto_update_after_change" id="auto_update_after_change" > <label for="auto_update_after_change">Actualiser automatiquement la partition lors d'une modification de mesure</label>
+        <input type="checkbox" name="auto_update_after_change" id="auto_update_after_change" /><label for="auto_update_after_change">Actualiser automatiquement la partition lors d'une modification de mesure</label>
       </div>
+
+      <div class="right">
+        <button onclick="Score.resetOptions.call(Score)">Ré-initialiser les options</button>
+      </div>
+
     </div>
-    <!-- 
-        /FIN du Panneau des options
-     -->    
+    <!-- /FIN du Panneau des options      -->    
 
     <div id="quick_aide" class="panneau closed">
 

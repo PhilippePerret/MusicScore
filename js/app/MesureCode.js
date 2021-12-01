@@ -185,6 +185,7 @@ static reset(){
   this.container.innerHTML = ""
   this.table_mesures = []
   this.lastId = 0
+  Options.applique(CONFIG.default_options)
 }
 
 

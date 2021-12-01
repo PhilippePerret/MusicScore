@@ -2,7 +2,6 @@
 -- page a4
 --piano
 --barres
---tune G
---time 3/8
+--tune undefined
 a b c d | d c b a | a a a a | b b b b
 a1 | e | a | g

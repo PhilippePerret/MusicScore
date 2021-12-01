@@ -14,7 +14,7 @@ prepare(){
   // 
   // Réglage des options
   // 
-  Score.setOptions(Options.default)
+  Options.init()
   // 
   // Observation de certains champs
   // 
