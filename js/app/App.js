@@ -25,6 +25,9 @@ traiteCodeInitial(fullcode){
   if ( undefined == fullcode ) {
     fullcode = document.querySelector('#ini_code').value
   }
+  if ( fullcode == '') {
+    return error("Aucun code n'a été fourni.")
+  }
   // console.log("Je dois traiter le code : ", fullcode)
   // 
   // On passe en revue chaque ligne pour définir les options

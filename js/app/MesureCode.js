@@ -52,7 +52,7 @@ static parse(code){
   // console.log("Je dois parser le code :", code)
   const porteesCode = code.split("\n")
   const nombrePortees = porteesCode.length
-  Score.systemeValue = nombrePortees
+  Score.systemeValue  = nombrePortees
   // console.info("Score.systemeValue = ", Score.systemeValue)
   for(var iportee = 0, lenP = porteesCode.length; iportee < lenP; ++ iportee){
     var mesuresCode = porteesCode[iportee];

@@ -8,14 +8,14 @@
 
 // Constante des types de champ par option
 const DATA_OPTIONS = {
-    'page':     {type:'select'}
-  , 'mesure':   {type:'text'}
-  , 'system':   {type:'select'}
-  , 'proximity':{type:'select'}
-  , 'cb_barre': {type:'checkbox'}
-  , 'cb_stems': {type:'checkbox'}
-  , 'tune'    : {type:'method', getter:'getTune', setter:'setTune'}
-  , 'time'    : {type:'select'}
+    'page':       {type:'select'}
+  , 'mesure':     {type:'text'}
+  , 'systeme':    {type:'select_or_other'}
+  , 'proximity':  {type:'select'}
+  , 'barre':      {type:'checkbox'}
+  , 'stems':      {type:'checkbox'}
+  , 'tune'    :   {type:'method', getter:'getTune', setter:'setTune'}
+  , 'time'    :   {type:'select'}
   , 'auto_update_after_change': {type:'checkbox'}
 }
 
@@ -44,14 +44,22 @@ setProperty(property, value){
   const dataProperty = DATA_OPTIONS[property]
   switch(dataProperty.type) {
     case 'checkbox':
-      document.querySelector('#'+property).checked = value
+      document.querySelector('#cb_'+property).checked = value
       break
     case 'method':
       this[dataProperty.setter](value)
       break
+    case 'select_or_other':
+      var menu = document.querySelector('#'+property)
+      if ( menu.querySelector(`option[value="${value}"]`) ) {
+        menu.value = value
+      } else {
+        menu.value = 'xxx'
+        document.querySelector('#other_'+property).value = value
+      }
+      break
     default:
       value = value || ''
-      console.log("Mise de l'objet #%s à %v", property, value)
       document.querySelector('#'+property).value = value    
   }
 }
@@ -59,11 +67,20 @@ getProperty(property){
   const dataProperty = DATA_OPTIONS[property]
   switch(dataProperty.type) {
     case 'checkbox':
-      return document.querySelector('#'+property).checked
+      return document.querySelector('#cb_'+property).checked
     case 'method':
       return this[dataProperty.getter]()
+    case 'select_or_other':
+      var value = document.querySelector('#'+property).value
+      if ( value == 'xxx') {
+        value = document.querySelector('#other_'+property).value.trim()
+      }
+      if ( value == '' ) value = null
+      return value
     default:
-      return document.querySelector('#'+property).value    
+      var value = document.querySelector('#'+property).value    
+      if ( value == '' ) value = null
+      return value
   }
 }
 
@@ -76,11 +93,9 @@ getProperty(property){
 applique(opts){
   var allOptions = {}
   for(var keyOption in DATA_OPTIONS){
-    console.log("Réglage de propriété %s", keyOption)
     const dataOption = DATA_OPTIONS[keyOption]
     if (undefined === opts[keyOption]) continue;
     else {
-      console.info("Valeur finale de %s : ", keyOption, opts[keyOption])
       this.setProperty(keyOption, opts[keyOption])
     }
   }
@@ -99,7 +114,7 @@ setTune(tune){
 /**
  * @return {String} La tonalité
  */
-get getTune(){
+getTune(){
   return this.menuTuneNote.value + this.menuTuneAlt.value
 }
 get menuTuneNote(){return document.querySelector('select#tune_note')}

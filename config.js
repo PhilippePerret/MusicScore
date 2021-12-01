@@ -15,8 +15,8 @@ const CONFIG = {
     , 'mesure':       ''
     , 'systeme':      'piano'
     , 'proximity':    ""
-    , 'cb_barre':     true
-    , 'cb_stems':     true
+    , 'barre':        true
+    , 'stems':        true
     , 'tune':         'C'
     , 'time':         null
     , 'auto_update_after_change': true

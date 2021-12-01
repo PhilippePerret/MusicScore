@@ -53,27 +53,10 @@ countStaves(){
     return parseInt(this.systemeValue,10)
   }
 }
-get menuSysteme(){
-  return this._menusys || (this._menusys = document.querySelector('#systeme'))
-}
-get systemeValue(){
-  var v = this.menuSysteme.value
-  if ( v == 'xxx' ) v = parseInt(document.querySelector('#systeme_other'),10)
-  return v
-}
+
+get systemeValue(){ return this.getOption('systeme')}
 set systemeValue(v){
-  var ov = ""
-  switch(v){
-    case 1: v = 'mono'    ; break
-    case 2: v = 'piano'   ; break
-    case 3: v = 'trio'    ; break
-    case 4: v = 'quatuor' ; break
-    default:
-      v = 'xxx'
-      ov = v
-  }
-  this.menuSysteme.value = v
-  document.querySelector('#systeme_other').value = ov
+  Options.setProperty('systeme', v)
 }
 get isMono    (){return this.systemeValue == 'mono'}
 get isPiano   (){return this.systemeValue == 'piano'}
@@ -82,31 +65,15 @@ get isTrio    (){return this.systemeValue == 'trio'}
 get isQuatuor (){return this.systemeValue == 'quatuor'}
 
 
-get metrique(){
-  var m = document.querySelector('select#time').value
-  if ( m == '' ) return null 
-  if ( m == 'xxx' ) m = document.querySelector('#other_time').value
-  return m
-}
+get tune      (){ return this.getOption('tune')}
+get metrique  (){ return this.getOption('metrique')}
+get mesure    (){ return this.getOption('mesure') }
+get page      (){ return this.getOption('page') }
+get proximity (){ return this.getOption('proximity')}
 
-get mesure(){
-  var m = document.querySelector('#mesure').value
-  return m == '' ? null : m
+getOption(key){
+  return Options.getProperty(key)
 }
-setMesure(v){
-  document.querySelector('#mesure').value = v
-}
-
-get page(){
-  var m = document.querySelector('#page').value
-  return m == '' ? null : m
-}
-
-get proximity(){
-  var m = document.querySelector('#proximity').value
-  return m == '' ? null : m
-}
-
 /**
  * @return le code {String} final
  * 
@@ -116,11 +83,11 @@ get proximity(){
  */
 getCodeFinal(params){
   var c = []
-  this.page       && c.push('-- page ' + this.page)
+  this.page       && c.push('--page ' + this.page)
   this.isPiano    && c.push('--piano')
-  this.cbStems.checked  || c.push('--no_stem')
-  this.cbBarre.checked  && c.push('--barres')
-  c.push('--tune ' + this.tune)
+  this.getOption('stems')  || c.push('--no_stem')
+  this.getOption('barre')  && c.push('--barres')
+  this.tune       && c.push('--tune ' + this.tune)
   this.metrique   && c.push('--time ' + this.metrique)
   this.mesure     && c.push('--mesure ' + this.mesure)
   this.proximity  && c.push('--proximity ' + this.proximity)
