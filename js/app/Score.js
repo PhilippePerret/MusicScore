@@ -51,17 +51,18 @@ countStaves(){
   }
 }
 
-get isMono    (){return this.system == 'mono'}
-get isPiano   (){return this.system == 'piano'}
-get isDuo     (){return this.system == 'duo'}
-get isTrio    (){return this.system == 'trio'}
-get isQuatuor (){return this.system == 'quatuor'}
+get isMono    (){return this.systeme == 'mono'}
+get isPiano   (){return this.systeme == 'piano'}
+get isDuo     (){return this.systeme == 'duo'}
+get isTrio    (){return this.systeme == 'trio'}
+get isQuatuor (){return this.systeme == 'quatuor'}
 
-get tune      (){ return this.getOption('tune')}
-get metrique  (){ return this.getOption('time')}
-get mesure    (){ return this.getOption('mesure')}
-get page      (){ return this.getOption('page') }
-get proximity (){ return this.getOption('proximity')}
+get tune          (){ return this.getOption('tune')}
+get metrique      (){ return this.getOption('time')}
+get mesure        (){ return this.getOption('mesure')}
+get page          (){ return this.getOption('page') }
+get proximity     (){ return this.getOption('proximity')}
+get staves_vspace (){ return this.getOption('staves_vspace')}
 get systeme   (){ 
   return this._systeme || (this._systeme = this.getOption('systeme')) 
 }
@@ -70,6 +71,13 @@ getOption(key){
   return Options.getProperty(key)
 }
 /**
+ * = main =
+ * 
+ * Grand méthode principale qui construit le code complet de la
+ * partition, avec les options et tous les détails.
+ * C'est par exemple ce code qui est envoyé pour la fabrication de
+ * la partition.
+ * 
  * @return le code {String} final
  * 
  * @param params {Hash} 
@@ -87,10 +95,14 @@ getCodeFinal(params){
   }
   this.getOption('stems')  || c.push('--no_stem')
   this.getOption('barre')  && c.push('--barres')
-  this.tune       && c.push('--tune ' + this.tune)
-  this.metrique   && c.push('--time ' + this.metrique)
-  this.mesure     && c.push('--mesure ' + this.mesure)
-  this.proximity  && c.push('--proximity ' + this.proximity)
+  this.staves_vspace  && c.push('--staves_vspace ' + this.staves_vspace)
+  this.tune           && c.push('--tune ' + this.tune)
+  this.metrique       && c.push('--time ' + this.metrique)
+  this.mesure         && c.push('--mesure ' + this.mesure)
+  this.proximity      && c.push('--proximity ' + this.proximity)
+  // 
+  // On prend toutes les notes
+  // 
   c.push(MesureCode.getFullCode(params))
   c = c.join("\n")
   // console.log("Le code complet : ", c)

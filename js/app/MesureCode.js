@@ -21,10 +21,13 @@ class MesureCode {
 static getFullCode(params){
   var c = []
   params = params || {}
+  if ( undefined == params.from ) params.from = 1;
+  if ( undefined == params.to   ) params.to   = this.count;
+  console.info("Export du code de la mesure %i à la mesure %i", params.from, params.to)
   const nombrePortees = Score.nombrePortees
   for(var xportee = 0; xportee < nombrePortees; ++xportee){
     c.push([])
-    for(var imesure = (params.from||1) - 1; imesure < (params.to||this.count); ++ imesure){
+    for(var imesure = params.from - 1; imesure < params.to; ++ imesure){
       const mes = this.table_mesures[imesure]
       if (!mes) break ; // Numéro de dernière mesure trop grand
       var code = mes.getPorteeCode(parseInt(xportee,10) + 1).trim()

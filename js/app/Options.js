@@ -8,15 +8,16 @@
 
 // Constante des types de champ par option
 const DATA_OPTIONS = {
-    'page':       {type:'select'}
-  , 'mesure':     {type:'text'}
-  , 'systeme':    {type:'select_or_other'}
-  , 'proximity':  {type:'select'}
-  , 'barre':      {type:'checkbox'}
-  , 'stems':      {type:'checkbox'}
-  , 'tune'    :   {type:'method', getter:'getTune', setter:'setTune'}
-  , 'time'    :   {type:'select'}
+    'page':           {type:'select'}
+  , 'mesure':         {type:'text'}
+  , 'systeme':        {type:'select_or_other'}
+  , 'proximity':      {type:'select'}
+  , 'barre':          {type:'checkbox'}
+  , 'stems':          {type:'checkbox'}
+  , 'tune'    :       {type:'method', getter:'getTune', setter:'setTune'}
+  , 'time'    :       {type:'select'}
   , 'auto_update_after_change': {type:'checkbox'}
+  , 'staves_vspace':  {type:'text'}
 }
 
 class OptionsClass {

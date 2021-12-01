@@ -20,5 +20,6 @@ const CONFIG = {
     , 'tune':         'C'
     , 'time':         null
     , 'auto_update_after_change': true
+    , 'staves_vspace':  null
   }
 }
