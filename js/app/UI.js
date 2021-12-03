@@ -1,4 +1,10 @@
 'use strict';
+
+window.onresize = function(ev){
+  UI.setDisposition()
+  return stopEvent(ev)
+}
+
 class UIClass {
 
 /**
@@ -21,6 +27,90 @@ prepare(){
   this.observeSpecialFields()
 }
 
+/**
+ * Réglage de la disposition de l'écran, qui peut mettre l'image de
+ * la partition et le bloc des lignes de code à différents endroits.
+ * 
+ * La méthode est appelée quand on lance l'application, par la 
+ * méthode Options.applique ou lorsqu'on change la disposition dans
+ * le panneau des options.
+ * 
+ * @param dispo {String}
+ *        up_down, down_up, left_right, right_left, correspondent à
+ *        <position image partition>_<position lignes code>
+ */
+setDisposition(dispo){
+  dispo = dispo || Options.getProperty('disposition')
+  // console.info("Disposition : %s", dispo)
+  const wWidth  = window.innerWidth - 140 // 140 = marge droite des outils
+  const wHeight = window.innerHeight
+  const sectionScore = document.querySelector('#score_container')
+  const sectionCode  = document.querySelector('#code_container')
+  const [posScore, posCode] = dispo.split('_')
+  const sens = (posScore == 'down' || posScore == 'up') ? 'vertical' : 'horizontal'
+  // console.info("Sens de la disposition : %s", sens)
+
+  // 
+  // Placement des éléments
+  // 
+
+  // Top de la partition
+  if ( posScore == 'down' ) {
+    sectionScore.style.top = px(wHeight / 2) 
+  } else {
+    sectionScore.style.top = 0
+  }
+
+  // Top des mesures de code
+  if ( posCode == 'down' ) {
+    sectionCode.style.top = px(wHeight / 2)
+  } else {
+    sectionCode.style.top = 0
+  }
+
+  // Les lefts
+  if ( sens == 'vertical' ) {
+    sectionScore.style.left   = 0
+    sectionScore.style.width  = '90%'
+    sectionCode .style.left   = '10%'
+    sectionCode .style.width  = '80%'
+    sectionScore.style.height = '48%'
+    sectionCode .style.height = '48%'
+    if ( posScore == 'up' ) {
+      sectionScore.style.top = 0
+      sectionCode .style.top = '50%'
+    } else /* Image en bas */ {
+      sectionScore.style.top = '50%'
+      sectionCode .style.top = 0
+    }
+  } else /* sens horizontal */ {
+    sectionScore.style.height = '98%'
+    sectionCode .style.height = '98%'
+    if ( posScore == 'left' ) {
+      sectionScore.style.left = 0
+    } else /* image à droite */ {
+      sectionCode .style.left = 0
+    }
+
+    if ( wWidth > 2000 ) {
+      sectionScore.style.width = px(1000)
+      sectionCode .style.width = px(wWidth - 1000 - 50)
+      if ( posScore == 'left' ) {
+        sectionCode .style.left = px(1000 + 25)
+      } else /* Score à droite */ {
+        sectionScore.style.left = px(wWidth - 1000)
+      }
+    } else /* fenêtre inférieure à 2000px de large */ {
+      sectionScore.style.width = '48%'
+      sectionCode .style.width = '48%'
+      if ( posScore == 'left' ) {
+        sectionCode .style.left = '50%'
+      } else /* Score à droite */ {
+        sectionScore.style.left = '50%'
+      }
+    }
+  }
+}
 
 /**
  * Observation de certains champs spéciaux (comme par exemple le
@@ -67,45 +157,7 @@ get firstMesureField(){
 
   }
 
-  // Pour placer le panneau d'information avec le texte +texte+
-  showInformation(texte){
-    this.panneauInformation.querySelector('.content').innerHTML = texte
-    this.panneauInformation.classList.remove('hidden')
-  }
-  hidePanneauInformation(){
-    this.panneauInformation.classList.add('hidden') 
-  }
-
-
-  // Appelée quand on double-clic sur la partition
-  onDoubleClickOnScore(e){
-    //console.log("e = ", e)
-    LigneCoupe.createAt(e.layerY) // NON : clientY
-  }
-
-  // Retourne les lignes de coupe
-  getTopsOfLignesCoupe(){
-    var ls = []
-    document.querySelectorAll('div.ligne_coupe').forEach(div => {
-      ls.push(unpx(div.style.top))
-    })
-    return ls.sort(function(a, b) {return a - b});
-  }
-
-  get btnConfirmer(){
-    return this._btnconfirm || (this._btnconfirm = document.querySelector('button#confirmer_decoupe'))
-  }
-  get btnRenoncer(){
-    return this._btncancel || (this._btncancel = document.querySelector('button#renoncer_decoupe'))
-  }
   get score(){return this._score || (this._score = document.querySelector('img#score'))}
-
-  get firstNumberField(){
-    return this._firstnum || (this._firstnum = document.querySelector('input#num_first_system'))
-  }
-  get panneauInformation(){
-    return this._infopanel || (this._infopanel = document.querySelector('div#panneau_information'))
-  }
 
 }
 const UI = new UIClass()

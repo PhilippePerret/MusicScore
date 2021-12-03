@@ -4,26 +4,22 @@
   
 */
 
-section#interactive_section {
+section#score_container {
   position: fixed;
-  top: 50%;
   display: block;
-  margin-left: 10%;
-  width: calc(80% - 40px);
-  height: 45%;
+  border: 1px dashed red;
   overflow: auto;
 }
 
-div#score_container {
-  width: 90%;
-  max-height: 500px;
-  height: 500px;
-  border: 1px dashed red;
-  overflow: auto;
-  margin: 1em;
-}
 img#score {
   width: 100%;
+}
+
+section#code_container {
+  position: fixed;
+  display: block;
+  overflow: auto;
+  border: 1px dashed green;
 }
 
 

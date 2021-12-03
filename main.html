@@ -56,17 +56,16 @@
   <!-- 
     Image(s) de la partition
    -->
-  <div id="score_container">
+  <section id="score_container">
     <img id="score" src="score_building/code/visu.svg" />
-  </div>
+  </section>
 
   <!-- 
 
     LA SECTION PRINCIPAL CONTENANT NOTAMMENT LE CHAMP POUR LE CODE
 
    -->
-  <section id="interactive_section">
-
+  <section id="code_container">
 
     <div id="mesures_code"><!--  
       Pour mettre les mesures-code de code
@@ -226,7 +225,7 @@
           </td>
 
           <td>
-            <input type="checkbox" id="cb_barre"> <label class="libelle" for="cb_barre" CHECKED>Barres mesures</label>
+            <input type="checkbox" id="cb_barres"> <label class="libelle" for="cb_barres" CHECKED>Barres mesures</label>
             <input type="checkbox" id="cb_stems"> <label class="libelle" for="cb_stems" CHECKED>Hampes</label>            
           </td>
         </tr>
@@ -243,6 +242,14 @@
 
       <div>
         <input type="checkbox" id="cb_auto_update_after_change" /><label for="auto_update_after_change">Actualiser automatiquement la partition lors d'une modification de mesure</label>
+      </div>
+      <div>
+        <span class="libelle">Disposition lignes code / Image partition</span><select id="disposition" onchange="Options.onChange.call(Options,this)">
+          <option value="up_down">Image au-dessus / Code en dessous</option>
+          <option value="down_up">Image en dessous / Code au-dessus</option>
+          <option value="left_right">Image à gauche / Code à droite</option>
+          <option value="right_left">Image à droite / Code à gauche</option>
+        </select>
       </div>
 
       <div class="right">

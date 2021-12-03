@@ -15,11 +15,12 @@ const CONFIG = {
     , 'mesure':       ''
     , 'systeme':      'piano'
     , 'proximity':    ""
-    , 'barre':        true
+    , 'barres':       true
     , 'stems':        true
     , 'tune':         'C'
     , 'time':         null
     , 'auto_update_after_change': true
     , 'staves_vspace':  null
+    , 'disposition':  'up_down'
   }
 }

@@ -12,12 +12,13 @@ const DATA_OPTIONS = {
   , 'mesure':         {type:'text'}
   , 'systeme':        {type:'select_or_other'}
   , 'proximity':      {type:'select'}
-  , 'barre':          {type:'checkbox'}
+  , 'barres':         {type:'checkbox'}
   , 'stems':          {type:'checkbox'}
   , 'tune'    :       {type:'method', getter:'getTune', setter:'setTune'}
   , 'time'    :       {type:'select'}
   , 'auto_update_after_change': {type:'checkbox'}
   , 'staves_vspace':  {type:'text'}
+  , 'disposition':    {type:'select'}
 }
 
 class OptionsClass {
@@ -44,6 +45,10 @@ init(){
 setProperty(property, value){
   // console.info("On doit mettre la propriété '%s' à %s", property, value)
   const dataProperty = DATA_OPTIONS[property]
+  if ( undefined == dataProperty ){
+    error("La propriété " + property + " n'est pas définie dans DATA_OPTIONS… Je dois renoncer à l'afficher.")
+    return
+  }
   switch(dataProperty.type) {
     case 'checkbox':
       document.querySelector('#cb_'+property).checked = value
@@ -102,15 +107,42 @@ getProperty(property){
 applique(opts){
   console.log("-> Options.applique(opts=)", opts)
   var allOptions = {}
-  for(var keyOption in DATA_OPTIONS){
-    const dataOption = DATA_OPTIONS[keyOption]
-    if (undefined === opts[keyOption]) continue;
-    else {
-      this.setProperty(keyOption, opts[keyOption])
+  for(var keyOption in opts){
+    const datOption = DATA_OPTIONS[keyOption]
+    const valOption = opts[keyOption]
+    this.setProperty(keyOption, valOption)
+    // 
+    // Traitement particulier de certaines options qui doivent 
+    // s'appliquer tout de suite
+    // 
+    switch(keyOption){
+      case 'disposition':
+        UI.setDisposition.call(UI, valOption)
+        break
     }
   }
 }
 
+/**
+ * Méthode qu'on peut appeler depuis un élément DOM avec le
+ * 'onchange', pour modifier quelque chose quand un choix d'option
+ * est changé.
+ * Cette méthode a été inaugurée pour la disposition. Quand on change
+ * de disposition, cette méthode est appelée pour utiliser une autre
+ * disposition d'écran.
+ * 
+ * @param objet {DOMElement}
+ *        L'objet qui appelle la méthode car elle est appelée par :
+ *        onchange="Options.onChange.call(Options,this)"
+ *        On checke son id pour savoir quoi faire.
+ */
+onChange(objet){
+  switch(objet.id){
+    case 'disposition':
+      this.applique({disposition: objet.value})
+      break
+  }
+}
 
 /**
  * Pour régler la tonalité

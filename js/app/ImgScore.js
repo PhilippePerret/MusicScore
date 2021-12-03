@@ -27,7 +27,7 @@ changeSize(val){
 }
 
 get container(){
-  return this._conteneur || (this._conteneur = DGet('#score_container'))
+  return this._conteneur || (this._conteneur = DGet('section#score_container'))
 }
 get img(){
   return this._img || (this._img = DGet('#score'))
