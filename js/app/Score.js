@@ -94,7 +94,7 @@ getCodeFinal(params){
     // TODO : Il faudra ici traiter les autres valeurs
   }
   this.getOption('stems')  || c.push('--no_stem')
-  this.getOption('barre')  && c.push('--barres')
+  this.getOption('barres') && c.push('--barres')
   this.staves_vspace  && c.push('--staves_vspace ' + this.staves_vspace)
   this.tune           && c.push('--tune ' + this.tune)
   this.metrique       && c.push('--time ' + this.metrique)

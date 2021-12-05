@@ -9,7 +9,7 @@ end
 begin
   # `echo "eliesalome" | sudo -S gem install tty-prompt`
   # pth = File.join('/Users','philippeperret','ICARE_EDITIONS','xdev','iced','iced.rb')
-  pth = '/Users/philippeperret/ICARE_EDITIONS/livres/musique/xDev/scripts/music-score/music-score.rb'
+  pth = '/Users/philippeperret/ICARE_EDITIONS/livres/musique/xDev/music-score-2/music-score.rb'
   curdir = __dir__
   cmd = "ruby #{pth} \"#{curdir}/code.mus\""
 
