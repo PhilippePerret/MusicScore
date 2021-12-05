@@ -23,6 +23,14 @@ writeInCurrent(key){
   }
 }
 
+/**
+ * Appelée par le bouton "Forcer le rechargement de limage"
+ * 
+ */
+forceUpdateImage(){
+  $('img#score').attr('src', "score_building/code/default.svg")
+  setTimeout(Score.update.bind(Score), 2000)
+}
 
 resetAll(){
   MesureCode.resetAll.call(MesureCode)
