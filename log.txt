@@ -1,11 +1,11 @@
 [0;96m⚙️  Production de l'image "visu"[0m
-** (process:1453): WARNING **: 06:53:24.070: Unable to create profile directory (Permission denied) (13)
-** Message: 06:53:24.697: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
-** Message: 06:53:24.697: Inkscape va d?marrer avec les pr?f?rences par d?faut.
+** (process:3734): WARNING **: 09:47:01.172: Unable to create profile directory (Permission denied) (13)
+** Message: 09:47:01.909: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
+** Message: 09:47:01.909: Inkscape va d?marrer avec les pr?f?rences par d?faut.
 Les nouvelles pr?f?rences ne seront pas enregistr?es. 
 
-** (org.inkscape.Inkscape:1453): WARNING **: 06:53:25.096: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
+** (org.inkscape.Inkscape:3734): WARNING **: 09:47:02.301: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
 
-** (org.inkscape.Inkscape:1453): WARNING **: 06:53:25.096: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
-2021-12-05 06:53:25.324 inkscape[1453:21195] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
+** (org.inkscape.Inkscape:3734): WARNING **: 09:47:02.301: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
+2021-12-05 09:47:02.526 inkscape[3734:90889] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
 [0;92m🎹 L'image visu.svg a été produite avec succès.[0m

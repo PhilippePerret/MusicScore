@@ -35,9 +35,9 @@
         ONGLETS POUR OUVRIR LES PANNEAUX
        -->
       <div id="main_onglets">
+        <button id="onglet_tools" class="onglet" data-panneau-id="tools">Outils</button>
         <button id="onglet_snippets" class="onglet" data-panneau-id="snippets">Snippets</button>
         <button id="onglet_options" class="onglet" data-panneau-id="options">Options</button>
-        <button id="onglet_tools" class="onglet" data-panneau-id="tools">Outils</button>
         <button id="onglet-quick_aide" class="onglet" data-panneau-id="quick_aide">Quick Help</button>
       </div>
 
@@ -110,11 +110,14 @@
       <legend>Outils</legend>
 
       <div>
-        <legend>Code final</legend>
         <div>
-          <button onclick="App.produceFinalCode.call(App)">Produire le code final</button>
-          <span class="libelle">De la mesure</span><input type="text" id="output_from_mesure" class="short" />
-          <span class="libelle">à la mesure</span><input type="text" id="output_to_mesure" class="short" />
+          <button onclick="App.produceFinalCode.call(App)">PRODUIRE LE CODE FINAL</button>
+          <div>
+            <span class="libelle">Nom de l'image</span><input type="text" id="image_name" placeholder="Nom de l'image" />
+            <span class="libelle">De la mesure</span><input type="text" id="output_from_mesure" class="very short" />
+            <span class="libelle">à la mesure</span><input type="text" id="output_to_mesure" class="very short" />
+            <input type="checkbox" id="cb_mesures_in_variable"><label for="cb_mesures_in_variable">Mesures dans variables</label>          
+          </div>
         </div>
         <textarea id="final_code" style="width:100%;" placeholder="CODE FINAL"></textarea>
         <div class="right">
@@ -131,6 +134,7 @@
 
       <div>
         
+        <button onclick="Tools.openManuelEditable.call(Tools)">Ouvrir version éditable du Manuel</button>
         <button onclick="Tools.resetAll.call(Tools)">Tout effacer</button>
         <button onclick="Tools.forceUpdateImage.call(Tools)">Forcer le rechargement de l'image</button>
 

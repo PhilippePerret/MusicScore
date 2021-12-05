@@ -81,8 +81,11 @@ getOption(key){
  * @return le code {String} final
  * 
  * @param params {Hash} 
- *    :from     Depuis cette mesure (toujours défini, 1 par défaut)
- *    :to       Jusqu'à cette mesure (idem)
+ *    :from         Depuis cette mesure (toujours défini, 1 par défaut)
+ *    :to           Jusqu'à cette mesure (idem)
+ *    :variables    Si true, il faut mettre chaque mesure dans une variable
+ *    :image_name   Nom éventuel de l'image
+ * 
  */
 getCodeFinal(params){
   var c = []
@@ -100,6 +103,13 @@ getCodeFinal(params){
   this.metrique       && c.push('--time ' + this.metrique)
   this.mesure         && c.push('--mesure ' + this.mesure)
   this.proximity      && c.push('--proximity ' + this.proximity)
+  // 
+  // Si un nom d'image a été fourni, on le met
+  // 
+  if ( !params.image_name ) {
+    const imgname = document.querySelector('#image_name').value.trim()
+    if ( imgname != '' ) Object.assign(params, {image_name: imgname})
+  }
   // 
   // On prend toutes les notes
   // 

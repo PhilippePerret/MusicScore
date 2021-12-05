@@ -17,6 +17,11 @@ class MesureCode {
 /**
  * @return {String} Le code complet
  * 
+ * @param params {Hash}
+ *      :from         Première mesure (première, par défaut)
+ *      :to           Dernière mesure (fin, par défaut)
+ *      :variables    Si true, utiliser des variables (globales)
+ *      :image_name   Si défini, c'est le nom de l'image finale
  */
 static getFullCode(params){
   var c = []
@@ -31,12 +36,66 @@ static getFullCode(params){
       const mes = this.table_mesures[imesure]
       if (!mes) break ; // Numéro de dernière mesure trop grand
       var code = mes.getPorteeCode(parseInt(xportee,10) + 1).trim()
-      if ( code == '' ) return ;
       c[xportee].push(code)
     }
-    c[xportee] = c[xportee].join(' | ')
+    if ( !params.variables ) {
+      // 
+      // Si on ne doit pas utiliser des variables (cas normal), on
+      // "compile" les messures
+      // 
+      c[xportee] = c[xportee].join(' | ')
+    }
   }
-  return c.join("\n")
+  if ( !params.variables ) {
+    // 
+    // Si on ne doit pas utiliser de variable (donc le cas normal),
+    // on peut tout rassembler et retourner.
+    c = c.join("\n")
+    if ( params.image_name ) {
+      c = "-> " + params.image_name + "\n" + c
+    }
+    return c
+  }
+
+  // 
+  // On passe par ici quand il faut renvoyer le code sous forme de
+  // variables.
+  //
+  var vars = []
+  for(var xmesure = params.from; xmesure <= params.to; ++xmesure){
+    const varName = 'mesure' + String(xmesure)
+    const imesure = xmesure - params.from
+    vars.push([varName])
+    for(var xportee = 0; xportee < nombrePortees; ++xportee){
+      vars[imesure].push(c[xportee][imesure])
+    }
+  }
+
+  var codevar   = []
+  var codescore = []
+  vars.forEach( dvar => {
+    const varName = dvar.shift()
+    codescore.push(varName)
+    codevar.push("\n" + varName + "==")
+    dvar.forEach( mes => { 
+      codevar.push(mes)
+    })
+  })
+  codevar = codevar.join("\n")
+  // console.log("vars: ", vars)
+  const lineScore = codescore.join(' ')
+  codescore = []
+  for(var xportee = 0; xportee < nombrePortees; ++xportee){
+    codescore.push(lineScore)
+  }
+
+  if ( params.image_name ) {
+    params.image_name = "-> " + params.image_name + "\n"
+  } else {
+    params.image_name = ""
+  }
+  return codevar + "\n\n" + params.image_name + codescore.join("\n")
+
 }
 
 /**

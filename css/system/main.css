@@ -23,7 +23,8 @@ input[type="text"] {
   border: 1px solid #ccc;
   padding: 4px;
 }
-input[type="text"].short {width: 40px;}
+input[type="text"].short:not(.very) {width: 40px}
+input[type="text"].very.short {width: 28px}
 
 select, select option {
   all: unset;

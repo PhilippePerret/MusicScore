@@ -70,11 +70,12 @@ traiteCodeInitial(fullcode){
  */
 produceFinalCode(){
   const field = document.querySelector('#final_code')
+  const cbVariables = document.querySelector('#cb_mesures_in_variable')
   let from_mes  = document.querySelector('#output_from_mesure').value.trim()
   let to_mes    = document.querySelector('#output_to_mesure').value.trim()
   from_mes  = from_mes == '' ? 1 : parseInt(from_mes,10)
   to_mes    = to_mes == '' ? Score.count : to_mes
-  field.value = Score.getCodeFinal({from: from_mes, to:to_mes})
+  field.value = Score.getCodeFinal({from: from_mes, to:to_mes, variables: cbVariables.checked})
   field.style.height = px(200)
 }
 

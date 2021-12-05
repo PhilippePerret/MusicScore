@@ -12,7 +12,11 @@ send(script_name, data){
     // (si elles ne sont pas au format string, on considère que c'est
     //  une table est on la jsonnifie)
     // 
-    if ( 'string' != typeof data ) data = JSON.stringify(data) ;
+    if ( data ) {
+      if ( 'string' != typeof data ) data = JSON.stringify(data) ;
+    } else {
+      data = ""
+    }
     $('form#ajax_form #ajax_data').val(data)
 
     // 
@@ -21,7 +25,7 @@ send(script_name, data){
     var xhr = form.data('jqxhr');
     xhr.done(function(ret) {
       ret = ret.trim()
-      // console.info("RETOUR AJAX BRUT :", ret)
+      console.info("RETOUR AJAX BRUT :", ret)
       ok(JSON.parse(ret))
     });    
 

@@ -37,5 +37,13 @@ resetAll(){
   Onglet.close('tools')
 }
 
+/**
+ * Pour ouvrir la version éditable (Markdown) du manuel
+ * 
+ */
+openManuelEditable(){
+  ajax('open_manuel_md').then(ret => {message("Le manuel est ouvert pour édition.")})
+}
+
 }
 const Tools = new ToolsClass()

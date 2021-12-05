@@ -2,7 +2,7 @@
 # encoding: UTF-8
 require 'fileutils'
 
-src = File.join(Dir.home, 'ICARE_EDITIONS', 'livres', 'musique', 'xDev','scripts','music-score','Manuel.pdf')
+src = File.join(Dir.home, 'ICARE_EDITIONS', 'livres', 'musique', 'xDev','music-score-2','Manuel','Manuel.pdf')
 dst = File.join(__dir__,'Manuel.pdf')
 
 if File.exist?(src)
