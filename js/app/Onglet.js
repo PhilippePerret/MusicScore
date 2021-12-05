@@ -12,7 +12,10 @@ static get(onglet_id){
 }
 
 static close(ongid){
-  this.onglets[ongid].closePanneau()
+  if ( this.current ) {
+    ongid = ongid || this.current.id
+    this.onglets[ongid].closePanneau()
+  }
 }
 
 static closeIfCurrent(){

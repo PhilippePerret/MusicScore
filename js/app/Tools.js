@@ -17,7 +17,7 @@ class ToolsClass {
 writeInCurrent(key){
   if ( MesureCode.current ) {
     MesureCode.current.addInCurrentStaff(SNIPPETS[key])
-    Onglet.close('tools')
+    Onglet.close()
   } else {
     error("Il faut choisir le champ (en cliquant dedans.")
   }

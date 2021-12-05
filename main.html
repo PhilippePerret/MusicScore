@@ -35,6 +35,7 @@
         ONGLETS POUR OUVRIR LES PANNEAUX
        -->
       <div id="main_onglets">
+        <button id="onglet_snippets" class="onglet" data-panneau-id="snippets">Snippets</button>
         <button id="onglet_options" class="onglet" data-panneau-id="options">Options</button>
         <button id="onglet_tools" class="onglet" data-panneau-id="tools">Outils</button>
         <button id="onglet-quick_aide" class="onglet" data-panneau-id="quick_aide">Quick Help</button>
@@ -83,21 +84,30 @@
 
     <!-- 
 
-      Le PANNEAU DES OUTILS
+      LE PANNEAU DES SNIPPETS
 
      -->
-    <div id="tools" class="panneau closed">
-      
-      <legend>Outils</legend>
+
+     <div id="snippets" class="panneau closed">
+       <legend>Snippets/Raccourcis</legend>
 
       <div>
-        <legend>Snippets</legend>
         <button onclick="Tools.writeInCurrent('double_voix')">Double voix même portée</button>
         <button onclick="Tools.writeInCurrent('debut_reprise')"> |: </button>
         <button onclick="Tools.writeInCurrent('fin_reprise')"> :| </button>
         <button onclick="Tools.writeInCurrent('fin_debut_reprise')"> :|: </button>
         <button onclick="Tools.writeInCurrent('fin')">Fin morceau</button>
       </div>
+
+     </div>
+    <!-- 
+
+      Le PANNEAU DES OUTILS
+
+     -->
+    <div id="tools" class="panneau closed">
+      
+      <legend>Outils</legend>
 
       <div>
         <legend>Code final</legend>
