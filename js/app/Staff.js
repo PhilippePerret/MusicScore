@@ -10,6 +10,12 @@
  */
 class Staff {
 
+static get DATA(){
+  return {
+      'piano': {keys:['G','F'], names:['','']}
+    , 'quatuor': {keys:['G','G','UT3','F'], names:['Vl1','Vl2','Vla','Vlc']}
+  }
+}
 /**
  * Retourne l'instance Staff d'identifiant +staff_id+
  * 
@@ -72,7 +78,16 @@ static get data(){
 }
 static getData(){
   // console.log("options initiales dans Staff.getData : ", Options.data_ini)
-  const dataIni = Options.data_ini || {}
+  let dataIni ;
+  if ( Options.data_ini ) {
+    dataIni = Options.data_ini
+  } else if ( Staff.DATA[Score.systeme] ){
+    return Staff.DATA[Score.systeme]
+  } else {
+    dataIni = {}
+  }
+  // console.log("Options.data_ini = ", Options.data_ini)
+  // console.log("dataIni = ", dataIni)
   let keys  = dataIni.staves_keys
   keys = keys ? keys.split(', ') : []
   let names = dataIni.staves_names

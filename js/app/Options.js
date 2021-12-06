@@ -161,6 +161,9 @@ onChange(objet){
       this.applique({disposition: objet.value})
       break
     case 'systeme':
+      Staff.reset()
+      delete Options.data_ini
+      Options.data_ini = null
       this.applique({systeme: objet.value})
       break
   }
