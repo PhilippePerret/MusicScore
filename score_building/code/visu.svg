@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.2"
-   width="64.89489mm"
-   height="44.609657mm"
-   viewBox="0 0 36.928777 25.385358"
-   id="svg182"
+   width="192.12987mm"
+   height="145.91644mm"
+   viewBox="0 0 109.33251 83.034513"
+   id="svg1062"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs186" />
+     id="defs1066" />
   <style
      text="style/css"
      id="style2"><![CDATA[
@@ -21,606 +21,3449 @@ tspan { white-space: pre; }
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="5.7789998"
-     x2="36.878777"
-     y2="5.7789998"
+     x1="1.262"
+     y1="8.0345192"
+     x2="109.2825"
+     y2="8.0345192"
      id="line4" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="4.7789998"
-     x2="36.878777"
-     y2="4.7789998"
+     x1="1.262"
+     y1="7.0345187"
+     x2="109.2825"
+     y2="7.0345187"
      id="line6" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="3.779"
-     x2="36.878777"
-     y2="3.779"
+     x1="1.262"
+     y1="6.0345187"
+     x2="109.2825"
+     y2="6.0345187"
      id="line8" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="2.779"
-     x2="36.878777"
-     y2="2.779"
+     x1="1.262"
+     y1="5.0345187"
+     x2="109.2825"
+     y2="5.0345187"
      id="line10" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="1.779"
-     x2="36.878777"
-     y2="1.779"
+     x1="1.262"
+     y1="4.0345187"
+     x2="109.2825"
+     y2="4.0345187"
      id="line12" />
   <rect
-     x="36.738773"
-     y="19.729"
+     x="109.1424"
+     y="8.0846186"
      width="0.19"
-     height="4.0500002"
+     height="4.9499998"
      ry="0.0000"
      fill="currentColor"
      id="rect14" />
   <rect
-     x="29.662674"
-     y="14.829"
+     x="109.1424"
+     y="12.984519"
      width="0.19"
-     height="4.9499998"
+     height="4.0500002"
      ry="0.0000"
      fill="currentColor"
      id="rect16" />
   <rect
-     x="29.662674"
-     y="5.829"
+     x="58.648998"
+     y="4.0345187"
      width="0.19"
-     height="4.9499998"
+     height="4.0500002"
      ry="0.0000"
      fill="currentColor"
      id="rect18" />
   <rect
-     x="29.662674"
-     y="19.729"
+     x="109.1424"
+     y="4.0345187"
      width="0.19"
      height="4.0500002"
      ry="0.0000"
      fill="currentColor"
      id="rect20" />
   <rect
-     x="36.738773"
-     y="10.729"
+     x="58.648998"
+     y="12.984519"
      width="0.19"
-     height="4.0999999"
+     height="4.0500002"
      ry="0.0000"
      fill="currentColor"
      id="rect22" />
   <rect
-     x="36.738773"
-     y="14.829"
+     x="58.648998"
+     y="8.0846186"
      width="0.19"
      height="4.9499998"
      ry="0.0000"
      fill="currentColor"
      id="rect24" />
   <rect
-     x="36.738773"
-     y="5.829"
-     width="0.19"
-     height="4.9499998"
-     ry="0.0000"
+     x="93.3339"
+     y="11.934519"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
      fill="currentColor"
      id="rect26" />
   <rect
-     x="29.662674"
-     y="1.779"
-     width="0.19"
-     height="4.0500002"
-     ry="0.0000"
+     x="85.628197"
+     y="11.934519"
+     width="1.8199"
+     height="0.2"
+     ry="0.1"
      fill="currentColor"
      id="rect28" />
   <rect
-     x="36.738773"
-     y="1.779"
-     width="0.19"
-     height="4.0500002"
-     ry="0.0000"
+     x="69.6119"
+     y="11.934519"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
      fill="currentColor"
      id="rect30" />
   <rect
-     x="29.662674"
-     y="10.729"
-     width="0.19"
-     height="4.0999999"
-     ry="0.0000"
+     x="42.804802"
+     y="10.934519"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
      fill="currentColor"
      id="rect32" />
+  <rect
+     x="42.804802"
+     y="11.934519"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect34" />
+  <rect
+     x="19.132799"
+     y="11.934519"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect36" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="23.778999"
-     x2="36.878777"
-     y2="23.778999"
-     id="line34" />
-  <line
-     stroke-linejoin="round"
-     stroke-linecap="round"
-     stroke-width="0.1"
-     stroke="currentColor"
-     x1="13.707775"
-     y1="22.778999"
-     x2="36.878777"
-     y2="22.778999"
-     id="line36" />
-  <line
-     stroke-linejoin="round"
-     stroke-linecap="round"
-     stroke-width="0.1"
-     stroke="currentColor"
-     x1="13.707775"
-     y1="21.778999"
-     x2="36.878777"
-     y2="21.778999"
+     x1="1.262"
+     y1="17.034519"
+     x2="109.2825"
+     y2="17.034519"
      id="line38" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="20.778999"
-     x2="36.878777"
-     y2="20.778999"
+     x1="1.262"
+     y1="16.034519"
+     x2="109.2825"
+     y2="16.034519"
      id="line40" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="19.778999"
-     x2="36.878777"
-     y2="19.778999"
+     x1="1.262"
+     y1="15.034519"
+     x2="109.2825"
+     y2="15.034519"
      id="line42" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="14.779"
-     x2="36.878777"
-     y2="14.779"
+     x1="1.262"
+     y1="14.034519"
+     x2="109.2825"
+     y2="14.034519"
      id="line44" />
   <line
      stroke-linejoin="round"
      stroke-linecap="round"
      stroke-width="0.1"
      stroke="currentColor"
-     x1="13.707775"
-     y1="13.779"
-     x2="36.878777"
-     y2="13.779"
+     x1="1.262"
+     y1="13.034519"
+     x2="109.2825"
+     y2="13.034519"
      id="line46" />
-  <line
-     stroke-linejoin="round"
-     stroke-linecap="round"
-     stroke-width="0.1"
-     stroke="currentColor"
-     x1="13.707775"
-     y1="12.779"
-     x2="36.878777"
-     y2="12.779"
-     id="line48" />
-  <line
-     stroke-linejoin="round"
-     stroke-linecap="round"
-     stroke-width="0.1"
-     stroke="currentColor"
-     x1="13.707775"
-     y1="11.779"
-     x2="36.878777"
-     y2="11.779"
-     id="line50" />
-  <line
-     stroke-linejoin="round"
-     stroke-linecap="round"
-     stroke-width="0.1"
-     stroke="currentColor"
-     x1="13.707775"
-     y1="10.779"
-     x2="36.878777"
-     y2="10.779"
-     id="line52" />
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:60:7:8"
-     id="a56"
-     transform="translate(7.9671749,-3.8303)">
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:42:43"
+     id="a50"
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,18.8597,25.6093)"
+       transform="matrix(0.004,0,0,-0.004,90.2964,8.792)"
        d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
        fill="currentColor"
-       id="path54" />
+       id="path48" />
   </a>
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:46:7:8"
-     id="a60"
-     transform="translate(7.9671749,-3.8303)">
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:358:359"
+     id="a54"
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,18.8597,15.1093)"
+       transform="matrix(0.004,0,0,-0.004,90.2964,17.792)"
        d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
        fill="currentColor"
-       id="path58" />
+       id="path52" />
   </a>
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:32:7:8"
-     id="a64"
-     transform="translate(7.9671749,-3.8303)">
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:300:301"
+     id="a58"
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,18.8597,7.6093)"
+       transform="matrix(0.004,0,0,-0.004,90.2964,15.792)"
        d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
        fill="currentColor"
-       id="path62" />
+       id="path56" />
   </a>
   <rect
-     x="33.944275"
-     y="20.965099"
+     x="86.991997"
+     y="2.0345187"
+     width="0.13"
+     height="2.8139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect60" />
+  <path
+     d="m 4.24,14.534519 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m 0,-1 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m -1.3,-0.552 c 0.688,0 1.172,0.352 1.172,1.004 0,1.052 -1.052,1.656 -2.064,2.084 -0.012,0.012 -0.024,0.016 -0.036,0.016 -0.028,0 -0.052,-0.024 -0.052,-0.052 0,-0.012 0.004,-0.024 0.016,-0.036 0.808,-0.472 1.648,-1.06 1.648,-1.972 0,-0.48 -0.252,-0.94 -0.684,-0.94 -0.296,0 -0.516,0.216 -0.616,0.504 0.044,-0.02 0.088,-0.032 0.136,-0.032 0.22,0 0.4,0.18 0.4,0.4 0,0.232 -0.176,0.424 -0.4,0.424 -0.24,0 -0.448,-0.188 -0.448,-0.424 0,-0.532 0.408,-0.976 0.928,-0.976 z"
+     fill="currentColor"
+     id="path62"
+     style="stroke-width:0.004" />
+  <rect
+     x="85.817802"
+     y="14.220619"
      width="0.13"
      height="3.3139"
      ry="0.039999999"
      fill="currentColor"
-     id="rect66" />
+     id="rect64" />
+  <path
+     d="m 85.9478,17.494519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path66"
+     style="stroke-width:0.004" />
   <rect
-     x="30.942076"
-     y="3.4651"
+     x="86.991997"
+     y="8.5359192"
      width="0.13"
-     height="3.3139"
+     height="3.3125"
      ry="0.039999999"
      fill="currentColor"
      id="rect68" />
-  <rect
-     x="30.942076"
-     y="21.465099"
-     width="0.13"
-     height="3.3139"
-     ry="0.039999999"
+  <path
+     d="m 84.7398,10.534519 c 0.032,-0.016 0.068,-0.028 0.104,-0.028 0.036,0 0.064,0.012 0.096,0.028 l -0.008,0.732 0.424,-0.08 h 0.012 c 0.04,0 0.072,0.028 0.072,0.068 l 0.028,2.28 c -0.032,0.016 -0.064,0.028 -0.1,0.028 -0.036,0 -0.068,-0.012 -0.1,-0.028 l 0.012,-0.732 -0.424,0.08 h -0.012 c -0.04,0 -0.072,-0.028 -0.072,-0.068 z m 0.556,1.052 -0.368,0.068 -0.012,0.828 0.368,-0.068 z"
      fill="currentColor"
-     id="rect70" />
-  <rect
-     x="30.942076"
-     y="10.9651"
-     width="0.13"
-     height="3.3139"
-     ry="0.039999999"
-     fill="currentColor"
-     id="rect72" />
-  <rect
-     x="26.826876"
-     y="3.9651"
-     width="0.13"
-     height="3.1472001"
-     ry="0.039999999"
-     fill="currentColor"
-     id="rect74" />
+     id="path70"
+     style="stroke-width:0.004" />
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:60:9:10"
-     id="a78"
-     transform="translate(7.9671749,-3.8303)">
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:304:305"
+     id="a74"
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,22.9749,25.1093)"
+       transform="matrix(0.004,0,0,-0.004,98.1385,15.292)"
        d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
        fill="currentColor"
-       id="path76" />
+       id="path72" />
   </a>
+  <rect
+     x="94.834099"
+     y="8.7031193"
+     width="0.13"
+     height="2.6452999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect76" />
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:46:11:12"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:36:6:7"
      id="a82"
-     transform="translate(7.9671749,-3.8303)">
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,22.9749,14.6093)"
-       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       transform="matrix(0.004,0,0,-0.004,12.3088,18.792)"
+       d="m 235,355 c 0,60 -18,122 -70,122 -26,0 -51,-14 -51,-37 0,-27 35,-41 35,-68 0,-38 -30,-69 -68,-69 -38,0 -69,31 -69,69 0,76 72,128 153,128 96,0 187,-56 187,-145 0,-153 -151,-159 -249,-220 9,2 17,3 26,3 33,0 70,-11 105,-36 21,-15 46,-23 66,-23 21,0 39,9 44,29 2,6 6,9 11,9 6,0 12,-5 12,-12 0,-1 -1,-2 -1,-3 C 349,37 288,0 229,0 193,0 158,14 133,44 120,60 102,66 85,66 55,66 26,46 23,11 22,4 17,0 12,0 6,0 0,4 0,11 0,186 235,176 235,355 Z"
+       fill="currentColor"
+       id="path78" />
+    <path
+       transform="matrix(0.004,0,0,-0.004,12.2406,20.8406)"
+       d="m 196,117 h 117 c 0,-48 27,-94 72,-94 8,0 12,-5 12,-11 C 397,6 393,0 385,0 341,0 298,13 254,13 210,13 167,0 123,0 c -8,0 -12,6 -12,12 0,6 4,11 12,11 45,0 73,46 73,94 z m 8,190 c 22,14 44,29 60,50 11,15 19,33 27,50 2,4 5,6 9,6 6,0 13,-5 13,-14 V 154 h 72 c 10,0 15,-7 15,-14 0,-7 -5,-15 -15,-15 h -72 v -8 H 196 v 8 H 29 c -23,0 -31,14 -31,23 0,3 1,5 2,6 80,93 138,207 138,330 0,10 7,19 16,16 23,-7 47,-13 71,-13 24,0 48,6 71,13 14,4 23,-9 17,-16 L 29,154 h 167 v 131 c 0,8 1,17 8,22 z"
        fill="currentColor"
        id="path80" />
   </a>
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:32:9:10"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:212:213"
      id="a86"
-     transform="translate(7.9671749,-3.8303)">
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,22.9749,7.1093)"
+       transform="matrix(0.004,0,0,-0.004,74.4165,15.292)"
        d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
        fill="currentColor"
        id="path84" />
   </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:39:6:7"
+     id="a90"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,9.9906,17.792)"
+       d="m 216,-312 c 0,-10 -8,-19 -18,-19 -10,0 -19,9 -19,19 v 145 l -83,-31 v -158 c 0,-10 -9,-19 -19,-19 -10,0 -18,9 -18,19 v 145 l -32,-12 c -2,-1 -5,-1 -7,-1 -11,0 -20,9 -20,20 v 60 c 0,8 5,16 13,19 l 46,16 V 51 L 27,40 C 25,39 22,39 20,39 9,39 0,48 0,59 v 60 c 0,8 5,15 13,18 l 46,17 v 158 c 0,10 8,19 18,19 10,0 19,-9 19,-19 V 167 l 83,31 v 158 c 0,10 9,19 19,19 10,0 18,-9 18,-19 V 211 l 32,12 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-16 -13,-19 L 216,109 V -51 l 32,11 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-15 -13,-18 l -46,-17 z M 96,65 V -95 l 83,30 V 95 Z"
+       fill="currentColor"
+       id="path88" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:356:357"
+     id="a94"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,78.2854,20.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path92" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:25:26"
+     id="a98"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="translate(15.8453,9.792)"
+       stroke-width="0.08"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke="currentColor"
+       fill="currentColor"
+       d="m 1.6042,-3.195 c 3.3832,-3.0376 70.2568,-3.9447 73.7211,-1 v 0 c -3.4627,-2.8247 -70.3362,-1.9176 -73.7211,1 z"
+       id="path96" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:248:249"
+     id="a102"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,82.1543,11.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path100" />
+  </a>
   <rect
-     x="26.826876"
-     y="21.965099"
+     x="77.675697"
+     y="7.7206187"
+     width="0.13"
+     height="2.1180999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect104" />
+  <rect
+     x="12.5409"
+     y="2.7012186"
      width="0.13"
      height="3.1472001"
      ry="0.039999999"
      fill="currentColor"
-     id="rect88" />
-  <rect
-     x="26.826876"
-     y="11.4651"
-     width="0.13"
-     height="3.3139"
-     ry="0.039999999"
-     fill="currentColor"
-     id="rect90" />
-  <path
-     d="m 15.729775,12.779 c 0,0.132 0.028,0.292 0.18,0.292 0.116,0 0.228,-0.124 0.352,-0.124 0.492,0 0.916,0.356 0.916,0.832 0,0.676 -0.372,1 -1.06,1 -0.332,0 -0.608,-0.244 -0.608,-0.568 0,-0.168 0.136,-0.308 0.304,-0.308 0.168,0 0.304,0.14 0.304,0.308 0,0.156 -0.196,0.148 -0.196,0.304 0,0.092 0.096,0.152 0.196,0.152 0.464,0 0.56,-0.36 0.56,-0.888 0,-0.424 -0.048,-0.72 -0.416,-0.72 -0.288,0 -0.476,0.284 -0.476,0.596 0,0.036 -0.028,0.056 -0.056,0.056 -0.028,0 -0.052,-0.02 -0.052,-0.056 0,-0.304 -0.124,-0.588 -0.336,-0.8 v 1.884 c 0,0.024 -0.016,0.04 -0.04,0.04 h -0.084 c -0.024,0 -0.04,-0.016 -0.04,-0.04 v -3.92 c 0,-0.024 0.016,-0.04 0.04,-0.04 h 0.084 c 0.024,0 0.04,0.016 0.04,0.04 v 1.884 c 0.212,-0.212 0.336,-0.496 0.336,-0.8 0,-0.036 0.024,-0.056 0.052,-0.056 0.028,0 0.056,0.02 0.056,0.056 0,0.312 0.188,0.596 0.476,0.596 0.368,0 0.416,-0.296 0.416,-0.72 0,-0.528 -0.096,-0.888 -0.56,-0.888 -0.1,0 -0.196,0.06 -0.196,0.152 0,0.156 0.196,0.148 0.196,0.304 0,0.168 -0.136,0.308 -0.304,0.308 -0.168,0 -0.304,-0.14 -0.304,-0.308 0,-0.324 0.276,-0.568 0.608,-0.568 0.688,0 1.06,0.324 1.06,1 0,0.476 -0.424,0.832 -0.916,0.832 -0.124,0 -0.236,-0.124 -0.352,-0.124 -0.152,0 -0.18,0.16 -0.18,0.292 z m -0.756,2 h -0.476 c -0.024,0 -0.04,-0.016 -0.04,-0.04 v -3.92 c 0,-0.024 0.016,-0.04 0.04,-0.04 h 0.476 c 0.024,0 0.04,0.016 0.04,0.04 v 3.92 c 0,0.024 -0.016,0.04 -0.04,0.04 z"
-     fill="currentColor"
-     id="path92"
-     style="stroke-width:0.004" />
+     id="rect106" />
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:44:4:5"
-     id="a96"
-     transform="translate(7.9671749,-3.8303)">
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:38:39"
+     id="a110"
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,9.9906,15.1093)"
-       d="m 216,-312 c 0,-10 -8,-19 -18,-19 -10,0 -19,9 -19,19 v 145 l -83,-31 v -158 c 0,-10 -9,-19 -19,-19 -10,0 -18,9 -18,19 v 145 l -32,-12 c -2,-1 -5,-1 -7,-1 -11,0 -20,9 -20,20 v 60 c 0,8 5,16 13,19 l 46,16 V 51 L 27,40 C 25,39 22,39 20,39 9,39 0,48 0,59 v 60 c 0,8 5,15 13,18 l 46,17 v 158 c 0,10 8,19 18,19 10,0 19,-9 19,-19 V 167 l 83,31 v 158 c 0,10 9,19 19,19 10,0 18,-9 18,-19 V 211 l 32,12 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-16 -13,-19 L 216,109 V -51 l 32,11 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-15 -13,-18 l -46,-17 z M 96,65 V -95 l 83,30 V 95 Z"
-       fill="currentColor"
-       id="path94" />
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:41:4:5"
-     id="a102"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,12.3088,16.6093)"
-       d="m 235,355 c 0,60 -18,122 -70,122 -26,0 -51,-14 -51,-37 0,-27 35,-41 35,-68 0,-38 -30,-69 -68,-69 -38,0 -69,31 -69,69 0,76 72,128 153,128 96,0 187,-56 187,-145 0,-153 -151,-159 -249,-220 9,2 17,3 26,3 33,0 70,-11 105,-36 21,-15 46,-23 66,-23 21,0 39,9 44,29 2,6 6,9 11,9 6,0 12,-5 12,-12 0,-1 -1,-2 -1,-3 C 349,37 288,0 229,0 193,0 158,14 133,44 120,60 102,66 85,66 55,66 26,46 23,11 22,4 17,0 12,0 6,0 0,4 0,11 0,186 235,176 235,355 Z"
-       fill="currentColor"
-       id="path98" />
-    <path
-       transform="matrix(0.004,0,0,-0.004,12.2406,18.6579)"
-       d="m 196,117 h 117 c 0,-48 27,-94 72,-94 8,0 12,-5 12,-11 C 397,6 393,0 385,0 341,0 298,13 254,13 210,13 167,0 123,0 c -8,0 -12,6 -12,12 0,6 4,11 12,11 45,0 73,46 73,94 z m 8,190 c 22,14 44,29 60,50 11,15 19,33 27,50 2,4 5,6 9,6 6,0 13,-5 13,-14 V 154 h 72 c 10,0 15,-7 15,-14 0,-7 -5,-15 -15,-15 h -72 v -8 H 196 v 8 H 29 c -23,0 -31,14 -31,23 0,3 1,5 2,6 80,93 138,207 138,330 0,10 7,19 16,16 23,-7 47,-13 71,-13 24,0 48,6 71,13 14,4 23,-9 17,-16 L 29,154 h 167 v 131 c 0,8 1,17 8,22 z"
-       fill="currentColor"
-       id="path100" />
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:60:5:6"
-     id="a106"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,15.8453,26.1093)"
+       transform="matrix(0.004,0,0,-0.004,84.0888,8.292)"
        d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
        fill="currentColor"
-       id="path104" />
+       id="path108" />
   </a>
+  <rect
+     x="80.784401"
+     y="1.5334187"
+     width="0.13"
+     height="2.8150001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect112" />
+  <rect
+     x="71.112099"
+     y="9.2572193"
+     width="0.13"
+     height="2.0912001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect114" />
+  <rect
+     x="11.3667"
+     y="13.720619"
+     width="0.13"
+     height="3.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect116" />
   <path
-     d="m 16.685775,21.279 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m 0,-1 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m -1.3,-0.552 c 0.688,0 1.172,0.352 1.172,1.004 0,1.052 -1.052,1.656 -2.064,2.084 -0.012,0.012 -0.024,0.016 -0.036,0.016 -0.028,0 -0.052,-0.024 -0.052,-0.052 0,-0.012 0.004,-0.024 0.016,-0.036 0.808,-0.472 1.648,-1.06 1.648,-1.972 0,-0.48 -0.252,-0.94 -0.684,-0.94 -0.296,0 -0.516,0.216 -0.616,0.504 0.044,-0.02 0.088,-0.032 0.136,-0.032 0.22,0 0.4,0.18 0.4,0.4 0,0.232 -0.176,0.424 -0.4,0.424 -0.24,0 -0.448,-0.188 -0.448,-0.424 0,-0.532 0.408,-0.976 0.928,-0.976 z"
+     d="m 11.4967,16.994519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
      fill="currentColor"
-     id="path108"
+     id="path118"
      style="stroke-width:0.004" />
+  <polygon
+     transform="translate(86.992,8.5345187)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.4957,0.11 14.4957,0.51 "
+     id="polygon120" />
+  <polygon
+     transform="translate(63.02,8.5345187)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.7457,1.11 14.7457,1.51 "
+     id="polygon122" />
+  <polygon
+     transform="translate(63.02,1.2245187)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 17.8544,0.11 17.8544,0.51 "
+     id="polygon124" />
+  <polygon
+     transform="translate(79.7494,2.3244187)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 1.125,-0.1798 1.125,0.2202 "
+     id="polygon126" />
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:58:4:5"
-     id="a112"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,9.9906,24.6093)"
-       d="m 216,-312 c 0,-10 -8,-19 -18,-19 -10,0 -19,9 -19,19 v 145 l -83,-31 v -158 c 0,-10 -9,-19 -19,-19 -10,0 -18,9 -18,19 v 145 l -32,-12 c -2,-1 -5,-1 -7,-1 -11,0 -20,9 -20,20 v 60 c 0,8 5,16 13,19 l 46,16 V 51 L 27,40 C 25,39 22,39 20,39 9,39 0,48 0,59 v 60 c 0,8 5,15 13,18 l 46,17 v 158 c 0,10 8,19 18,19 10,0 19,-9 19,-19 V 167 l 83,31 v 158 c 0,10 9,19 19,19 10,0 18,-9 18,-19 V 211 l 32,12 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-16 -13,-19 L 216,109 V -51 l 32,11 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-15 -13,-18 l -46,-17 z M 96,65 V -95 l 83,30 V 95 Z"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:286:287"
+     id="a132"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(98.2946,11.6729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
        fill="currentColor"
-       id="path110" />
+       id="text130"><tspan
+         id="tspan128">3</tspan></text>
   </a>
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:55:4:5"
-     id="a118"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,12.3088,25.6093)"
-       d="m 235,355 c 0,60 -18,122 -70,122 -26,0 -51,-14 -51,-37 0,-27 35,-41 35,-68 0,-38 -30,-69 -68,-69 -38,0 -69,31 -69,69 0,76 72,128 153,128 96,0 187,-56 187,-145 0,-153 -151,-159 -249,-220 9,2 17,3 26,3 33,0 70,-11 105,-36 21,-15 46,-23 66,-23 21,0 39,9 44,29 2,6 6,9 11,9 6,0 12,-5 12,-12 0,-1 -1,-2 -1,-3 C 349,37 288,0 229,0 193,0 158,14 133,44 120,60 102,66 85,66 55,66 26,46 23,11 22,4 17,0 12,0 6,0 0,4 0,11 0,186 235,176 235,355 Z"
-       fill="currentColor"
-       id="path114" />
-    <path
-       transform="matrix(0.004,0,0,-0.004,12.2406,27.6579)"
-       d="m 196,117 h 117 c 0,-48 27,-94 72,-94 8,0 12,-5 12,-11 C 397,6 393,0 385,0 341,0 298,13 254,13 210,13 167,0 123,0 c -8,0 -12,6 -12,12 0,6 4,11 12,11 45,0 73,46 73,94 z m 8,190 c 22,14 44,29 60,50 11,15 19,33 27,50 2,4 5,6 9,6 6,0 13,-5 13,-14 V 154 h 72 c 10,0 15,-7 15,-14 0,-7 -5,-15 -15,-15 h -72 v -8 H 196 v 8 H 29 c -23,0 -31,14 -31,23 0,3 1,5 2,6 80,93 138,207 138,330 0,10 7,19 16,16 23,-7 47,-13 71,-13 24,0 48,6 71,13 14,4 23,-9 17,-16 L 29,154 h 167 v 131 c 0,8 1,17 8,22 z"
-       fill="currentColor"
-       id="path116" />
-  </a>
-  <rect
-     x="24.986675"
-     y="0.77899998"
-     width="0.13"
-     height="3.3139"
-     ry="0.039999999"
-     fill="currentColor"
-     id="rect120" />
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:46:5:6"
-     id="a124"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,15.8453,15.6093)"
-       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
-       fill="currentColor"
-       id="path122" />
-  </a>
-  <rect
-     x="23.812475"
-     y="11.9651"
-     width="0.13"
-     height="3.3139"
-     ry="0.039999999"
-     fill="currentColor"
-     id="rect126" />
-  <rect
-     x="33.944275"
-     y="10.4651"
-     width="0.13"
-     height="3.3139"
-     ry="0.039999999"
-     fill="currentColor"
-     id="rect128" />
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:27:4:5"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:286:287"
      id="a134"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,12.3088,7.6093)"
-       d="m 235,355 c 0,60 -18,122 -70,122 -26,0 -51,-14 -51,-37 0,-27 35,-41 35,-68 0,-38 -30,-69 -68,-69 -38,0 -69,31 -69,69 0,76 72,128 153,128 96,0 187,-56 187,-145 0,-153 -151,-159 -249,-220 9,2 17,3 26,3 33,0 70,-11 105,-36 21,-15 46,-23 66,-23 21,0 39,9 44,29 2,6 6,9 11,9 6,0 12,-5 12,-12 0,-1 -1,-2 -1,-3 C 349,37 288,0 229,0 193,0 158,14 133,44 120,60 102,66 85,66 55,66 26,46 23,11 22,4 17,0 12,0 6,0 0,4 0,11 0,186 235,176 235,355 Z"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:194:195"
+     id="a140"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(74.4476,12.1729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
        fill="currentColor"
-       id="path130" />
-    <path
-       transform="matrix(0.004,0,0,-0.004,12.2406,9.6579)"
-       d="m 196,117 h 117 c 0,-48 27,-94 72,-94 8,0 12,-5 12,-11 C 397,6 393,0 385,0 341,0 298,13 254,13 210,13 167,0 123,0 c -8,0 -12,6 -12,12 0,6 4,11 12,11 45,0 73,46 73,94 z m 8,190 c 22,14 44,29 60,50 11,15 19,33 27,50 2,4 5,6 9,6 6,0 13,-5 13,-14 V 154 h 72 c 10,0 15,-7 15,-14 0,-7 -5,-15 -15,-15 h -72 v -8 H 196 v 8 H 29 c -23,0 -31,14 -31,23 0,3 1,5 2,6 80,93 138,207 138,330 0,10 7,19 16,16 23,-7 47,-13 71,-13 24,0 48,6 71,13 14,4 23,-9 17,-16 L 29,154 h 167 v 131 c 0,8 1,17 8,22 z"
-       fill="currentColor"
-       id="path132" />
+       id="text138"><tspan
+         id="tspan136">3</tspan></text>
   </a>
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:4:5"
-     id="a138"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,9.9906,5.6093)"
-       d="m 216,-312 c 0,-10 -8,-19 -18,-19 -10,0 -19,9 -19,19 v 145 l -83,-31 v -158 c 0,-10 -9,-19 -19,-19 -10,0 -18,9 -18,19 v 145 l -32,-12 c -2,-1 -5,-1 -7,-1 -11,0 -20,9 -20,20 v 60 c 0,8 5,16 13,19 l 46,16 V 51 L 27,40 C 25,39 22,39 20,39 9,39 0,48 0,59 v 60 c 0,8 5,15 13,18 l 46,17 v 158 c 0,10 8,19 18,19 10,0 19,-9 19,-19 V 167 l 83,31 v 158 c 0,10 9,19 19,19 10,0 18,-9 18,-19 V 211 l 32,12 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-16 -13,-19 L 216,109 V -51 l 32,11 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-15 -13,-18 l -46,-17 z M 96,65 V -95 l 83,30 V 95 Z"
-       fill="currentColor"
-       id="path136" />
-  </a>
-  <path
-     d="m 15.521775,7.319 h -0.024 c -0.432,0 -0.78,-0.352 -0.78,-0.788 0,-0.232 0.212,-0.412 0.448,-0.412 0.216,0 0.38,0.188 0.38,0.412 0,0.208 -0.172,0.38 -0.38,0.38 -0.044,0 -0.084,-0.008 -0.124,-0.024 0.104,0.156 0.272,0.26 0.468,0.26 h 0.016 z m 0.78,-1.728 c 0.272,-0.096 0.452,-0.38 0.452,-0.656 0,-0.36 -0.264,-0.716 -0.692,-0.76 0.096,0.464 0.184,0.924 0.24,1.416 z m -1.548,-0.924 c 0,0.54 0.516,0.988 1.056,0.988 0.112,0 0.22,-0.008 0.328,-0.024 -0.056,-0.508 -0.148,-0.98 -0.252,-1.456 -0.316,0.032 -0.496,0.244 -0.496,0.476 0,0.176 0.1,0.364 0.324,0.492 0.02,0.02 0.028,0.04 0.028,0.06 0,0.044 -0.04,0.088 -0.088,0.088 -0.012,0 -0.024,-0.004 -0.036,-0.008 -0.32,-0.172 -0.468,-0.46 -0.468,-0.74 0,-0.352 0.232,-0.696 0.64,-0.788 -0.056,-0.232 -0.116,-0.468 -0.184,-0.7 -0.428,0.484 -0.852,0.972 -0.852,1.612 z m 1.044,1.16 c -0.752,0 -1.332,-0.688 -1.332,-1.496 0,-0.708 0.524,-1.224 0.992,-1.764 -0.076,-0.248 -0.148,-0.5 -0.18,-0.76 -0.024,-0.208 -0.028,-0.416 -0.028,-0.624 0,-0.46 0.22,-0.896 0.596,-1.168 0.024,-0.02 0.056,-0.02 0.08,0 0.284,0.336 0.532,0.98 0.532,1.432 0,0.572 -0.344,1.02 -0.72,1.456 0.084,0.272 0.156,0.552 0.224,0.828 0.016,0 0.036,-0.004 0.052,-0.004 0.62,0 1.024,0.512 1.024,1.044 0,0.304 -0.132,0.616 -0.428,0.84 -0.088,0.068 -0.188,0.112 -0.292,0.144 0.012,0.14 0.02,0.28 0.02,0.42 0,0.076 -0.004,0.156 -0.008,0.232 -0.028,0.476 -0.352,0.9 -0.808,0.912 l 0.004,-0.172 c 0.372,-0.008 0.612,-0.368 0.636,-0.764 0.004,-0.072 0.008,-0.148 0.008,-0.22 0,-0.124 -0.004,-0.244 -0.016,-0.368 -0.116,0.02 -0.232,0.032 -0.356,0.032 z m 0.372,-4.712 c 0,-0.22 -0.016,-0.316 -0.08,-0.516 -0.396,0.192 -0.648,0.596 -0.648,1.036 0,0.296 0.072,0.532 0.144,0.776 0.32,-0.388 0.584,-0.792 0.584,-1.296 z"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:194:195"
+     id="a142"
+     transform="translate(-4.4786,-3.7574813)" />
+  <polygon
+     transform="translate(36.2129,8.2245187)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
      fill="currentColor"
-     id="path140"
-     style="stroke-width:0.004" />
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.7457,0.8 14.7457,1.2 "
+     id="polygon144" />
+  <polygon
+     transform="translate(12.5409,9.0345187)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.7457,0.3 14.7457,0.7 "
+     id="polygon146" />
   <a
      style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:32:5:6"
-     id="a144"
-     transform="translate(7.9671749,-3.8303)">
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:102:103"
+     id="a152"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(47.6405,11.7079)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text150"><tspan
+         id="tspan148">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:102:103"
+     id="a154"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:12:13"
+     id="a160"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(23.9685,12.2679)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text158"><tspan
+         id="tspan156">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:12:13"
+     id="a162"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:362:363"
+     id="a166"
+     transform="translate(-4.4786,-3.7574813)">
     <path
-       transform="matrix(0.004,0,0,-0.004,15.8453,8.1093)"
+       transform="matrix(0.004,0,0,-0.004,102.0074,20.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path164" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:340:341"
+     id="a170"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,105.8764,10.292)"
        d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
        fill="currentColor"
-       id="path142" />
+       id="path168" />
   </a>
   <rect
-     x="13.597775"
-     y="1.7289999"
-     width="0.16"
-     height="22.1"
-     ry="0.050000001"
-     fill="currentColor"
-     id="rect146" />
-  <path
-     d="M 12.347775,1.728 V 1.38 c 0,-0.056 0.044,-0.1 0.1,-0.1 h 0.2 c 0.636,0 1.084,-0.544 1.448,-1.08 0.044,-0.068 0.148,0.004 0.104,0.072 -0.396,0.576 -0.86,1.456 -1.552,1.456 z"
-     fill="currentColor"
-     id="path148"
-     style="stroke-width:0.004" />
-  <path
-     d="m 12.347775,23.83 h 0.3 c 0.692,0 1.156,0.88 1.552,1.456 0.044,0.068 -0.06,0.14 -0.104,0.072 -0.364,-0.536 -0.812,-1.08 -1.448,-1.08 h -0.2 c -0.056,0 -0.1,-0.044 -0.1,-0.1 z"
-     fill="currentColor"
-     id="path150"
-     style="stroke-width:0.004" />
-  <rect
-     x="12.347775"
-     y="1.6839998"
-     width="0.44999999"
-     height="22.190001"
-     ry="0.0000"
-     fill="currentColor"
-     id="rect152" />
-  <text
-     font-family="serif"
-     font-size="2.2001px"
-     text-anchor="start"
-     fill="currentColor"
-     id="text156"
-     x="1.0901749"
-     y="22.5301"><tspan
-       id="tspan154">Main droite </tspan></text>
-  <text
-     font-family="serif"
-     font-size="2.2001px"
-     text-anchor="start"
-     fill="currentColor"
-     id="text160"
-     x="0.81697488"
-     y="13.5301"><tspan
-       id="tspan158">Deux mains </tspan></text>
-  <text
-     font-family="serif"
-     font-size="2.2001px"
-     text-anchor="start"
-     fill="currentColor"
-     id="text164"
-     x="-0.036525097"
-     y="4.3081999"><tspan
-       id="tspan162">Main gauche </tspan></text>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:32:11:12"
-     id="a168"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,25.9771,6.6093)"
-       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
-       fill="currentColor"
-       id="path166" />
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:46:13:14"
-     id="a172"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,25.9771,14.1093)"
-       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
-       fill="currentColor"
-       id="path170" />
-  </a>
-  <a
-     style="color:inherit"
-     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:60:11:12"
-     id="a176"
-     transform="translate(7.9671749,-3.8303)">
-    <path
-       transform="matrix(0.004,0,0,-0.004,25.9771,24.6093)"
-       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
-       fill="currentColor"
-       id="path174" />
-  </a>
-  <rect
-     x="33.944275"
-     y="2.9651"
+     x="101.3978"
+     y="6.7206187"
      width="0.13"
-     height="3.3139"
+     height="2.1224999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect172" />
+  <rect
+     x="12.5409"
+     y="9.0367193"
+     width="0.13"
+     height="3.3117001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect174" />
+  <path
+     d="m 35.1687,18.744519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path176"
+     style="stroke-width:0.004" />
+  <rect
+     x="20.632999"
+     y="9.3103189"
+     width="0.13"
+     height="2.0381"
      ry="0.039999999"
      fill="currentColor"
      id="rect178" />
   <rect
-     x="24.986675"
-     y="18.778999"
+     x="36.212898"
+     y="8.228919"
+     width="0.13"
+     height="4.1195002"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect180" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:30:31"
+     id="a184"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,23.9374,15.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path182" />
+  </a>
+  <path
+     d="m 34.4527,16.782519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path186"
+     style="stroke-width:0.004" />
+  <path
+     d="m 33.9967,12.370519 -0.004,0.264 v 0.044 c 0,0.088 0.004,0.176 0.016,0.264 0.18,-0.152 0.372,-0.32 0.372,-0.556 0,-0.132 -0.056,-0.268 -0.172,-0.268 -0.124,0 -0.208,0.12 -0.212,0.252 z m -0.168,0.716 -0.048,-2.38 c 0.032,-0.02 0.072,-0.032 0.108,-0.032 0.036,0 0.076,0.012 0.108,0.032 l -0.028,1.38 c 0.1,-0.084 0.232,-0.136 0.364,-0.136 0.208,0 0.356,0.192 0.356,0.408 0,0.32 -0.344,0.468 -0.588,0.676 -0.06,0.052 -0.096,0.152 -0.18,0.152 -0.052,0 -0.092,-0.044 -0.092,-0.1 z"
+     fill="currentColor"
+     id="path188"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:25:6:7"
+     id="a194"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,12.3088,9.792)"
+       d="m 235,355 c 0,60 -18,122 -70,122 -26,0 -51,-14 -51,-37 0,-27 35,-41 35,-68 0,-38 -30,-69 -68,-69 -38,0 -69,31 -69,69 0,76 72,128 153,128 96,0 187,-56 187,-145 0,-153 -151,-159 -249,-220 9,2 17,3 26,3 33,0 70,-11 105,-36 21,-15 46,-23 66,-23 21,0 39,9 44,29 2,6 6,9 11,9 6,0 12,-5 12,-12 0,-1 -1,-2 -1,-3 C 349,37 288,0 229,0 193,0 158,14 133,44 120,60 102,66 85,66 55,66 26,46 23,11 22,4 17,0 12,0 6,0 0,4 0,11 0,186 235,176 235,355 Z"
+       fill="currentColor"
+       id="path190" />
+    <path
+       transform="matrix(0.004,0,0,-0.004,12.2406,11.8406)"
+       d="m 196,117 h 117 c 0,-48 27,-94 72,-94 8,0 12,-5 12,-11 C 397,6 393,0 385,0 341,0 298,13 254,13 210,13 167,0 123,0 c -8,0 -12,6 -12,12 0,6 4,11 12,11 45,0 73,46 73,94 z m 8,190 c 22,14 44,29 60,50 11,15 19,33 27,50 2,4 5,6 9,6 6,0 13,-5 13,-14 V 154 h 72 c 10,0 15,-7 15,-14 0,-7 -5,-15 -15,-15 h -72 v -8 H 196 v 8 H 29 c -23,0 -31,14 -31,23 0,3 1,5 2,6 80,93 138,207 138,330 0,10 7,19 16,16 23,-7 47,-13 71,-13 24,0 48,6 71,13 14,4 23,-9 17,-16 L 29,154 h 167 v 131 c 0,8 1,17 8,22 z"
+       fill="currentColor"
+       id="path192" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:122:123"
+     id="a198"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,47.6094,14.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path196" />
+  </a>
+  <rect
+     x="44.305"
+     y="8.7762194"
+     width="0.13"
+     height="2.0722001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect200" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:26:27"
+     id="a204"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,15.8453,16.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path202" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:180:181"
+     id="a208"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,51.4783,20.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path206" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:23:24"
+     id="a212"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,15.8453,9.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path210" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:173:174"
+     id="a216"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,27.8063,20.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path214" />
+  </a>
+  <path
+     d="M 3.076,9.5745187 H 3.052 c -0.432,0 -0.78,-0.352 -0.78,-0.788 0,-0.232 0.212,-0.412 0.448,-0.412 0.216,0 0.38,0.188 0.38,0.412 0,0.208 -0.172,0.38 -0.38,0.38 -0.044,0 -0.084,-0.008 -0.124,-0.024 0.104,0.156 0.272,0.26 0.468,0.26 H 3.08 Z m 0.78,-1.728 c 0.272,-0.096 0.452,-0.38 0.452,-0.656 0,-0.36 -0.264,-0.716 -0.692,-0.76 0.096,0.464 0.184,0.924 0.24,1.416 z m -1.548,-0.924 c 0,0.54 0.516,0.988 1.056,0.988 0.112,0 0.22,-0.008 0.328,-0.024 -0.056,-0.508 -0.148,-0.98 -0.252,-1.456 -0.316,0.032 -0.496,0.244 -0.496,0.476 0,0.176 0.1,0.364 0.324,0.492 0.02,0.02 0.028,0.04 0.028,0.06 0,0.044 -0.04,0.088 -0.088,0.088 -0.012,0 -0.024,-0.004 -0.036,-0.008 -0.32,-0.172 -0.468,-0.46 -0.468,-0.74 0,-0.352 0.232,-0.696 0.64,-0.788 -0.056,-0.232 -0.116,-0.468 -0.184,-0.7 -0.428,0.484 -0.852,0.972 -0.852,1.612 z m 1.044,1.16 c -0.752,0 -1.332,-0.688 -1.332,-1.496 0,-0.708 0.524,-1.224 0.992,-1.764 -0.076,-0.248 -0.148,-0.5 -0.18,-0.76 -0.024,-0.208 -0.028,-0.416 -0.028,-0.624 0,-0.46 0.22,-0.896 0.596,-1.168 0.024,-0.02 0.056,-0.02 0.08,0 0.284,0.336 0.532,0.98 0.532,1.432 0,0.572 -0.344,1.02 -0.72,1.456 0.084,0.272 0.156,0.552 0.224,0.828 0.016,0 0.036,-0.004 0.052,-0.004 0.62,0 1.024,0.512 1.024,1.044 0,0.304 -0.132,0.616 -0.428,0.84 -0.088,0.068 -0.188,0.112 -0.292,0.144 0.012,0.14 0.02,0.28 0.02,0.42 0,0.076 -0.004,0.156 -0.008,0.232 -0.028,0.476 -0.352,0.9 -0.808,0.912 l 0.004,-0.172 c 0.372,-0.008 0.612,-0.368 0.636,-0.764 0.004,-0.072 0.008,-0.148 0.008,-0.22 0,-0.124 -0.004,-0.244 -0.016,-0.368 -0.116,0.02 -0.232,0.032 -0.356,0.032 z m 0.372,-4.712 c 0,-0.22 -0.016,-0.316 -0.08,-0.516 -0.396,0.192 -0.648,0.596 -0.648,1.036 0,0.296 0.072,0.532 0.144,0.776 0.32,-0.388 0.584,-0.792 0.584,-1.296 z"
+     fill="currentColor"
+     id="path218"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:66:67"
+     id="a222"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,31.6752,10.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path220" />
+  </a>
+  <rect
+     x="27.1966"
+     y="7.2206187"
+     width="0.13"
+     height="2.3117001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect224" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:28:6:7"
+     id="a228"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,9.9906,7.792)"
+       d="m 216,-312 c 0,-10 -8,-19 -18,-19 -10,0 -19,9 -19,19 v 145 l -83,-31 v -158 c 0,-10 -9,-19 -19,-19 -10,0 -18,9 -18,19 v 145 l -32,-12 c -2,-1 -5,-1 -7,-1 -11,0 -20,9 -20,20 v 60 c 0,8 5,16 13,19 l 46,16 V 51 L 27,40 C 25,39 22,39 20,39 9,39 0,48 0,59 v 60 c 0,8 5,15 13,18 l 46,17 v 158 c 0,10 8,19 18,19 10,0 19,-9 19,-19 V 167 l 83,31 v 158 c 0,10 9,19 19,19 10,0 18,-9 18,-19 V 211 l 32,12 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-16 -13,-19 L 216,109 V -51 l 32,11 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-15 -13,-18 l -46,-17 z M 96,65 V -95 l 83,30 V 95 Z"
+       fill="currentColor"
+       id="path226" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:27:28"
+     id="a232"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,39.5173,7.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path230" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:175:176"
+     id="a236"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,39.5173,19.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path234" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:116:117"
+     id="a240"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,39.5173,16.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path238" />
+  </a>
+  <rect
+     x="36.212898"
+     y="1.0345187"
+     width="0.13"
+     height="2.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect242" />
+  <rect
+     x="35.0387"
+     y="15.720619"
+     width="0.13"
+     height="3.0639"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect244" />
+  <rect
+     x="61.845798"
+     y="15.220619"
+     width="0.13"
+     height="3.1889"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect246" />
+  <path
+     d="m 61.9758,18.369519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path248"
+     style="stroke-width:0.004" />
+  <path
+     d="m 0.792,12.526519 c 0,1.044 -0.408,2.064 -0.408,3.06 0,0.54 0.12,1.044 0.516,1.44 0.06,0.06 -0.036,0.156 -0.096,0.096 -0.528,-0.54 -0.708,-1.248 -0.708,-2.004 0,-1.068 0.432,-2.112 0.432,-3.12 0,-0.54 -0.132,-1.044 -0.516,-1.44 C 0,10.546519 0,10.546519 0,10.534519 c 0,-0.012 0,-0.012 0.012,-0.024 0.384,-0.396 0.516,-0.9000003 0.516,-1.4400003 0,-1.008 -0.432,-2.052 -0.432,-3.12 0,-0.756 0.18,-1.464 0.708,-2.004 0.06,-0.06 0.156,0.036 0.096,0.096 -0.396,0.396 -0.516,0.9 -0.516,1.44 0,0.996 0.408,2.016 0.408,3.06 0,0.744 -0.18,1.452 -0.696,1.9920003 0.516,0.54 0.696,1.248 0.696,1.992 z"
+     fill="currentColor"
+     id="path250"
+     style="stroke-width:0.004" />
+  <rect
+     x="63.02"
+     y="8.5403185"
+     width="0.13"
+     height="4.3081002"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect252" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:169:170"
+     id="a256"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,15.8453,17.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path254" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:158:159"
+     id="a260"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,55.3473,10.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path258" />
+  </a>
+  <rect
+     x="50.868698"
+     y="7.2206187"
+     width="0.13"
+     height="1.9995"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect262" />
+  <rect
+     x="1.152"
+     y="3.9845185"
+     width="0.16"
+     height="13.1"
+     ry="0.050000001"
+     fill="currentColor"
+     id="rect264" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:32:33"
+     id="a268"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,66.3244,7.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path266" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:352:353"
+     id="a272"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,66.3244,18.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path270" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:208:209"
+     id="a276"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,66.3244,16.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path274" />
+  </a>
+  <path
+     d="m 63.6,3.5345187 c 0,-0.124 0.1,-0.224 0.224,-0.224 0.124,0 0.224,0.1 0.224,0.224 0,0.124 -0.1,0.224 -0.224,0.224 -0.124,0 -0.224,-0.1 -0.224,-0.224 z"
+     fill="currentColor"
+     id="path278"
+     style="stroke-width:0.004" />
+  <rect
+     x="63.02"
+     y="1.2256188"
+     width="0.13"
+     height="2.6228001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect280" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="29.034519"
+     x2="109.2825"
+     y2="29.034519"
+     id="line282" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="28.034519"
+     x2="109.2825"
+     y2="28.034519"
+     id="line284" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="27.034519"
+     x2="109.2825"
+     y2="27.034519"
+     id="line286" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="26.034519"
+     x2="109.2825"
+     y2="26.034519"
+     id="line288" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="25.034519"
+     x2="109.2825"
+     y2="25.034519"
+     id="line290" />
+  <rect
+     x="57.487499"
+     y="25.034519"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect292" />
+  <rect
+     x="57.487499"
+     y="33.98452"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect294" />
+  <rect
+     x="57.487499"
+     y="29.084518"
+     width="0.19"
+     height="4.9499998"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect296" />
+  <rect
+     x="109.1424"
+     y="25.034519"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect298" />
+  <rect
+     x="109.1424"
+     y="33.98452"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect300" />
+  <rect
+     x="109.1424"
+     y="29.084518"
+     width="0.19"
+     height="4.9499998"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect302" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="38.034519"
+     x2="109.2825"
+     y2="38.034519"
+     id="line304" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="37.034519"
+     x2="109.2825"
+     y2="37.034519"
+     id="line306" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="36.034519"
+     x2="109.2825"
+     y2="36.034519"
+     id="line308" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="35.034519"
+     x2="109.2825"
+     y2="35.034519"
+     id="line310" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="34.034519"
+     x2="109.2825"
+     y2="34.034519"
+     id="line312" />
+  <rect
+     x="92.969498"
+     y="32.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect314" />
+  <rect
+     x="85.081596"
+     y="32.934517"
+     width="1.8199"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect316" />
+  <rect
+     x="68.700897"
+     y="32.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect318" />
+  <rect
+     x="41.2789"
+     y="31.934519"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect320" />
+  <rect
+     x="41.2789"
+     y="32.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect322" />
+  <rect
+     x="17.0602"
+     y="32.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect324" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:719:720"
+     id="a328"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,77.4655,41.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path326" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:611:612"
+     id="a332"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,81.4255,32.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path330" />
+  </a>
+  <rect
+     x="76.946899"
+     y="28.720619"
+     width="0.13"
+     height="2.1183"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect334" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:575:576"
+     id="a338"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,73.5055,36.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path336" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:90:91"
+     id="a342"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,83.4056,29.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path340" />
+  </a>
+  <rect
+     x="80.101196"
+     y="22.533419"
+     width="0.13"
+     height="2.8150001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect344" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:94:95"
+     id="a348"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,89.7498,29.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path346" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:721:722"
+     id="a352"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,89.7498,38.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path350" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:663:664"
+     id="a356"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,89.7498,36.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path354" />
+  </a>
+  <rect
+     x="86.445396"
+     y="23.034519"
+     width="0.13"
+     height="2.8139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect358" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:77:78"
+     id="a362"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="translate(13.5906,30.792)"
+       stroke-width="0.08"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke="currentColor"
+       fill="currentColor"
+       d="m 1.6042,-3.195 c 3.3954,-3.0317 71.9547,-3.9406 75.4293,-1 v 0 c -3.473,-2.8206 -72.0323,-1.9117 -75.4293,1 z"
+       id="path360" />
+  </a>
+  <rect
+     x="60.752602"
+     y="36.220619"
+     width="0.13"
+     height="3.1889"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect364" />
+  <path
+     d="m 60.8826,39.369519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path366"
+     style="stroke-width:0.004" />
+  <rect
+     x="61.9268"
+     y="29.540119"
+     width="0.13"
+     height="4.3083"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect368" />
+  <rect
+     x="70.201103"
+     y="30.255619"
+     width="0.13"
+     height="2.0927999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect370" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:376:377"
+     id="a372"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:376:377"
+     id="a378"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(21.896,33.2679)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text376"><tspan
+         id="tspan374">3</tspan></text>
+  </a>
+  <polygon
+     transform="translate(86.4454,29.534519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.8601,0.11 14.8601,0.51 "
+     id="polygon380" />
+  <polygon
+     transform="translate(61.9268,29.534519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 15.1101,1.11 15.1101,1.51 "
+     id="polygon382" />
+  <polygon
+     transform="translate(61.9268,22.224519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 18.2644,0.11 18.2644,0.51 "
+     id="polygon384" />
+  <polygon
+     transform="translate(79.0662,23.324819)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 1.125,-0.1803 1.125,0.2197 "
+     id="polygon386" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:649:650"
+     id="a392"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(97.9302,32.6729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text390"><tspan
+         id="tspan388">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:649:650"
+     id="a394"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:557:558"
+     id="a400"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(73.5366,33.1729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text398"><tspan
+         id="tspan396">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:557:558"
+     id="a402"
+     transform="translate(-4.4786,-3.7574813)" />
+  <polygon
+     transform="translate(34.5048,29.224519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 15.1101,0.8 15.1101,1.2 "
+     id="polygon404" />
+  <polygon
+     transform="translate(10.2862,30.034519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 15.1101,0.3 15.1101,0.7 "
+     id="polygon406" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:465:466"
+     id="a412"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(46.1146,32.7079)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text410"><tspan
+         id="tspan408">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:667:668"
+     id="a416"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,97.7741,36.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path414" />
+  </a>
+  <rect
+     x="85.271202"
+     y="35.220619"
      width="0.13"
      height="3.3139"
      ry="0.039999999"
      fill="currentColor"
-     id="rect180" />
+     id="rect418" />
+  <path
+     d="m 85.4012,38.494519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path420"
+     style="stroke-width:0.004" />
+  <rect
+     x="86.445396"
+     y="29.535919"
+     width="0.13"
+     height="3.3125"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect422" />
+  <path
+     d="m 84.1932,31.534519 c 0.032,-0.016 0.068,-0.028 0.104,-0.028 0.036,0 0.064,0.012 0.096,0.028 l -0.008,0.732 0.424,-0.08 h 0.012 c 0.04,0 0.072,0.028 0.072,0.068 l 0.028,2.28 c -0.032,0.016 -0.064,0.028 -0.1,0.028 -0.036,0 -0.068,-0.012 -0.1,-0.028 l 0.012,-0.732 -0.424,0.08 h -0.012 c -0.04,0 -0.072,-0.028 -0.072,-0.068 z m 0.556,1.052 -0.368,0.068 -0.012,0.828 0.368,-0.068 z"
+     fill="currentColor"
+     id="path424"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:465:466"
+     id="a426"
+     transform="translate(-4.4786,-3.7574813)" />
+  <rect
+     x="94.469704"
+     y="29.70282"
+     width="0.13"
+     height="2.6456001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect428" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:725:726"
+     id="a432"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,101.7341,41.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path430" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:703:704"
+     id="a436"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,105.6942,31.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path434" />
+  </a>
+  <rect
+     x="101.2156"
+     y="27.720619"
+     width="0.13"
+     height="2.1224999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect438" />
+  <rect
+     x="9.1120005"
+     y="34.720619"
+     width="0.13"
+     height="3.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect440" />
+  <path
+     d="M 9.242,37.994519 H 9.178 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path442"
+     style="stroke-width:0.004" />
+  <rect
+     x="10.2862"
+     y="30.036619"
+     width="0.13"
+     height="3.3117001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect444" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:393:394"
+     id="a448"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,21.8648,36.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path446" />
+  </a>
+  <rect
+     x="18.5604"
+     y="30.309719"
+     width="0.13"
+     height="2.0387001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect450" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:536:537"
+     id="a454"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,25.8249,41.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path452" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:429:430"
+     id="a458"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,29.7849,31.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path456" />
+  </a>
+  <path
+     d="m 6.376,26.282519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path460"
+     style="stroke-width:0.004" />
+  <path
+     d="m 0.792,33.526519 c 0,1.044 -0.408,2.064 -0.408,3.06 0,0.54 0.12,1.044 0.516,1.44 0.06,0.06 -0.036,0.156 -0.096,0.096 -0.528,-0.54 -0.708,-1.248 -0.708,-2.004 0,-1.068 0.432,-2.112 0.432,-3.12 0,-0.54 -0.132,-1.044 -0.516,-1.44 C 0,31.546519 0,31.546519 0,31.534519 c 0,-0.012 0,-0.012 0.012,-0.024 0.384,-0.396 0.516,-0.9 0.516,-1.44 0,-1.008 -0.432,-2.052 -0.432,-3.12 0,-0.756 0.18,-1.464 0.708,-2.004 0.06,-0.06 0.156,0.036 0.096,0.096 -0.396,0.396 -0.516,0.9 -0.516,1.44 0,0.996 0.408,2.016 0.408,3.06 0,0.744 -0.18,1.452 -0.696,1.992 0.516,0.54 0.696,1.248 0.696,1.992 z"
+     fill="currentColor"
+     id="path462"
+     style="stroke-width:0.004" />
+  <rect
+     x="1.152"
+     y="24.984518"
+     width="0.16"
+     height="13.1"
+     ry="0.050000001"
+     fill="currentColor"
+     id="rect464" />
+  <text
+     font-family="serif"
+     font-size="1.7461px"
+     text-anchor="start"
+     fill="currentColor"
+     id="text468"
+     x="0.3242"
+     y="23.950418"><tspan
+       id="tspan466">3</tspan></text>
+  <path
+     d="M 3.076,30.574519 H 3.052 c -0.432,0 -0.78,-0.352 -0.78,-0.788 0,-0.232 0.212,-0.412 0.448,-0.412 0.216,0 0.38,0.188 0.38,0.412 0,0.208 -0.172,0.38 -0.38,0.38 -0.044,0 -0.084,-0.008 -0.124,-0.024 0.104,0.156 0.272,0.26 0.468,0.26 H 3.08 Z m 0.78,-1.728 c 0.272,-0.096 0.452,-0.38 0.452,-0.656 0,-0.36 -0.264,-0.716 -0.692,-0.76 0.096,0.464 0.184,0.924 0.24,1.416 z m -1.548,-0.924 c 0,0.54 0.516,0.988 1.056,0.988 0.112,0 0.22,-0.008 0.328,-0.024 -0.056,-0.508 -0.148,-0.98 -0.252,-1.456 -0.316,0.032 -0.496,0.244 -0.496,0.476 0,0.176 0.1,0.364 0.324,0.492 0.02,0.02 0.028,0.04 0.028,0.06 0,0.044 -0.04,0.088 -0.088,0.088 -0.012,0 -0.024,-0.004 -0.036,-0.008 -0.32,-0.172 -0.468,-0.46 -0.468,-0.74 0,-0.352 0.232,-0.696 0.64,-0.788 -0.056,-0.232 -0.116,-0.468 -0.184,-0.7 -0.428,0.484 -0.852,0.972 -0.852,1.612 z m 1.044,1.16 c -0.752,0 -1.332,-0.688 -1.332,-1.496 0,-0.708 0.524,-1.224 0.992,-1.764 -0.076,-0.248 -0.148,-0.5 -0.18,-0.76 -0.024,-0.208 -0.028,-0.416 -0.028,-0.624 0,-0.46 0.22,-0.896 0.596,-1.168 0.024,-0.02 0.056,-0.02 0.08,0 0.284,0.336 0.532,0.98 0.532,1.432 0,0.572 -0.344,1.02 -0.72,1.456 0.084,0.272 0.156,0.552 0.224,0.828 0.016,0 0.036,-0.004 0.052,-0.004 0.62,0 1.024,0.512 1.024,1.044 0,0.304 -0.132,0.616 -0.428,0.84 -0.088,0.068 -0.188,0.112 -0.292,0.144 0.012,0.14 0.02,0.28 0.02,0.42 0,0.076 -0.004,0.156 -0.008,0.232 -0.028,0.476 -0.352,0.9 -0.808,0.912 l 0.004,-0.172 c 0.372,-0.008 0.612,-0.368 0.636,-0.764 0.004,-0.072 0.008,-0.148 0.008,-0.22 0,-0.124 -0.004,-0.244 -0.016,-0.368 -0.116,0.02 -0.232,0.032 -0.356,0.032 z m 0.372,-4.712 c 0,-0.22 -0.016,-0.316 -0.08,-0.516 -0.396,0.192 -0.648,0.596 -0.648,1.036 0,0.296 0.072,0.532 0.144,0.776 0.32,-0.388 0.584,-0.792 0.584,-1.296 z"
+     fill="currentColor"
+     id="path470"
+     style="stroke-width:0.004" />
+  <rect
+     x="25.306299"
+     y="28.220619"
+     width="0.13"
+     height="2.3117001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect472" />
+  <path
+     d="m 4.24,35.534519 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m 0,-1 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m -1.3,-0.552 c 0.688,0 1.172,0.352 1.172,1.004 0,1.052 -1.052,1.656 -2.064,2.084 -0.012,0.012 -0.024,0.016 -0.036,0.016 -0.028,0 -0.052,-0.024 -0.052,-0.052 0,-0.012 0.004,-0.024 0.016,-0.036 0.808,-0.472 1.648,-1.06 1.648,-1.972 0,-0.48 -0.252,-0.94 -0.684,-0.94 -0.296,0 -0.516,0.216 -0.616,0.504 0.044,-0.02 0.088,-0.032 0.136,-0.032 0.22,0 0.4,0.18 0.4,0.4 0,0.232 -0.176,0.424 -0.4,0.424 -0.24,0 -0.448,-0.188 -0.448,-0.424 0,-0.532 0.408,-0.976 0.928,-0.976 z"
+     fill="currentColor"
+     id="path474"
+     style="stroke-width:0.004" />
+  <path
+     d="m 6.376,36.282519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path476"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:76:77"
+     id="a480"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,30.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path478" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:532:533"
+     id="a484"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,38.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path482" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:390:391"
+     id="a488"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,37.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path486" />
+  </a>
+  <rect
+     x="10.2862"
+     y="23.70122"
+     width="0.13"
+     height="3.1472001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect490" />
+  <rect
+     x="49.524899"
+     y="28.220619"
+     width="0.13"
+     height="1.9996001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect492" />
+  <path
+     d="m 32.2886,33.370519 -0.004,0.264 v 0.044 c 0,0.088 0.004,0.176 0.016,0.264 0.18,-0.152 0.372,-0.32 0.372,-0.556 0,-0.132 -0.056,-0.268 -0.172,-0.268 -0.124,0 -0.208,0.12 -0.212,0.252 z m -0.168,0.716 -0.048,-2.38 c 0.032,-0.02 0.072,-0.032 0.108,-0.032 0.036,0 0.076,0.012 0.108,0.032 l -0.028,1.38 c 0.1,-0.084 0.232,-0.136 0.364,-0.136 0.208,0 0.356,0.192 0.356,0.408 0,0.32 -0.344,0.468 -0.588,0.676 -0.06,0.052 -0.096,0.152 -0.18,0.152 -0.052,0 -0.092,-0.044 -0.092,-0.1 z"
+     fill="currentColor"
+     id="path494"
+     style="stroke-width:0.004" />
+  <rect
+     x="42.779099"
+     y="29.77492"
+     width="0.13"
+     height="2.0734999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect496" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:543:544"
+     id="a500"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,50.0435,41.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path498" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:521:522"
+     id="a504"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,54.0035,31.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path502" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:485:486"
+     id="a508"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,46.0835,35.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path506" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:84:85"
+     id="a512"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,65.2312,28.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path510" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:715:716"
+     id="a516"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,65.2312,39.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path514" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:571:572"
+     id="a520"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,65.2312,37.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path518" />
+  </a>
+  <path
+     d="m 62.5068,24.534519 c 0,-0.124 0.1,-0.224 0.224,-0.224 0.124,0 0.224,0.1 0.224,0.224 0,0.124 -0.1,0.224 -0.224,0.224 -0.124,0 -0.224,-0.1 -0.224,-0.224 z"
+     fill="currentColor"
+     id="path522"
+     style="stroke-width:0.004" />
+  <rect
+     x="61.9268"
+     y="22.225618"
+     width="0.13"
+     height="2.6228001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect524" />
+  <rect
+     x="33.330601"
+     y="36.720619"
+     width="0.13"
+     height="3.0639"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect526" />
+  <path
+     d="m 33.4606,39.744519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path528"
+     style="stroke-width:0.004" />
+  <rect
+     x="34.504799"
+     y="29.228819"
+     width="0.13"
+     height="4.1195998"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect530" />
+  <rect
+     x="34.504799"
+     y="22.034519"
+     width="0.13"
+     height="2.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect532" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:479:480"
+     id="a536"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.8092,37.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path534" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:538:539"
+     id="a540"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.8092,40.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path538" />
+  </a>
+  <path
+     d="m 32.7446,37.782519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path542"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:79:80"
+     id="a546"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.8092,28.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path544" />
+  </a>
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="50.034519"
+     x2="109.2825"
+     y2="50.034519"
+     id="line548" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="49.034519"
+     x2="109.2825"
+     y2="49.034519"
+     id="line550" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="48.034519"
+     x2="109.2825"
+     y2="48.034519"
+     id="line552" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="47.034519"
+     x2="109.2825"
+     y2="47.034519"
+     id="line554" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="46.034519"
+     x2="109.2825"
+     y2="46.034519"
+     id="line556" />
+  <rect
+     x="93.3507"
+     y="53.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect558" />
+  <rect
+     x="69.457397"
+     y="52.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect560" />
+  <rect
+     x="69.457397"
+     y="53.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect562" />
+  <rect
+     x="41.6063"
+     y="53.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect564" />
+  <rect
+     x="16.851801"
+     y="53.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect566" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="59.034519"
+     x2="109.2825"
+     y2="59.034519"
+     id="line568" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="58.034519"
+     x2="109.2825"
+     y2="58.034519"
+     id="line570" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="57.034519"
+     x2="109.2825"
+     y2="57.034519"
+     id="line572" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="56.034519"
+     x2="109.2825"
+     y2="56.034519"
+     id="line574" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="55.034519"
+     x2="109.2825"
+     y2="55.034519"
+     id="line576" />
+  <rect
+     x="109.1424"
+     y="54.98452"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect578" />
+  <rect
+     x="57.397999"
+     y="50.084618"
+     width="0.19"
+     height="4.9499998"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect580" />
+  <rect
+     x="109.1424"
+     y="50.084618"
+     width="0.19"
+     height="4.9499998"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect582" />
+  <rect
+     x="109.1424"
+     y="46.034519"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect584" />
+  <rect
+     x="57.397999"
+     y="46.034519"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect586" />
+  <rect
+     x="57.397999"
+     y="54.98452"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect588" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1100:1101"
+     id="a592"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,66.1962,59.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path590" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:952:953"
+     id="a596"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,65.035,59.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path594" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1111:1112"
+     id="a600"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,65.035,61.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path598" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:136:137"
+     id="a604"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,65.035,50.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path602" />
+  </a>
+  <rect
+     x="49.643902"
+     y="49.220619"
+     width="0.13"
+     height="2.0051999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect606" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:883:884"
+     id="a610"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,54.1225,52.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path608" />
+  </a>
+  <path
+     d="m 62.3106,46.534519 c 0,-0.124 0.1,-0.224 0.224,-0.224 0.124,0 0.224,0.1 0.224,0.224 0,0.124 -0.1,0.224 -0.224,0.224 -0.124,0 -0.224,-0.1 -0.224,-0.224 z"
+     fill="currentColor"
+     id="path612"
+     style="stroke-width:0.004" />
+  <rect
+     x="61.730598"
+     y="43.845818"
+     width="0.13"
+     height="2.5026"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect614" />
+  <rect
+     x="60.5564"
+     y="57.720619"
+     width="0.13"
+     height="3.0639"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect616" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:842:843"
+     id="a620"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.1838,59.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path618" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:739:740"
+     id="a622"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:905:906"
+     id="a626"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,38.345,59.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path624" />
+  </a>
+  <rect
+     x="33.879398"
+     y="43.034519"
+     width="0.13"
+     height="2.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect628" />
+  <rect
+     x="32.7052"
+     y="58.220619"
+     width="0.13"
+     height="2.9389"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect630" />
+  <path
+     d="m 32.8352,61.119519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path632"
+     style="stroke-width:0.004" />
+  <rect
+     x="33.879398"
+     y="51.533218"
+     width="0.13"
+     height="3.8152001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect634" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:846:847"
+     id="a638"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,46.4109,57.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path636" />
+  </a>
+  <rect
+     x="43.106499"
+     y="51.353317"
+     width="0.13"
+     height="1.9951"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect640" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:919:920"
+     id="a644"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,50.2667,62.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path642" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:993:994"
+     id="a648"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,81.9736,52.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path646" />
+  </a>
+  <rect
+     x="77.495003"
+     y="49.220619"
+     width="0.13"
+     height="1.9998"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect650" />
+  <rect
+     x="9.1120005"
+     y="55.720619"
+     width="0.13"
+     height="3.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect652" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:140:141"
+     id="a656"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,83.9015,50.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path654" />
+  </a>
+  <rect
+     x="80.597099"
+     y="44.223217"
+     width="0.13"
+     height="2.6252"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect658" />
+  <polygon
+     transform="translate(86.7851,51.844519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.6932,-0.51 14.6932,-0.11 "
+     id="polygon660" />
+  <polygon
+     transform="translate(61.7306,50.224519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 15.8544,0.8 15.8544,1.2 "
+     id="polygon662" />
+  <polygon
+     transform="translate(61.7306,43.844519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 18.9566,0.18 18.9566,0.58 "
+     id="polygon664" />
+  <polygon
+     transform="translate(79.5621,45.011219)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 1.125,-0.1767 1.125,0.2233 "
+     id="polygon666" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1029:1030"
+     id="a672"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(98.1864,54.6729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text670"><tspan
+         id="tspan668">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1029:1030"
+     id="a674"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:938:939"
+     id="a680"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(73.7125,53.7079)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text678"><tspan
+         id="tspan676">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:938:939"
+     id="a682"
+     transform="translate(-4.4786,-3.7574813)" />
+  <polygon
+     transform="translate(33.8794,51.534519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 15.8544,-0.51 15.8544,-0.11 "
+     id="polygon684" />
+  <polygon
+     transform="translate(10.2862,51.034519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.6932,0.3 14.6932,0.7 "
+     id="polygon686" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:828:829"
+     id="a692"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(45.8614,54.3629)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text690"><tspan
+         id="tspan688">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:828:829"
+     id="a694"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:739:740"
+     id="a700"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(21.6875,54.2679)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text698"><tspan
+         id="tspan696">3</tspan></text>
+  </a>
+  <rect
+     x="61.730598"
+     y="50.228619"
+     width="0.13"
+     height="5.1198001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect702" />
+  <path
+     d="m 60.6864,60.744519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path704"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:956:957"
+     id="a708"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,74.262,56.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path706" />
+  </a>
+  <rect
+     x="70.957603"
+     y="50.80912"
+     width="0.13"
+     height="2.0393"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect710" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1120:1121"
+     id="a714"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,78.1178,62.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path712" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1043:1044"
+     id="a718"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,90.0895,59.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path716" />
+  </a>
+  <rect
+     x="86.785103"
+     y="44.367821"
+     width="0.13"
+     height="2.9806001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect720" />
+  <rect
+     x="85.610901"
+     y="56.720619"
+     width="0.13"
+     height="3.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect722" />
+  <path
+     d="m 85.7409,59.994519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path724"
+     style="stroke-width:0.004" />
+  <rect
+     x="86.785103"
+     y="51.843121"
+     width="0.13"
+     height="3.5053"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect726" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1122:1123"
+     id="a730"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,90.0895,60.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path728" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1047:1048"
+     id="a734"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,98.1553,57.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path732" />
+  </a>
+  <rect
+     x="94.850899"
+     y="51.67342"
+     width="0.13"
+     height="2.175"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect736" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1124:1125"
+     id="a740"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,102.0111,62.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path738" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:915:916"
+     id="a744"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.1838,61.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path742" />
+  </a>
+  <path
+     d="m 0.792,54.526519 c 0,1.044 -0.408,2.064 -0.408,3.06 0,0.54 0.12,1.044 0.516,1.44 0.06,0.06 -0.036,0.156 -0.096,0.096 -0.528,-0.54 -0.708,-1.248 -0.708,-2.004 0,-1.068 0.432,-2.112 0.432,-3.12 0,-0.54 -0.132,-1.044 -0.516,-1.44 C 0,52.546519 0,52.546519 0,52.534519 c 0,-0.012 0,-0.012 0.012,-0.024 0.384,-0.396 0.516,-0.9 0.516,-1.44 0,-1.008 -0.432,-2.052 -0.432,-3.12 0,-0.756 0.18,-1.464 0.708,-2.004 0.06,-0.06 0.156,0.036 0.096,0.096 -0.396,0.396 -0.516,0.9 -0.516,1.44 0,0.996 0.408,2.016 0.408,3.06 0,0.744 -0.18,1.452 -0.696,1.992 0.516,0.54 0.696,1.248 0.696,1.992 z"
+     fill="currentColor"
+     id="path746"
+     style="stroke-width:0.004" />
+  <rect
+     x="1.152"
+     y="45.98452"
+     width="0.16"
+     height="13.1"
+     ry="0.050000001"
+     fill="currentColor"
+     id="rect748" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:129:130"
+     id="a752"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="translate(13.5906,51.792)"
+       stroke-width="0.08"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke="currentColor"
+       fill="currentColor"
+       d="m 1.2415,-4.695 c 3.5646,-1.9754 95.2458,-1.4851 98.789,0.5283 v 0 C 96.4866,-6.0601 4.8054,-6.5504 1.2415,-4.695 Z"
+       id="path750" />
+  </a>
+  <text
+     font-family="serif"
+     font-size="1.7461px"
+     text-anchor="start"
+     fill="currentColor"
+     id="text756"
+     x="0.3242"
+     y="44.95042"><tspan
+       id="tspan754">5</tspan></text>
+  <path
+     d="M 3.076,51.574519 H 3.052 c -0.432,0 -0.78,-0.352 -0.78,-0.788 0,-0.232 0.212,-0.412 0.448,-0.412 0.216,0 0.38,0.188 0.38,0.412 0,0.208 -0.172,0.38 -0.38,0.38 -0.044,0 -0.084,-0.008 -0.124,-0.024 0.104,0.156 0.272,0.26 0.468,0.26 H 3.08 Z m 0.78,-1.728 c 0.272,-0.096 0.452,-0.38 0.452,-0.656 0,-0.36 -0.264,-0.716 -0.692,-0.76 0.096,0.464 0.184,0.924 0.24,1.416 z m -1.548,-0.924 c 0,0.54 0.516,0.988 1.056,0.988 0.112,0 0.22,-0.008 0.328,-0.024 -0.056,-0.508 -0.148,-0.98 -0.252,-1.456 -0.316,0.032 -0.496,0.244 -0.496,0.476 0,0.176 0.1,0.364 0.324,0.492 0.02,0.02 0.028,0.04 0.028,0.06 0,0.044 -0.04,0.088 -0.088,0.088 -0.012,0 -0.024,-0.004 -0.036,-0.008 -0.32,-0.172 -0.468,-0.46 -0.468,-0.74 0,-0.352 0.232,-0.696 0.64,-0.788 -0.056,-0.232 -0.116,-0.468 -0.184,-0.7 -0.428,0.484 -0.852,0.972 -0.852,1.612 z m 1.044,1.16 c -0.752,0 -1.332,-0.688 -1.332,-1.496 0,-0.708 0.524,-1.224 0.992,-1.764 -0.076,-0.248 -0.148,-0.5 -0.18,-0.76 -0.024,-0.208 -0.028,-0.416 -0.028,-0.624 0,-0.46 0.22,-0.896 0.596,-1.168 0.024,-0.02 0.056,-0.02 0.08,0 0.284,0.336 0.532,0.98 0.532,1.432 0,0.572 -0.344,1.02 -0.72,1.456 0.084,0.272 0.156,0.552 0.224,0.828 0.016,0 0.036,-0.004 0.052,-0.004 0.62,0 1.024,0.512 1.024,1.044 0,0.304 -0.132,0.616 -0.428,0.84 -0.088,0.068 -0.188,0.112 -0.292,0.144 0.012,0.14 0.02,0.28 0.02,0.42 0,0.076 -0.004,0.156 -0.008,0.232 -0.028,0.476 -0.352,0.9 -0.808,0.912 l 0.004,-0.172 c 0.372,-0.008 0.612,-0.368 0.636,-0.764 0.004,-0.072 0.008,-0.148 0.008,-0.22 0,-0.124 -0.004,-0.244 -0.016,-0.368 -0.116,0.02 -0.232,0.032 -0.356,0.032 z m 0.372,-4.712 c 0,-0.22 -0.016,-0.316 -0.08,-0.516 -0.396,0.192 -0.648,0.596 -0.648,1.036 0,0.296 0.072,0.532 0.144,0.776 0.32,-0.388 0.584,-0.792 0.584,-1.296 z"
+     fill="currentColor"
+     id="path758"
+     style="stroke-width:0.004" />
+  <path
+     d="m 6.376,47.282519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path760"
+     style="stroke-width:0.004" />
+  <path
+     d="m 4.24,56.534519 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m 0,-1 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m -1.3,-0.552 c 0.688,0 1.172,0.352 1.172,1.004 0,1.052 -1.052,1.656 -2.064,2.084 -0.012,0.012 -0.024,0.016 -0.036,0.016 -0.028,0 -0.052,-0.024 -0.052,-0.052 0,-0.012 0.004,-0.024 0.016,-0.036 0.808,-0.472 1.648,-1.06 1.648,-1.972 0,-0.48 -0.252,-0.94 -0.684,-0.94 -0.296,0 -0.516,0.216 -0.616,0.504 0.044,-0.02 0.088,-0.032 0.136,-0.032 0.22,0 0.4,0.18 0.4,0.4 0,0.232 -0.176,0.424 -0.4,0.424 -0.24,0 -0.448,-0.188 -0.448,-0.424 0,-0.532 0.408,-0.976 0.928,-0.976 z"
+     fill="currentColor"
+     id="path762"
+     style="stroke-width:0.004" />
+  <path
+     d="m 6.376,57.282519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path764"
+     style="stroke-width:0.004" />
+  <rect
+     x="18.351999"
+     y="51.310417"
+     width="0.13"
+     height="2.0380001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect766" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:144:145"
+     id="a770"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,90.0895,51.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path768" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:894:895"
+     id="a774"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,59.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path772" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:128:129"
+     id="a778"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,51.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path776" />
+  </a>
+  <rect
+     x="10.2862"
+     y="51.03672"
+     width="0.13"
+     height="3.3117001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect780" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:898:899"
+     id="a784"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,25.5122,62.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path782" />
+  </a>
+  <path
+     d="M 9.242,58.994519 H 9.178 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path786"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:792:793"
+     id="a790"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,29.368,52.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path788" />
+  </a>
+  <rect
+     x="24.8894"
+     y="49.220619"
+     width="0.13"
+     height="2.3117001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect792" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:131:132"
+     id="a796"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.1838,49.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path794" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1083:1084"
+     id="a800"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,105.8669,52.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path798" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:756:757"
+     id="a804"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,21.6564,57.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path802" />
+  </a>
+  <rect
+     x="101.3883"
+     y="49.220619"
+     width="0.13"
+     height="2.3153"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect806" />
+  <rect
+     x="10.2862"
+     y="44.701218"
+     width="0.13"
+     height="3.1472001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect808" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:753:754"
+     id="a812"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,58.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path810" />
+  </a>
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="71.034515"
+     x2="109.2825"
+     y2="71.034515"
+     id="line814" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="70.034515"
+     x2="109.2825"
+     y2="70.034515"
+     id="line816" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="69.034515"
+     x2="109.2825"
+     y2="69.034515"
+     id="line818" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="68.034515"
+     x2="109.2825"
+     y2="68.034515"
+     id="line820" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="67.034515"
+     x2="109.2825"
+     y2="67.034515"
+     id="line822" />
+  <rect
+     x="108.7324"
+     y="71.084518"
+     width="0.60000002"
+     height="4.9499998"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect824" />
+  <rect
+     x="108.2424"
+     y="71.084518"
+     width="0.19"
+     height="4.9499998"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect826" />
+  <rect
+     x="56.733898"
+     y="75.98452"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect828" />
+  <path
+     d="m 107.4924,77.534519 c 0,-0.124 0.1,-0.224 0.224,-0.224 0.124,0 0.224,0.1 0.224,0.224 0,0.124 -0.1,0.224 -0.224,0.224 -0.124,0 -0.224,-0.1 -0.224,-0.224 z"
+     fill="currentColor"
+     id="path830"
+     style="stroke-width:0.004" />
+  <path
+     d="m 107.4924,78.534519 c 0,-0.124 0.1,-0.224 0.224,-0.224 0.124,0 0.224,0.1 0.224,0.224 0,0.124 -0.1,0.224 -0.224,0.224 -0.124,0 -0.224,-0.1 -0.224,-0.224 z"
+     fill="currentColor"
+     id="path832"
+     style="stroke-width:0.004" />
+  <rect
+     x="108.7324"
+     y="75.98452"
+     width="0.60000002"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect834" />
+  <rect
+     x="108.2424"
+     y="75.98452"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect836" />
+  <path
+     d="m 107.4924,68.534519 c 0,-0.124 0.1,-0.224 0.224,-0.224 0.124,0 0.224,0.1 0.224,0.224 0,0.124 -0.1,0.224 -0.224,0.224 -0.124,0 -0.224,-0.1 -0.224,-0.224 z"
+     fill="currentColor"
+     id="path838"
+     style="stroke-width:0.004" />
+  <path
+     d="m 107.4924,69.534519 c 0,-0.124 0.1,-0.224 0.224,-0.224 0.124,0 0.224,0.1 0.224,0.224 0,0.124 -0.1,0.224 -0.224,0.224 -0.124,0 -0.224,-0.1 -0.224,-0.224 z"
+     fill="currentColor"
+     id="path840"
+     style="stroke-width:0.004" />
+  <rect
+     x="108.7324"
+     y="67.034515"
+     width="0.60000002"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect842" />
+  <rect
+     x="108.2424"
+     y="67.034515"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect844" />
+  <rect
+     x="56.733898"
+     y="71.084518"
+     width="0.19"
+     height="4.9499998"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect846" />
+  <rect
+     x="56.733898"
+     y="67.034515"
+     width="0.19"
+     height="4.0500002"
+     ry="0.0000"
+     fill="currentColor"
+     id="rect848" />
+  <rect
+     x="40.752602"
+     y="74.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect850" />
+  <rect
+     x="16.928699"
+     y="74.934517"
+     width="1.9563"
+     height="0.2"
+     ry="0.1"
+     fill="currentColor"
+     id="rect852" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="80.034515"
+     x2="109.2825"
+     y2="80.034515"
+     id="line854" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="79.034515"
+     x2="109.2825"
+     y2="79.034515"
+     id="line856" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="78.034515"
+     x2="109.2825"
+     y2="78.034515"
+     id="line858" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="77.034515"
+     x2="109.2825"
+     y2="77.034515"
+     id="line860" />
+  <line
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.1"
+     stroke="currentColor"
+     x1="1.262"
+     y1="76.034515"
+     x2="109.2825"
+     y2="76.034515"
+     id="line862" />
+  <rect
+     x="59.844501"
+     y="80.220619"
+     width="0.13"
+     height="2.8139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect864" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:191:192"
+     id="a868"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,64.3231,72.792)"
+       d="m 314,65 c 0,24 -21,41 -42,41 -4,0 -8,0 -12,-1 C 229,96 182,65 145,41 108,17 61,-12 41,-37 34,-45 31,-55 31,-65 c 0,-24 21,-41 42,-41 4,0 8,0 12,1 31,9 77,40 114,64 37,24 84,53 104,78 7,8 11,18 11,28 z m -52,71 c 46,0 82,-21 82,-71 0,-19 -4,-39 -10,-57 -12,-37 -32,-72 -64,-94 -53,-36 -113,-50 -187,-50 -46,0 -83,21 -83,71 0,19 5,39 11,57 12,37 31,72 63,94 53,36 114,50 188,50 z"
+       fill="currentColor"
+       id="path866" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1477:1478"
+     id="a872"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,64.3231,83.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path870" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1334:1335"
+     id="a876"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,64.3231,81.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path874" />
+  </a>
+  <rect
+     x="61.0919"
+     y="65.701218"
+     width="0.13"
+     height="3.0743001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect878" />
+  <path
+     d="m 59.9745,82.994519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path880"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1138:1139"
+     id="a882"
+     transform="translate(-4.4786,-3.7574813)" />
+  <rect
+     x="61.018799"
+     y="73.838821"
+     width="0.13"
+     height="4.0096002"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect884" />
+  <path
+     d="m 33.0659,81.369519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path886"
+     style="stroke-width:0.004" />
+  <rect
+     x="34.1101"
+     y="72.844521"
+     width="0.13"
+     height="4.0039001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect888" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1248:1249"
+     id="a892"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,45.5572,78.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path890" />
+  </a>
+  <rect
+     x="42.2528"
+     y="72.844521"
+     width="0.13"
+     height="2.0039001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect894" />
+  <rect
+     x="32.935902"
+     y="78.220619"
+     width="0.13"
+     height="3.1889"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect896" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1306:1307"
+     id="a900"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,49.4515,83.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path898" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1285:1286"
+     id="a904"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,53.3457,74.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path902" />
+  </a>
+  <rect
+     x="48.8671"
+     y="70.720619"
+     width="0.13"
+     height="2.1238999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect906" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1484:1485"
+     id="a910"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,88.1471,80.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path908" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1425:1426"
+     id="a914"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,88.1471,80.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path912" />
+  </a>
+  <rect
+     x="83.668503"
+     y="76.720619"
+     width="0.13"
+     height="3.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect916" />
+  <path
+     d="m 83.7985,79.994519 h -0.064 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path918"
+     style="stroke-width:0.004" />
+  <rect
+     x="84.842697"
+     y="72.843117"
+     width="0.13"
+     height="3.5051999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect920" />
+  <polygon
+     transform="translate(84.8427,72.844519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.847,-0.51 14.847,-0.11 "
+     id="polygon922" />
+  <polygon
+     transform="translate(61.0188,73.844519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.847,-1.51 14.847,-1.11 "
+     id="polygon924" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1411:1412"
+     id="a930"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(96.3209,75.6729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text928"><tspan
+         id="tspan926">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1411:1412"
+     id="a932"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1320:1321"
+     id="a938"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(72.497,76.1729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text936"><tspan
+         id="tspan934">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1320:1321"
+     id="a940"
+     transform="translate(-4.4786,-3.7574813)" />
+  <polygon
+     transform="translate(34.1101,72.844519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.847,-0.2 14.847,0.2 "
+     id="polygon942" />
+  <polygon
+     transform="translate(10.2862,72.844519)"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     stroke-width="0.08"
+     fill="currentColor"
+     stroke="currentColor"
+     points="0.04,0.2 0.04,-0.2 14.847,-0.51 14.847,-0.11 "
+     id="polygon944" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1228:1229"
+     id="a950"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(45.5884,75.8279)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text948"><tspan
+         id="tspan946">3</tspan></text>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1228:1229"
+     id="a952"
+     transform="translate(-4.4786,-3.7574813)" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1138:1139"
+     id="a958"
+     transform="translate(-4.4786,-3.7574813)">
+    <text
+       transform="translate(21.7644,75.6729)"
+       font-family="serif"
+       font-style="italic"
+       font-size="1.7461px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text956"><tspan
+         id="tspan954">3</tspan></text>
+  </a>
+  <rect
+     x="69.161499"
+     y="73.122322"
+     width="0.13"
+     height="2.2261"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect960" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1337:1338"
+     id="a964"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,72.4659,79.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path962" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1482:1483"
+     id="a968"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,76.3601,83.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path966" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1374:1375"
+     id="a972"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,80.2544,73.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path970" />
+  </a>
+  <rect
+     x="75.775803"
+     y="70.220619"
+     width="0.13"
+     height="2.3196001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect974" />
+  <rect
+     x="92.985397"
+     y="72.673622"
+     width="0.13"
+     height="2.6747999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect976" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1487:1488"
+     id="a980"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,100.1841,83.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path978" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1465:1466"
+     id="a984"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,104.0783,73.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path982" />
+  </a>
+  <rect
+     x="99.599701"
+     y="70.220619"
+     width="0.13"
+     height="2.3152001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect986" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1429:1430"
+     id="a990"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,96.2898,79.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path988" />
+  </a>
+  <path
+     d="m 6.376,68.282519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path992"
+     style="stroke-width:0.004" />
+  <path
+     d="m 0.792,75.526519 c 0,1.044 -0.408,2.064 -0.408,3.06 0,0.54 0.12,1.044 0.516,1.44 0.06,0.06 -0.036,0.156 -0.096,0.096 -0.528,-0.54 -0.708,-1.248 -0.708,-2.004 0,-1.068 0.432,-2.112 0.432,-3.12 0,-0.54 -0.132,-1.044 -0.516,-1.44 C 0,73.546519 0,73.546519 0,73.534519 c 0,-0.012 0,-0.012 0.012,-0.024 0.384,-0.396 0.516,-0.9 0.516,-1.44 0,-1.008 -0.432,-2.052 -0.432,-3.12 0,-0.756 0.18,-1.464 0.708,-2.004 0.06,-0.06 0.156,0.036 0.096,0.096 -0.396,0.396 -0.516,0.9 -0.516,1.44 0,0.996 0.408,2.016 0.408,3.06 0,0.744 -0.18,1.452 -0.696,1.992 0.516,0.54 0.696,1.248 0.696,1.992 z"
+     fill="currentColor"
+     id="path994"
+     style="stroke-width:0.004" />
+  <rect
+     x="1.152"
+     y="66.98452"
+     width="0.16"
+     height="13.1"
+     ry="0.050000001"
+     fill="currentColor"
+     id="rect996" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:129:130"
+     id="a1000"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="translate(5.6906,72.792)"
+       stroke-width="0.08"
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke="currentColor"
+       fill="currentColor"
+       d="m 5.4,-3.5 c 3.2341,-1.9828 51.2555,-2.5948 54.5391,-0.695 v 0 C 56.6571,-5.9748 8.6356,-5.3628 5.4,-3.5 Z"
+       id="path998" />
+  </a>
+  <text
+     font-family="serif"
+     font-size="1.7461px"
+     text-anchor="start"
+     fill="currentColor"
+     id="text1004"
+     x="0.3242"
+     y="65.950417"><tspan
+       id="tspan1002">7</tspan></text>
+  <path
+     d="M 3.076,72.574519 H 3.052 c -0.432,0 -0.78,-0.352 -0.78,-0.788 0,-0.232 0.212,-0.412 0.448,-0.412 0.216,0 0.38,0.188 0.38,0.412 0,0.208 -0.172,0.38 -0.38,0.38 -0.044,0 -0.084,-0.008 -0.124,-0.024 0.104,0.156 0.272,0.26 0.468,0.26 H 3.08 Z m 0.78,-1.728 c 0.272,-0.096 0.452,-0.38 0.452,-0.656 0,-0.36 -0.264,-0.716 -0.692,-0.76 0.096,0.464 0.184,0.924 0.24,1.416 z m -1.548,-0.924 c 0,0.54 0.516,0.988 1.056,0.988 0.112,0 0.22,-0.008 0.328,-0.024 -0.056,-0.508 -0.148,-0.98 -0.252,-1.456 -0.316,0.032 -0.496,0.244 -0.496,0.476 0,0.176 0.1,0.364 0.324,0.492 0.02,0.02 0.028,0.04 0.028,0.06 0,0.044 -0.04,0.088 -0.088,0.088 -0.012,0 -0.024,-0.004 -0.036,-0.008 -0.32,-0.172 -0.468,-0.46 -0.468,-0.74 0,-0.352 0.232,-0.696 0.64,-0.788 -0.056,-0.232 -0.116,-0.468 -0.184,-0.7 -0.428,0.484 -0.852,0.972 -0.852,1.612 z m 1.044,1.16 c -0.752,0 -1.332,-0.688 -1.332,-1.496 0,-0.708 0.524,-1.224 0.992,-1.764 -0.076,-0.248 -0.148,-0.5 -0.18,-0.76 -0.024,-0.208 -0.028,-0.416 -0.028,-0.624 0,-0.46 0.22,-0.896 0.596,-1.168 0.024,-0.02 0.056,-0.02 0.08,0 0.284,0.336 0.532,0.98 0.532,1.432 0,0.572 -0.344,1.02 -0.72,1.456 0.084,0.272 0.156,0.552 0.224,0.828 0.016,0 0.036,-0.004 0.052,-0.004 0.62,0 1.024,0.512 1.024,1.044 0,0.304 -0.132,0.616 -0.428,0.84 -0.088,0.068 -0.188,0.112 -0.292,0.144 0.012,0.14 0.02,0.28 0.02,0.42 0,0.076 -0.004,0.156 -0.008,0.232 -0.028,0.476 -0.352,0.9 -0.808,0.912 l 0.004,-0.172 c 0.372,-0.008 0.612,-0.368 0.636,-0.764 0.004,-0.072 0.008,-0.148 0.008,-0.22 0,-0.124 -0.004,-0.244 -0.016,-0.368 -0.116,0.02 -0.232,0.032 -0.356,0.032 z m 0.372,-4.712 c 0,-0.22 -0.016,-0.316 -0.08,-0.516 -0.396,0.192 -0.648,0.596 -0.648,1.036 0,0.296 0.072,0.532 0.144,0.776 0.32,-0.388 0.584,-0.792 0.584,-1.296 z"
+     fill="currentColor"
+     id="path1006"
+     style="stroke-width:0.004" />
+  <path
+     d="m 4.24,77.534519 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m 0,-1 c 0,-0.112 0.092,-0.204 0.204,-0.204 0.112,0 0.204,0.092 0.204,0.204 0,0.112 -0.092,0.204 -0.204,0.204 -0.112,0 -0.204,-0.092 -0.204,-0.204 z m -1.3,-0.552 c 0.688,0 1.172,0.352 1.172,1.004 0,1.052 -1.052,1.656 -2.064,2.084 -0.012,0.012 -0.024,0.016 -0.036,0.016 -0.028,0 -0.052,-0.024 -0.052,-0.052 0,-0.012 0.004,-0.024 0.016,-0.036 0.808,-0.472 1.648,-1.06 1.648,-1.972 0,-0.48 -0.252,-0.94 -0.684,-0.94 -0.296,0 -0.516,0.216 -0.616,0.504 0.044,-0.02 0.088,-0.032 0.136,-0.032 0.22,0 0.4,0.18 0.4,0.4 0,0.232 -0.176,0.424 -0.4,0.424 -0.24,0 -0.448,-0.188 -0.448,-0.424 0,-0.532 0.408,-0.976 0.928,-0.976 z"
+     fill="currentColor"
+     id="path1008"
+     style="stroke-width:0.004" />
+  <path
+     d="m 6.376,78.282519 c 0,0.04 -0.032,0.076 -0.072,0.076 -0.04,0 -0.076,-0.036 -0.076,-0.076 v -0.58 l -0.332,0.124 v 0.632 c 0,0.04 -0.036,0.076 -0.076,0.076 -0.04,0 -0.072,-0.036 -0.072,-0.076 v -0.58 l -0.128,0.048 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.064 0.052,-0.076 l 0.184,-0.064 v -0.64 l -0.128,0.044 c -0.008,0.004 -0.02,0.004 -0.028,0.004 -0.044,0 -0.08,-0.036 -0.08,-0.08 v -0.24 c 0,-0.032 0.02,-0.06 0.052,-0.072 l 0.184,-0.068 v -0.632 c 0,-0.04 0.032,-0.076 0.072,-0.076 0.04,0 0.076,0.036 0.076,0.076 v 0.58 l 0.332,-0.124 v -0.632 c 0,-0.04 0.036,-0.076 0.076,-0.076 0.04,0 0.072,0.036 0.072,0.076 v 0.58 l 0.128,-0.048 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.064 -0.052,0.076 l -0.184,0.064 v 0.64 l 0.128,-0.044 c 0.008,-0.004 0.02,-0.004 0.028,-0.004 0.044,0 0.08,0.036 0.08,0.08 v 0.24 c 0,0.032 -0.02,0.06 -0.052,0.072 l -0.184,0.068 z m -0.48,-1.508 v 0.64 l 0.332,-0.12 v -0.64 z"
+     fill="currentColor"
+     id="path1010"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1155:1156"
+     id="a1014"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,21.7333,78.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1012" />
+  </a>
+  <rect
+     x="18.4289"
+     y="72.673622"
+     width="0.13"
+     height="2.1747999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect1016" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1302:1303"
+     id="a1020"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,25.6275,83.792)"
+       d="M 72,-250 189,76 C 155,64 120,54 84,54 38,54 -3,87 -3,133 c 0,40 33,72 73,72 25,0 48,-15 56,-39 10,-28 6,-59 35,-59 16,0 54,48 61,63 6,12 23,12 28,0 L 127,-250 c -8,-7 -17,-10 -27,-10 -10,0 -20,3 -28,10 z"
+       fill="currentColor"
+       id="path1018" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1191:1192"
+     id="a1024"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,29.5218,73.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1022" />
+  </a>
+  <rect
+     x="25.0432"
+     y="70.220619"
+     width="0.13"
+     height="2.3152001"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect1026" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:179:180"
+     id="a1030"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.4145,71.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1028" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1304:1305"
+     id="a1034"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.4145,81.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1032" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1242:1243"
+     id="a1038"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,37.4145,80.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1036" />
+  </a>
+  <rect
+     x="34.1101"
+     y="65.034515"
+     width="0.13"
+     height="2.8139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect1040" />
+  <path
+     d="M 9.242,81.369519 H 9.178 v -1 h 0.064 z m 0,0 v -1 c 0.388,-0.236 0.896,-0.592 0.896,-1.036 0,-0.228 -0.06,-0.448 -0.16,-0.652 -0.012,-0.064 0.04,-0.108 0.092,-0.108 0.028,0 0.06,0.012 0.08,0.044 0.1,0.224 0.16,0.468 0.16,0.716 0,0.812 -1.068,1.224 -1.068,2.036 z"
+     fill="currentColor"
+     id="path1042"
+     style="stroke-width:0.004" />
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:30:177:178"
+     id="a1046"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,73.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1044" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1298:1299"
+     id="a1050"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,81.792)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1048" />
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///Users/philippeperret/Sites/MusicScoreWriter/score_building/code/visu-untrimed.ly:40:1152:1153"
+     id="a1054"
+     transform="translate(-4.4786,-3.7574813)">
+    <path
+       transform="matrix(0.004,0,0,-0.004,13.5906,80.292)"
+       d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+       fill="currentColor"
+       id="path1052" />
+  </a>
+  <rect
+     x="10.2862"
+     y="66.034515"
+     width="0.13"
+     height="3.3139"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect1056" />
+  <rect
+     x="9.1120005"
+     y="78.220619"
+     width="0.13"
+     height="3.1889"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect1058" />
+  <rect
+     x="10.2862"
+     y="72.843117"
+     width="0.13"
+     height="3.5051999"
+     ry="0.039999999"
+     fill="currentColor"
+     id="rect1060" />
 </svg>
