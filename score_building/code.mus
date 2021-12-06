@@ -1,8 +1,11 @@
 -> visu
 --page a4
 --staves 3
+--staves_keys G, UT3, F
+--staves_names Main gauche, Deux mains, Main droite
 --barres
---tune C
+--tune G
+--time 2/4
 a b c d
-e f g a
-c d e f
+e fis g a
+c d e fis

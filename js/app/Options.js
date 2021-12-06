@@ -19,6 +19,8 @@ const DATA_OPTIONS = {
   , 'auto_update_after_change': {type:'checkbox'}
   , 'staves_vspace':  {type:'text'}
   , 'staves'        : {type:'method', setter:'setStaves'}
+  , 'staves_names'  : {type:'none'}
+  , 'staves_keys'   : {type:'none'}
   , 'disposition':    {type:'select'}
 }
 
@@ -51,6 +53,13 @@ setProperty(property, value){
     return
   }
   switch(dataProperty.type) {
+    case 'none':
+      // 
+      // C'est une propriété qui ne se règle pas directement, comme
+      // par exemple les clés de portée (staves_names) ou leur nom
+      // Ces valeurs seront réglées par une autre méthode
+      // 
+      break
     case 'checkbox':
       document.querySelector('#cb_'+property).checked = value
       break
@@ -81,6 +90,9 @@ getProperty(property){
     return null
   }
   switch(dataProperty.type) {
+    case 'none':
+      // La propriété est récupérée par un autre moyen
+      break
     case 'checkbox':
       return document.querySelector('#cb_'+property).checked
     case 'method':
@@ -205,42 +217,18 @@ setSysteme(sys){
 }
 
 setStavesData(){
-  console.log("-> setStavesData")
-  let nombrePortees = Score.nombrePortees
-  console.info("[setStavesData] Nombre de portées définies : %i", nombrePortees)
+  // console.log("-> setStavesData")
   // 
   // On détruit les rangées de définition de portée, à part la
   // première, qui servira de modèle
   // 
-  var trportee
-    , istaff = 1 // pour commencer à 2
-  while ( true ){
-    trportee = document.querySelector(`#tr_staff-${++istaff}`)
-    if ( trportee ) {
-      trportee.remove()
-    } else {
-      break
-    }
-  }
-  // lignesDataStaff.forEach(tr => tr.remove())
-  const firstStaff = document.querySelector('tr#tr_staff-1')
-  var currentStaff, lastStaff;
-  for(var istaff = 0; istaff < nombrePortees; ++istaff){
-    if ( istaff > 0 ) {
-      // 
-      // Il faut cloner le premier champ et l'insérer après le dernier
-      // 
-      const newStaff = firstStaff.cloneNode(true)
-      lastStaff.parentNode.insertBefore(newStaff, lastStaff.nextSibling)
-      newStaff.querySelector('.staff_number').innerHTML = 1 + Number(istaff)
-      newStaff.id = `tr_staff-${1 + istaff}`
-      currentStaff = newStaff
-    } else {
-      currentStaff = firstStaff
-    }
+  Staff.removeStaves()
 
-    lastStaff = currentStaff
-  }
+  // 
+  // Construction des portées en options en fonction des données
+  // 
+  Staff.buildStavesInOptions()
+
 }
 
 getStavesData(){

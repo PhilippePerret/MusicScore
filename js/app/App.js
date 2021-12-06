@@ -9,11 +9,6 @@ submitCode(){
     Score.update()
     message("Partition actualisée.")
   })
-  // $('#music_score_form #operation').val('build_score')
-  // const form = $('#music_score_form').ajaxSubmit({url:'ajax.php', type:'POST'})
-  // var xhr = form.data('jqxhr');
-  // xhr.done(function(ret) {
-  // });    
 }
 
 /**
@@ -36,7 +31,9 @@ traiteCodeInitial(fullcode){
   fullcode.split("\n").forEach(line => {
     line = line.trim()
     if ( line.substring(0, 2) == '--' ){
-      var [option, valoption] = line.substring(2, line.length).split(' ')
+      var opts = line.substring(2, line.length).split(' ')
+      var option = opts.shift()
+      var valoption = opts.join(' ')
       switch(option){
         case'piano': case'solo': case'duo': case'trio': case'quatuor':
           console.info("Option %s rencontrée", option)
@@ -52,9 +49,13 @@ traiteCodeInitial(fullcode){
     }
   })
   // 
-  // Traitement des options
+  // Pour mémoire
   // 
-  console.info("Options récupérées : ", options)
+  Options.data_ini = options
+  // 
+  // Traitement des options
+  //
+  Staff.reset()
   Options.applique(options)
   // 
   // Traitement des notes
