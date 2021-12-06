@@ -133,6 +133,8 @@ getNameValue(){
   return n
 }
 
+get key(){return this.getKeyValue()}
+get name(){return this.getNameValue()}
 
 get keyMenu(){return this._keymenu || (this._keymenu = this.node.querySelector('.staff_key'))}
 get nameField(){return this._namefield || (this._namefield = this.node.querySelector('.staff_name'))}

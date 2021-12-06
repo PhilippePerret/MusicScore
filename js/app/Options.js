@@ -232,23 +232,17 @@ setStavesData(){
 }
 
 getStavesData(){
-  const nombrePortees = Score.nombrePortees;
   let dataKeys  = []
   let dataNames = []
   let keysArePertinent = false
   let namesArePertinent = false
-  for(var istaff = 0; istaff < nombrePortees; ++istaff) {
-    const trstaff   = document.querySelector(`#tr_staff-${1 + istaff}`)
-    const staffKey  = trstaff.querySelector('.staff_key').value
-    dataKeys .push(staffKey)
-    if ( staffKey != 'G' ) {
-      keysArePertinent = true
-    }
-    const staffName = trstaff.querySelector('.staff_name').value
-    dataNames.push(staffName)
-    if ( staffName != '' ){
-      namesArePertinent = true
-    }
+  const nombrePortees = Score.nombrePortees;
+  for(var istaff = 1; istaff <= nombrePortees; ++istaff){
+    const staff = Staff.get(istaff)
+    dataKeys.push(staff.key)
+    if ( staff.key != 'G' ) keysArePertinent = true ;
+    dataNames.push(staff.name)
+    if ( staff.name ) namesArePertinent = true ;
   }
   var d = {}
   keysArePertinent  && Object.assign(d, {keys: dataKeys})
