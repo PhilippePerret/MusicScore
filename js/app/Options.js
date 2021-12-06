@@ -18,6 +18,7 @@ const DATA_OPTIONS = {
   , 'time'    :       {type:'select'}
   , 'auto_update_after_change': {type:'checkbox'}
   , 'staves_vspace':  {type:'text'}
+  , 'staves'        : {type:'method', setter:'setStaves'}
   , 'disposition':    {type:'select'}
 }
 
@@ -119,6 +120,12 @@ applique(opts){
       case 'disposition':
         UI.setDisposition.call(UI, valOption)
         break
+      case 'systeme':
+      case 'staves':
+        Score.reset()
+        this.setSysteme(valOption)
+        this.setStavesData()
+        break
     }
   }
 }
@@ -140,6 +147,9 @@ onChange(objet){
   switch(objet.id){
     case 'disposition':
       this.applique({disposition: objet.value})
+      break
+    case 'systeme':
+      this.applique({systeme: objet.value})
       break
   }
 }
@@ -163,7 +173,100 @@ get menuTuneNote(){return document.querySelector('select#tune_note')}
 get menuTuneAlt (){return document.querySelector('select#tune_alteration')}
 
 
+/**
+ * Pour définir les portées
+ * Appelée par la méthode setProperties l'option 'staves', mais on
+ * s'occupera dedans de toutes les définitions de staves (noms, 
+ * clés, etc.)
+ */
+setStaves(staves){
+  console.log("staves reçu par la méthode Options.setStaves :", staves)
+  // this.setStavesData()
+}
 
+
+/**
+ * Réglage du système
+ * 
+ * +sys+ peut être une valeur symbolique, comme 'piano' ou 'quatuor',
+ * ou un nombre de portées.
+ * 
+ */
+setSysteme(sys){
+  console.log("-> setSysteme(%s)", sys)
+  const menuSysteme = document.querySelector('#systeme')
+  if ( isNaN(sys) ) {
+    menuSysteme.value = sys
+  } else {
+    const otreSysteme = document.querySelector('#other_systeme')
+    menuSysteme.value = 'xxx'
+    otreSysteme.value = sys
+  }
+}
+
+setStavesData(){
+  console.log("-> setStavesData")
+  let nombrePortees = Score.nombrePortees
+  console.info("[setStavesData] Nombre de portées définies : %i", nombrePortees)
+  // 
+  // On détruit les rangées de définition de portée, à part la
+  // première, qui servira de modèle
+  // 
+  var trportee
+    , istaff = 1 // pour commencer à 2
+  while ( true ){
+    trportee = document.querySelector(`#tr_staff-${++istaff}`)
+    if ( trportee ) {
+      trportee.remove()
+    } else {
+      break
+    }
+  }
+  // lignesDataStaff.forEach(tr => tr.remove())
+  const firstStaff = document.querySelector('tr#tr_staff-1')
+  var currentStaff, lastStaff;
+  for(var istaff = 0; istaff < nombrePortees; ++istaff){
+    if ( istaff > 0 ) {
+      // 
+      // Il faut cloner le premier champ et l'insérer après le dernier
+      // 
+      const newStaff = firstStaff.cloneNode(true)
+      lastStaff.parentNode.insertBefore(newStaff, lastStaff.nextSibling)
+      newStaff.querySelector('.staff_number').innerHTML = 1 + Number(istaff)
+      newStaff.id = `tr_staff-${1 + istaff}`
+      currentStaff = newStaff
+    } else {
+      currentStaff = firstStaff
+    }
+
+    lastStaff = currentStaff
+  }
+}
+
+getStavesData(){
+  const nombrePortees = Score.nombrePortees;
+  let dataKeys  = []
+  let dataNames = []
+  let keysArePertinent = false
+  let namesArePertinent = false
+  for(var istaff = 0; istaff < nombrePortees; ++istaff) {
+    const trstaff   = document.querySelector(`#tr_staff-${1 + istaff}`)
+    const staffKey  = trstaff.querySelector('.staff_key').value
+    dataKeys .push(staffKey)
+    if ( staffKey != 'G' ) {
+      keysArePertinent = true
+    }
+    const staffName = trstaff.querySelector('.staff_name').value
+    dataNames.push(staffName)
+    if ( staffName != '' ){
+      namesArePertinent = true
+    }
+  }
+  var d = {}
+  keysArePertinent  && Object.assign(d, {keys: dataKeys})
+  namesArePertinent && Object.assign(d, {names: dataNames})
+  return d
+}
 
 /**
  * Les options définies en configuration (config.js)

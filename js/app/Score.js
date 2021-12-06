@@ -26,6 +26,14 @@ setOptions(options){
   Options.applique(options)
 }
 
+reset(){
+  const _props = ['_stavescount','_systeme']
+  _props.forEach( _prop => {
+    delete this[_prop]
+    this[_prop] = null
+  })
+}
+
 /**
  * Retourne le nombre de portées (par système)
  * 
@@ -38,7 +46,7 @@ get nombrePortees(){
 }
 set nombrePortees(v){ this._stavescount = v }
 countStaves(){
-  if ( this.isPiano ) {
+  if ( this.isPiano || this.isDuo ) {
     return 2
   } else if ( this.isTrio ) {
     return 3
@@ -47,7 +55,7 @@ countStaves(){
   } else if ( this.isMono ) {
     return 1
   } else {
-    return parseInt(this.system,10)
+    return parseInt(this.systeme,10)
   }
 }
 
@@ -88,14 +96,24 @@ getOption(key){
  * 
  */
 getCodeFinal(params){
+  params = params || {}
   var c = []
   this._systeme = null
   this.page       && c.push('--page ' + this.page)
   if ( this.isPiano ) {
     c.push('--piano')
-  } else {
-    // TODO : Il faudra ici traiter les autres valeurs
+  } else if ( this.isQuatuor ) {
+    c.push('--quatuor')
+  } else if ( this.nombrePortees > 1) {
+    c.push('--staves ' + this.nombrePortees)
   }
+  // 
+  // Données pour les portées
+  // 
+  const stavesData = Options.getStavesData()
+  stavesData.keys   && c.push('--staves_keys ' + stavesData.keys.join(', '))
+  stavesData.names  && c.push('--staves_names ' + stavesData.names.join(', '))
+
   this.getOption('stems')  || c.push('--no_stem')
   this.getOption('barres') && c.push('--barres')
   this.staves_vspace  && c.push('--staves_vspace ' + this.staves_vspace)

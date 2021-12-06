@@ -43,7 +43,13 @@ static getFullCode(params){
       // Si on ne doit pas utiliser des variables (cas normal), on
       // "compile" les messures
       // 
-      c[xportee] = c[xportee].join(' | ')
+      c[xportee] = c[xportee].join(' | ').trim()
+      // 
+      // On vérifie qu'il n'y ait pas de mesure vide à la fin
+      // 
+      if ( c[xportee].endsWith('|') ) {
+        c[xportee] = c[xportee].substring(0, c[xportee].length - 1).trim()
+      }
     }
   }
   if ( !params.variables ) {
@@ -77,9 +83,7 @@ static getFullCode(params){
     const varName = dvar.shift()
     codescore.push(varName)
     codevar.push("\n" + varName + "==")
-    dvar.forEach( mes => { 
-      codevar.push(mes)
-    })
+    dvar.forEach( mes => codevar.push(mes) )
   })
   codevar = codevar.join("\n")
   // console.log("vars: ", vars)

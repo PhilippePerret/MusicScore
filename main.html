@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Music Score</title>
+  <title>Music Score Writer</title>
   
   <link rel="stylesheet" type="text/css" href="css/system/main.css" />
   <link rel="stylesheet" type="text/css" href="css/app/main.css" />
@@ -133,12 +133,19 @@
       </div>
 
       <div>
-        
-        <button onclick="Tools.openManuelEditable.call(Tools)">Ouvrir version éditable du Manuel</button>
         <button onclick="Tools.resetAll.call(Tools)">Tout effacer</button>
-        <button onclick="Tools.forceUpdateImage.call(Tools)">Forcer le rechargement de l'image</button>
-
       </div>
+
+      <div>
+        <button onclick="Tools.openManuelEditable.call(Tools)">Ouvrir version éditable du Manuel</button>
+        <button onclick="Tools.forceUpdateImage.call(Tools)">Forcer le rechargement de l'image</button>
+      </div>
+
+      <div>
+        <textarea id="code_a_tester" style="width:100%;height:140px;display:block;"></textarea>
+        <button onclick="Tools.execCodeInApp.call(Tools)">Exécuter ce code dans l'application</button>
+      </div>
+    
     </div>
 
     <!-- 
@@ -169,12 +176,12 @@
             <span class="libelle">1<sup>ère</sup> mesure</span><input type="text" id="mesure" value="" class="short" />
           </td>
           <td>
-            <span class="libelle">Système</span><select id="systeme">
+            <span class="libelle">Système</span><select id="systeme" onchange="Options.onChange.call(Options, this)">
               <option value="mono">Mono</option>
               <option value="piano" SELECTED>Piano</option>
-              <option value="duo">duo</option>
-              <option value="trio">trio</option>
-              <option value="quatuor">quatuor</option>
+              <option value="duo">Duo</option>
+              <option value="trio">Trio</option>
+              <option value="quatuor">Quatuor à cordes</option>
               <option value="xxx">autre :</option>
             </select><input type="text" id="other_systeme" class="short">
           </td>
@@ -202,8 +209,31 @@
             </select>
           </td>
         </tr>
+        <!--  
+          LIGNES (au pluriel) de définition des portées
+        -->
+        <tr class="tr_staff_data" id="tr_staff-1">
+          <td class="right">
+            <strong>Portée <span class="staff_number">1</span> : </strong>
+            <span class="libelle">Clé</span><select class="staff_key" id="staff1-key">
+              <option value="G">SOL</option>
+              <option value="F">FA</option>
+              <option value="UT3">UT 3</option>
+              <option value="UT4">UT 4</option>
+              <option value="UT1">UT 1</option>
+              <option value="UT2">UT 2</option>
+            </select>
+          </td>
+          <td class="td_staff_name right">
+            <span class="libelle">Nom</span>
+            <input type="text" id="staff1-name" class="staff_name" />
+          </td>
+          <td class="td_staff_options">
+            
+          </td>
+        </tr>
         <!-- 
-          Deuxième ligne d'options
+          Deuxième (sans compter la ligne des définitions des portées) ligne d'options
          -->
         <tr>
           <td>

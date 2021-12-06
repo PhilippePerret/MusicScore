@@ -45,5 +45,26 @@ openManuelEditable(){
   ajax('open_manuel_md').then(ret => {message("Le manuel est ouvert pour édition.")})
 }
 
+/**
+ * Pour exécuter le code du champ #code_a_tester (Outils) dans 
+ * l'application.
+ * Le résultat sort dans la console.
+ * 
+ */
+execCodeInApp(){
+  const code = document.querySelector('#code_a_tester').value.trim()
+  if ( code == "" ) {
+    error("Aucun code n'est à évaluer…")
+  } else {
+    try {
+      let res = eval(code)
+      console.log("Résultat en évaluant le code fourni", code, res)
+    } catch(erreur) {
+      console.error(erreur)
+      error("Une erreur s'est produite en exécutant le code. Visez la console.")
+    }
+  }
+}
+
 }
 const Tools = new ToolsClass()
