@@ -34,6 +34,12 @@ select, select option {
   border: 1px solid #CCC;
   pointer: cursor;
 }
+select:focus {
+  outline-offset: -2px;
+  outline-color: -webkit-focus-ring-color;
+  outline-style: auto;
+  outline-width: 5px;
+}
 
 footer {
   position: fixed;
