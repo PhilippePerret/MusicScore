@@ -4,11 +4,21 @@ class AppClass {
 
 submitCode(){
   message("Actualisation en cours…", {keep: true})
-  ajax('build_score', Score.getCodeFinal()).then(ret => {
-    console.log("Retour ajax", ret)
-    Score.update()
-    message("Partition actualisée.")
-  })
+  const finalCode = Score.getCodeFinal()
+  if ( ! finalCode ) {
+    // 
+    // S'il n'y a pas de code final (pour une erreur quelconque)
+    // 
+    console.error("Il n'y a pas de code… Score.getCodeFinal() n'a rien renvoyé.")
+    return erreur("Une erreur s'est produite. Consulter la console.")
+  } else {
+    console.log("finalCode = ", finalCode)
+    ajax('build_score', finalCode).then(ret => {
+      console.log("Retour ajax", ret)
+      Score.update()
+      message("Partition actualisée.")
+    })
+  }
 }
 
 /**

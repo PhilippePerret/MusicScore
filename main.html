@@ -225,7 +225,7 @@
               <option value="UT2">UT 2</option>
             </select>
           </td>
-          <td class="td_staff_name right">
+          <td class="td_staff_name">
             <span class="libelle">Nom</span>
             <input type="text" id="staff1-name" class="staff_name" />
           </td>
@@ -281,7 +281,7 @@
          -->
          <tr>
            <td>
-             <span class="libelle">Espace entre portées (9:normal)</span><input type="text" id="staves_vspace" class="short" />
+             <span class="libelle">Espace entre portées (9 = normal)</span><input type="text" id="staves_vspace" class="short" />
            </td>
          </tr>
       </table>
@@ -299,7 +299,8 @@
       </div>
 
       <div class="right">
-        <button onclick="Score.resetOptions.call(Score)">Ré-initialiser les options</button>
+        <button onclick="Tools.resetAll.call(Tools)">Tout effacer et appliquer ces options</button>
+        <button onclick="Score.resetOptions.call(Score)">Remettre les options par défaut</button>
       </div>
 
     </div>
