@@ -1,11 +1,0 @@
-[0;96m⚙️  Production de l'image "visu"[0m
-** (process:7533): WARNING **: 16:40:03.392: Unable to create profile directory (Permission denied) (13)
-** Message: 16:40:03.833: Impossible de cr?er le dossier de profil /Library/Application Support/org.inkscape.Inkscape/config/inkscape.
-** Message: 16:40:03.833: Inkscape va d?marrer avec les pr?f?rences par d?faut.
-Les nouvelles pr?f?rences ne seront pas enregistr?es. 
-
-** (org.inkscape.Inkscape:7533): WARNING **: 16:40:04.175: Could not create directory '/Library/Application Support/org.inkscape.Inkscape/config/inkscape'
-
-** (org.inkscape.Inkscape:7533): WARNING **: 16:40:04.175: Impossible de cr?er le journal d'erreurs de l'extension?: ??/Library/Application Support/org.inkscape.Inkscape/config/inkscape/extension-errors.log??
-2021-12-13 16:40:04.541 inkscape[7533:277752] +[NSXPCSharedListener endpointForReply:withListenerName:]: an error occurred while attempting to obtain endpoint for listener 'ClientCallsAuxiliary': Connection invalid
-[0;92m🎹 L'image visu.svg a été produite avec succès.[0m
