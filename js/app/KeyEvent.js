@@ -42,8 +42,10 @@ commonOnKeyDown(ev){
     /**
      * La touche tabulation est toujours captée, pour éviter le
      * comportement par défaut qui sélectionne l'adresse.
+     * 
+     * Sauf quand un panneau est ouvert
      */
-    ev.preventDefault()
+    if ( !Onglet.current ) ev.preventDefault()
   }
 }
 
