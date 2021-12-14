@@ -27,6 +27,15 @@ const DATA_OPTIONS = {
 class OptionsClass {
 
 /**
+ * = public methods pour obtenir directement des valeurs avec
+ *    Opions.<prop>
+ * 
+ */
+get auto_update_after_change(){
+  return this.getProperty('auto_update_after_change')
+}
+
+/**
  * Initialiser les options
  * 
  * Ça consiste principalement à :

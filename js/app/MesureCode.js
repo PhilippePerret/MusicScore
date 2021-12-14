@@ -507,9 +507,41 @@ onChangeMesure(mesure, ev){
   // Noter qu'il faut le faire après setWidth car c'est setWidth qui
   // définit la valeur the this.complete
   // 
-  Options.auto_update_after_change && this.complete && App.submitCode()
+  console.info("Options.auto_update_after_change = ", Options.auto_update_after_change)
+  Options.auto_update_after_change && this.isComplete() && App.submitCode()
 
   return stopEvent(ev)
+}
+
+/**
+ * @return TRUE Si la mesure est "complète", c'est-à-dire si toutes
+ * ses portées contiennent du code.
+ * 
+ * La méthode est utile pour quand l'option "actualiser après 
+ * changement" est activée.
+ * 
+ */
+isComplete(){
+  var oui = true
+  this.portees.forEach(oportee => {
+    if ( !oui ) return // pour accélérer
+    if ( oportee.value.trim().length == 0 ){ oui = false }
+  })
+  console.info("isComplete ?", oui)
+  return oui
+}
+get nombrePortees(){
+  return this._nbstaves || (this._nbstaves = Score.nombrePortees)
+}
+get portees(){
+  return this._portees || (this._portees = this.getPortees())
+}
+getPortees(){
+  var lesportees = []
+  for (var iportee = 1; iportee <= this.nombrePortees; ++iportee) {
+    lesportees.push(this.obj.querySelector('.mesure_code.portee' + iportee))
+  }
+  return lesportees
 }
 
 /**
