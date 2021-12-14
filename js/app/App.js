@@ -12,7 +12,7 @@ submitCode(){
     console.error("Il n'y a pas de code… Score.getCodeFinal() n'a rien renvoyé.")
     return erreur("Une erreur s'est produite. Consulter la console.")
   } else {
-    console.log("finalCode = ", finalCode)
+    // console.log("finalCode = ", finalCode)
     ajax('build_score', finalCode).then(ret => {
       console.log("Retour ajax", ret)
       Score.update()
@@ -40,7 +40,15 @@ traiteCodeInitial(fullcode){
   var options = {}
   fullcode.split("\n").forEach(line => {
     line = line.trim()
-    if ( line.substring(0, 2) == '--' ){
+    if ( line.substring(0, 2) == '->') {
+      // 
+      // Si le nom de l'image est défini
+      // 
+      Options.setImageName(line.substring(2, line.length).trim())
+    } else if ( line.substring(0, 2) == '--' ){
+      // 
+      // Une options quelconque
+      // 
       var opts = line.substring(2, line.length).split(' ')
       var option = opts.shift()
       var valoption = opts.join(' ')

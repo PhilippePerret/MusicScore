@@ -143,6 +143,20 @@ applique(opts){
 }
 
 /**
+ * Pour le nom de l'image (traitement à part)
+ * 
+ */
+getImageName(){
+  return this.imageNameField.value.trim()
+}
+setImageName(imgName){
+  this.imageNameField.value = imgName
+}
+get imageNameField(){
+  return this._imgnamefield || (this._imgnamefield = document.querySelector('#image_name'))
+}
+
+/**
  * Méthode qu'on peut appeler depuis un élément DOM avec le
  * 'onchange', pour modifier quelque chose quand un choix d'option
  * est changé.

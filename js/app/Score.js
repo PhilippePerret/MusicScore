@@ -125,7 +125,7 @@ getCodeFinal(params){
   // Si un nom d'image a été fourni, on le met
   // 
   if ( !params.image_name ) {
-    const imgname = document.querySelector('#image_name').value.trim()
+    const imgname = Options.getImageName()
     if ( imgname != '' ) Object.assign(params, {image_name: imgname})
   }
   // 
