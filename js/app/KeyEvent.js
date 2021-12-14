@@ -13,8 +13,17 @@ commonOnKeyUp(ev){
      * comportement par défaut qui sélectionne l'adresse.
      */
     // console.log("[UP] Tabulation")
-    ev.preventDefault()
-    MesureCode.current && MesureCode.current.focusNextField()
+    // 
+    // Si un panneau est ouvert, on respecte le comportement par
+    // défaut, sinon, on passe à la mesure suivante
+    // 
+    if ( Onglet.current ) {
+      // console.log("Un panneau est ouvert. Je ne passe pas à la mesure suivante.")
+      return true
+    } else {
+      ev.preventDefault()
+      MesureCode.current && MesureCode.current.focusNextField()
+    }
   }
 }
 
