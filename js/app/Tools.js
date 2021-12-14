@@ -16,11 +16,25 @@ class ToolsClass {
 
 writeInCurrent(key){
   if ( MesureCode.current ) {
-    MesureCode.current.addInCurrentStaff(SNIPPETS[key])
+    const content = SNIPPETS[key] || key
+    MesureCode.current.addInCurrentStaff(content)
     Onglet.close()
   } else {
     error("Il faut choisir le champ (en cliquant dedans.")
   }
+}
+
+/**
+ * Méthode appelée pour ajouter un triolet dans le code
+ * 
+ */
+insertTriolet(){
+  const note1 = DGet('#triolet_note-1').value
+      , note2 = DGet('#triolet_note-2').value
+      , note3 = DGet('#triolet_note-3').value
+      , duree = DGet('#triolet_duree_note').value
+  const code = `3{${note1}${duree} ${note2} ${note3}}`
+  this.writeInCurrent(code)
 }
 
 /**

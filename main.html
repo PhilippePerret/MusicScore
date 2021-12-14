@@ -100,7 +100,22 @@
         <button onclick="Tools.writeInCurrent('fin')">Fin morceau</button>
       </div>
 
-     </div>
+      <div>
+        <span>Triolet :</span>
+        <input type="text" id="triolet_note-1" class="very short">
+        <input type="text" id="triolet_note-2" class="very short">
+        <input type="text" id="triolet_note-3" class="very short">
+        <select id="triolet_duree_note">
+          <option value="8">croche</option>
+          <option value="16">double-croche</option>
+          <option value="4">noire</option>
+          <option value="8.">croche pointée</option>
+        </select>
+        <button onclick="Tools.insertTriolet.call(Tools)">Insérer</button>
+      </div>
+
+     </div><!-- /div#snippets -->
+
     <!-- 
 
       Le PANNEAU DES OUTILS
