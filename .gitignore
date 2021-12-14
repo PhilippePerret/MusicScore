@@ -7,9 +7,10 @@ score_building/
 !score_building/scorize.rb
 
 code/visu.svg
+
 log.txt
-score_building/code.mus
 
 essais/
-score_building/code.mus
-score_building/code/visu.svg
+
+*.log
+scripts/journal.log
