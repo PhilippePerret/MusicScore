@@ -11,10 +11,6 @@ $(document).ready(e => {
     ajax('get_code').then(ret => {
       // console.log("retour ajax = ", ret)
       if (ret.data) {
-        // 
-        // On retire la première ligne qui est toujours '-> visu'
-        // 
-        ret.data.shift()
         App.traiteCodeInitial(ret.data.join("\n"))
       } else {
         MesureCode.createNew()

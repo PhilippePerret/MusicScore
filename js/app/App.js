@@ -2,9 +2,21 @@
 
 class AppClass {
 
+/**
+ * Méthode qui soumet le code par Ajax pour construire l'image
+ * 
+ */
 submitCode(){
   message("Actualisation en cours…", {keep: true})
   const finalCode = Score.getCodeFinal()
+  //
+  // On met le nom de l'image dans le formulaire (même si ce nom est
+  // non défini)
+  // 
+  document.querySelector('#image_name_in_form').value = Options.getImageName()
+  // 
+  // Envoi du code ou renoncement
+  // 
   if ( ! finalCode ) {
     // 
     // S'il n'y a pas de code final (pour une erreur quelconque)
@@ -22,8 +34,9 @@ submitCode(){
 }
 
 /**
+ *
  * Méthode générale principale traitant un code complet donné
- * 
+ * (ou remonté au lancement) 
  */
 traiteCodeInitial(fullcode){
   if ( undefined == fullcode ) {
@@ -42,9 +55,12 @@ traiteCodeInitial(fullcode){
     line = line.trim()
     if ( line.substring(0, 2) == '->') {
       // 
-      // Si le nom de l'image est défini
+      // Nom de l'image. Par défaut, c'est 'visu' et il ne faut rien
+      // faire, sinon, c'est le nom qu'on doit mettre dans le champ
+      // adéquat
       // 
-      Options.setImageName(line.substring(2, line.length).trim())
+      const image_name = line.substring(2, line.length).trim()
+      if ( image_name != 'visu' ) Options.setImageName(image_name) ;
     } else if ( line.substring(0, 2) == '--' ){
       // 
       // Une options quelconque

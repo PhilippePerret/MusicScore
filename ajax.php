@@ -8,6 +8,17 @@ if ( $script_name == 'build_score' ) {
   $code = '-> visu'."\n".$ajax_data;
   // On doit enregistrer le code dans un fichier
   file_put_contents("./score_building/code.mus", $code);
+  // 
+  // Si le nom de l'image est défini, on l'enregistre, sinon on
+  // détruit le fichier s'il existe.
+  // 
+  $image_name = $_POST['image_name'];
+  $image_name_path = "./score_building/image_name";
+  if ( $image_name && $image_name != "") {
+    file_put_contents($image_name_path, $image_name);
+  } elseif ( file_exists($image_name_path) ) {
+    unlink($image_name_path);
+  }
   // On lance la commande qui va produire l'image SVG
   $res = shell_exec('ruby ./score_building/scorize.rb 2>&1');
   $done = "Actualisation de la partition";
