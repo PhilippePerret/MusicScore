@@ -122,12 +122,6 @@ getCodeFinal(params){
   this.mesure         && c.push('--mesure ' + this.mesure)
   this.proximity      && c.push('--proximity ' + this.proximity)
   // 
-  // Si un nom d'image a été fourni, on le met (noter que ça n'arrive
-  // que pour le code final demandé. Sinon, l'image est toujours 
-  // 'visu')
-  // 
-  params.image_name && Object.assign(params, {image_name: imgname})
-  // 
   // On prend toutes les notes
   // 
   c.push(MesureCode.getFullCode(params))

@@ -104,7 +104,7 @@ produceFinalCode(){
   const imgname = Options.getImageName()
   if ( imgname != '' ) Object.assign(params, {image_name:imgname})
 
-  field.value = Score.getCodeFinal({from: from_mes, to:to_mes, })
+  field.value = Score.getCodeFinal(params)
   field.style.height = px(200)
 }
 
