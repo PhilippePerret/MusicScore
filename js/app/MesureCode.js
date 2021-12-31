@@ -475,7 +475,7 @@ focusNextField(){
     // => Focusser dans la première portée de la mesure suivante
     // 
     const nextMesure = MesureCode.table_mesures[this.number]
-    nextMesure.focus()
+    nextMesure && nextMesure.focus()
   }
 }
 
