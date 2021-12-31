@@ -86,15 +86,25 @@ traiteCodeInitial(fullcode){
 /**
  * Procédure normale de production du code
  * 
+ * Noter que la différence avec le code qui est envoyé au constructeur,
+ * ici, on ajoute au code le nom de l'image, s'il est défini. Pour le
+ * constructeur, c'est toujours 'visu'
  */
 produceFinalCode(){
+  var params = {}
   const field = document.querySelector('#final_code')
   const cbVariables = document.querySelector('#cb_mesures_in_variable')
+  Object.assign(params, {variables: cbVariables.checked})
   let from_mes  = document.querySelector('#output_from_mesure').value.trim()
-  let to_mes    = document.querySelector('#output_to_mesure').value.trim()
   from_mes  = from_mes == '' ? 1 : parseInt(from_mes,10)
+  Object.assign(params, {from: from_mes})
+  let to_mes    = document.querySelector('#output_to_mesure').value.trim()
   to_mes    = to_mes == '' ? Score.count : to_mes
-  field.value = Score.getCodeFinal({from: from_mes, to:to_mes, variables: cbVariables.checked})
+  Object.assign(params, {from: from_mes, to:to_mes})
+  const imgname = Options.getImageName()
+  if ( imgname != '' ) Object.assign(params, {image_name:imgname})
+
+  field.value = Score.getCodeFinal({from: from_mes, to:to_mes, })
   field.style.height = px(200)
 }
 

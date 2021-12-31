@@ -156,7 +156,9 @@ applique(opts){
  * 
  */
 getImageName(){
-  return this.imageNameField.value.trim()
+  var imgname = this.imageNameField.value.trim()
+  if (imgname == '') imgname = null;
+  return imgname
 }
 setImageName(imgName){
   this.imageNameField.value = imgName
