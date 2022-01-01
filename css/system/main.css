@@ -54,9 +54,9 @@ footer {
 div#message {
   position: fixed;
   color: white;
-  left: calc(100%/2 - 200px);
+  left: 10;
   width: 400px;
-  top: 0;
+  bottom: 0;
   padding: 8px 12px;
   z-index: 100;
   cursor: pointer;
