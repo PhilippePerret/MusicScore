@@ -111,8 +111,9 @@ getCodeFinal(params){
   // Données pour les portées
   // 
   const stavesData = Options.getStavesData()
-  stavesData.keys   && c.push('--staves_keys ' + stavesData.keys.join(', '))
-  stavesData.names  && c.push('--staves_names ' + stavesData.names.join(', '))
+  console.info("stavesData:", stavesData)
+  stavesData.keys   && c.push('--staves_keys ' + stavesData.keys.reverse().join(', '))
+  stavesData.names  && c.push('--staves_names ' + stavesData.names.reverse().join(', '))
 
   this.getOption('stems')  || c.push('--no_stem')
   this.getOption('barres') && c.push('--barres')

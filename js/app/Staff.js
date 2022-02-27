@@ -89,9 +89,9 @@ static getData(){
   // console.log("Options.data_ini = ", Options.data_ini)
   // console.log("dataIni = ", dataIni)
   let keys  = dataIni.staves_keys
-  keys = keys ? keys.split(', ') : []
+  keys = keys ? keys.split(', ').reverse() : []
   let names = dataIni.staves_names
-  names = names ? names.split(', ') : []
+  names = names ? names.split(', ').reverse() : []
   return {names:names, keys: keys}
 }
 
@@ -133,25 +133,49 @@ getValues(){
 }
 
 setKeyValue(value){
-  this.keyMenu.value = value
+  if ( this.keyMenu ) {
+    this.keyMenu.value = value
+  }
 }
 getKeyValue(){
-  return this.keyMenu.value
+  if ( this.keyMenu ) {
+    return this.keyMenu.value 
+  } else {
+    return 'G'
+  }
 }
 
 setNameValue(value){
-  this.nameField.value = value
+  if ( this.nameField ) {
+    this.nameField.value = value
+  }
 }
 getNameValue(){
-  var n = this.nameField.value.trim()
-  if (n == '') return
-  return n
+  if ( this.nameField ) {
+    var n = this.nameField.value.trim()
+    if (n == '') return
+    return n
+  } else {
+    return 
+  }
 }
 
 get key(){return this.getKeyValue()}
 get name(){return this.getNameValue()}
 
-get keyMenu(){return this._keymenu || (this._keymenu = this.node.querySelector('.staff_key'))}
-get nameField(){return this._namefield || (this._namefield = this.node.querySelector('.staff_name'))}
+get keyMenu(){return this._keymenu || (this._keymenu = this.getKeyMenu() )}
+get nameField(){return this._namefield || (this._namefield = this.getNameField() )}
 get node(){return this._node || (this._node = document.querySelector(`#tr_staff-${this.id}`))}
+
+getKeyMenu(){
+  if ( this.node ) {
+    return this.node.querySelector('.staff_key')
+  }
+}
+getNameField(){
+  if (this.node){
+    return this.node.querySelector('.staff_name')
+  }
+}
+
 }
