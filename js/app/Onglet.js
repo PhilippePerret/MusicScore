@@ -42,7 +42,7 @@ static instanciate(bouton){
  * 
  */
 static prepare(){
-  document.querySelectorAll('button.onglet').forEach(aong => {
+  DGetAll('button.onglet').forEach(aong => {
     Onglet.instanciate(aong)
   })
 }
@@ -79,12 +79,26 @@ openPanneau(){
   this.panneau.classList.remove('closed')
   this.isClosed = false
   this.bouton.classList.add('activated')
+  if ( this.isPanneauOptions ) {
+    this.optionsDepart = Options.getAllValues()
+  }
 }
 closePanneau(){
   this.constructor.current = null
   this.panneau.classList.add('closed') 
   this.isClosed = true
   this.bouton.classList.remove('activated')
+  /**
+   * Si c'est le panneau Options, à la fermeture, il faut 
+   * enregistrer les options choisies si elles ont changé
+   */
+  if ( this.isPanneauOptions ) {
+    Options.hasChangedFrom(this.optionsDepart) && Options.save()
+  }
+}
+
+get isPanneauOptions(){
+  return this._isoptions || (this._isoptions = this.id == 'options')
 }
 
 

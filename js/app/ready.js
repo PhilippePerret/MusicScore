@@ -3,19 +3,11 @@ $(document).ready(e => {
   try{
     UI.prepare()
     /**
-     * Si un code existe déjà dans le fichier 'score_building/code.mus'
-     * on le remonte et on l'affiche. Sinon, on ne met rien, on 
-     * fabrique simplement une mesure (à deux portées)
-     * 
+     * On remonte le code éventuel (il peut être défini par la 
+     * dernière partition ouverte, ou par le premier argument de
+     * la ligne de commande pour lancer l'application)
      */
-    ajax('get_code').then(ret => {
-      // console.log("retour ajax = ", ret)
-      if (ret.data) {
-        App.traiteCodeInitial(ret.data.join("\n"))
-      } else {
-        MesureCode.createNew()
-      }
-    })
+    WAA.send({class:'ScoreWriter::App',method:'get_code',data:{default:null, config:null}})
   } catch(err){
     console.log("Erreur au cours du chargement", err)
   }

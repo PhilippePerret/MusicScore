@@ -56,7 +56,7 @@ resetAll(){
  * 
  */
 openManuelEditable(){
-  ajax('open_manuel_md').then(ret => {message("Le manuel est ouvert pour édition.")})
+  WAA.send({class:'ScoreWriter::App',method:'open_manuel_md'})
 }
 
 /**

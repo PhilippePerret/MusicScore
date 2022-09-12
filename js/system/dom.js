@@ -16,6 +16,11 @@ function DGet(selector, container){
   return container.querySelector(selector)
 }
 
+function DGetAll(selector, container){
+  container = container || document
+  return container.querySelectorAll(selector)
+}
+
 /**
   Retourne une ligne div contenant un libellé et une valeur
 **/

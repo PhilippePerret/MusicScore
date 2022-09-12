@@ -1,13 +1,9 @@
 # TODO list
 
-* Reconstituer le code complet à partir des mesures-code
-* Pouvoir donner un code (avec des '|' pour délimiter les mesures) et le transformer en "mesures-code".
-* Pour aggrandir/rappetisser tous les champs ou le champs sélectionné
-* Découpage en petit input.text couvrant une mesure 
-  - possibilité de les agrandir/diminuer
-  - possibilité d'avoir un champ normal
-  - possibilité de donner un code et qu'il soit découper en mesure
-* Possibilité de récupérer tout le code (CMD+E) (mettre dans le PP avec )
-* Possibilité de définir les options (piano, tune, etc.)
-
-* Explication du programme
+* Pouvoir produire directement le fichier data_mesures.rb avec le code
+* Quand on choisit 'quatuor à cordes', les clés attribuées sont bonnes dans le panneau configuration, elles sont bonnes quand on demande le code final, mais elles ne sont pas bonnes dans l'image (comme si score-image les traiter mal)
+* Vérifier qu'un changement de portée sans application ne soit pas pris en compte par la configuration (pour le moment, ça l'est…)
+* Supprimer le message d'actualisation quand on remonte après la construction de l'image
+* Pouvoir indiquer deux mesures identiques en donnant simplement son numéro à la seconde [Normalement, c'est implémenté, mais ça ne semble pas fonctionner…]
+* (re)Mettre en place l'ouverture du manuel
+* Utiliser un rescue (où ?) pour empêcher d'envoyer plein de code quand on quitte Firefox au lieu d'éteindre le programme par Ctrl-C dans le Terminal.

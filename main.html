@@ -13,7 +13,10 @@
   <script type="text/javascript" src="js/system/Handies.js"></script>
   <script type="text/javascript" src="js/system/UISystem.js"></script>
   <script type="text/javascript" src="js/system/dom.js"></script>
-  <script type="text/javascript" src="js/system/Ajax.js"></script>
+
+  <!-- Communs à la suite Score -->
+  <script type="text/javascript" src="../lib/js/WAA.js"></script>
+  <script type="text/javascript" src="../lib/js/Message.js"></script>
 
 </head>
 <body>
@@ -24,8 +27,6 @@
    
    -->
   <div id="bloc_tools_right">
-    <div><a href="Manuel/Manuel.pdf" target="_blank">Manuel MSWriter</a></div>
-    <div><a href="Manuel.pdf" target="_blank">Manuel MusicScore</a></div>
     <button onclick="ImgScore.diminueSize.call(ImgScore)" style="font-size:22px">🔍</button>
     <button onclick="ImgScore.augmenteSize.call(ImgScore)" style="font-size:32px">🔍</button>
 
@@ -38,15 +39,17 @@
       <div id="main_onglets">
         <button id="onglet_tools" class="onglet" data-panneau-id="tools">Outils</button>
         <button id="onglet_snippets" class="onglet" data-panneau-id="snippets">Snippets</button>
-        <button id="onglet_options" class="onglet" data-panneau-id="options">Options</button>
-        <button id="onglet-quick_aide" class="onglet" data-panneau-id="quick_aide">Quick Help</button>
+        <button id="onglet_options" class="onglet" data-panneau-id="options">Configuration</button>
+        <button id="onglet-quick_aide" class="onglet" data-panneau-id="quick_aide">Aide</button>
       </div>
 
       <div>
         <!-- 
           Bouton pour construire l'image
          -->
-        <div><button onclick="App.submitCode.call(App)">BUILD</button></div>
+        <div style="margin-bottom:2em;">
+          <button onclick="App.submitCode.call(App)">BUILD</button>
+        </div>
        <!-- 
           Boutons "+" et "-" pour ajouter et supprimer des mesures
          -->
@@ -63,7 +66,7 @@
     Image(s) de la partition
    -->
   <section id="score_container">
-    <img id="score" src="score_building/code/visu.svg" />
+    <img id="score" src="" />
   </section>
 
   <!-- 
@@ -133,11 +136,16 @@
         <div>
           <button onclick="App.submitCode.call(App)">CONSTRUIRE L'IMAGE</button>
           <button onclick="App.produceFinalCode.call(App)">PRODUIRE LE CODE FINAL</button>
+          <button onclick="App.produceMesureDataFile.call(App)">Produire mesures_data.rb</button>        
           <div>
-            <span class="libelle">Nom de l'image</span><input type="text" id="image_name" placeholder="Nom de l'image" />
+            <span>Format </span>
+            <select id="output_format" style="width:150px;white-space:nowrap;">
+              <option value="normal">Normal</option>
+              <option value="data">Table de données des mesures (pour extraction)</option>
+              <option value="variables">Mesures in variables</option>
+            </select>          
             <span class="libelle">De la mesure</span><input type="text" id="output_from_mesure" class="very short" />
             <span class="libelle">à la mesure</span><input type="text" id="output_to_mesure" class="very short" />
-            <input type="checkbox" id="cb_mesures_in_variable"><label for="cb_mesures_in_variable">Mesures dans variables</label>          
           </div>
         </div>
         <textarea id="final_code" style="width:100%;" placeholder="CODE FINAL"></textarea>
@@ -172,7 +180,7 @@
     <!-- 
     
 
-      Le PANNEAU DES OPTIONS à appliquer à la partition
+      Le PANNEAU DE CONFIGURATION à appliquer à la partition
     
 
      -->
@@ -181,6 +189,14 @@
       <legend>Options</legend>
 
       <table id="table_options">
+        <!--
+          Ligne de nom de l'image
+        -->
+        <tr>
+          <td colspan="3">
+            <span class="libelle">Nom de l'image</span><input type="text" id="image_name" placeholder="Nom de l'image" />
+          </td>
+        </tr>
         <!-- 
           Première ligne d'options
          -->
@@ -310,6 +326,9 @@
         <input type="checkbox" id="cb_auto_update_after_change" /><label for="cb_auto_update_after_change">Actualiser automatiquement la partition lors d'une modification de mesure</label>
       </div>
       <div>
+        <input type="checkbox" id="cb_note_tune_fixed" /><label for="cb_note_tune_fixed">Note en hauteur absolue (\fixed c')</label>
+      </div>
+      <div>
         <span class="libelle">Disposition lignes code / Image partition</span><select id="disposition" onchange="Options.onChange.call(Options,this)">
           <option value="up_down">Image au-dessus / Code en dessous</option>
           <option value="down_up">Image en dessous / Code au-dessus</option>
@@ -319,7 +338,8 @@
       </div>
 
       <div class="right">
-        <button onclick="Tools.resetAll.call(Tools)">Tout effacer et appliquer ces options</button>
+        <button onclick="Options.apply.call(Options, true)">Tout effacer et appliquer cette configuration</button>
+        <button onclick="Options.apply.call(Options, false)">Appliquer cette configuration</button>
         <button onclick="Score.resetOptions.call(Score)">Remettre les options par défaut</button>
       </div>
 
@@ -328,19 +348,33 @@
 
     <div id="quick_aide" class="panneau closed">
 
+      <div><a href="Manuel/Manuel.pdf" target="_blank">Manuel MSWriter</a></div>
+      <div><a href="Manuel.pdf" target="_blank">Manuel MusicScore</a></div>
+
+
       <legend>Aide rapide</legend>
 
-      <h2>Synopsis général</h2>
+      <h2>Nouvelle image</h2>
       <ol>
-        <li>Régler les options de la partition à l'aide du bouton “Options”</li>
-        <li>Écrire le pseudo-code Lilypond dan se servant du bouton “+” pour ajouter des mesures (ou simplement en jouant la touche tabulation)</li>
-        <li>Forcer l'actualisation de la partition à l'aide de ⌘ B</li>
-        <li>Demander le code final dans le panneau “Outils” en cliquant le bouton “Produire le code final”</li>
-        <li>Copier-coller le code dans un fichier .mus (par exemple 'score.mus'</li>
-        <li>Ouvrir un Terminal au dossier de ce fichier</li>
-        <li>Jouer <code>scorize ./score.mus</code> pour produire l'image ou les images de la partition.</li>
+        <li>Ouvrir un Terminal au dossier où créer l'image,</li>
+        <li>jouer la commande <code>score-writer &lt;nom-nouvelle-image&gt;</code>,</li>
+        <li>=> l'image est instanciée</li>
+        <li>régler la configuration de l'image dans le panneau CONFIGURATION,</li>
+        <li>implémenter le code pseudo-lilypond,</li>
+        <li>cliquez sur “Build” pour construire l'image.</li>
       </ol>
-    </div>
+
+      <h2>Édition d'une image existante</h2>
+
+      <ol>
+        <li>Ouvrir une fenêtre Terminal au dossier de l'image,</li>
+        <li>jouer la commande <code>score-writer nom-image</code>,</li>
+        <li>=> l'image est mise en édition.</li>
+      </ol>
+
+      <div class="italic small">Dans cette version WAA de l'application, il est inutile de copier-coller le texte puisqu'il est directement placé dans le fichier de l'image.</div>
+
+    </div><!-- fin panneau -->
 
   </section>
 
@@ -357,7 +391,7 @@
   </footer>
   <div id="message" class="hidden" onclick="UI.hideMessage.call(UI)"></div>
 
-  <script type="text/javascript" src="config.js" defer></script>
+  <script type="text/javascript" src="js/app/config.js" defer></script>
   <script type="text/javascript" src="js/app/App.js" defer></script>
   <script type="text/javascript" src="js/app/Onglet.js" defer></script>
   <script type="text/javascript" src="js/app/data.js" defer></script>

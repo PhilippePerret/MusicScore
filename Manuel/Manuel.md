@@ -1,4 +1,24 @@
-# MusicScoreWriter Manuel
+# Score-Writer Manuel
+
+## Présentation
+
+**Score-writer** permet de produire rapidement des partitions (ou segments de partitions), à l’aide d’un code pseud-LiLypond interprété en direct, qui permet donc de visualiser immédiatement ce que l’on produit comme image.
+
+## Utilisation
+
+### Utilisation basique
+
+* Ouvrir un Terminal à un dossier quelconque où l’on veut produire l’image,
+* jouer la commande `score-writer mon_image`,
+* si `mon_image.mus` existe dans le dossier courant, elle est chargé comme image courante. Sinon, c’est une nouvelle image qui est produite.
+
+### Création d’une nouvelle image
+
+* Ouvrir un Terminal dans le dossier où l’image doit être créée,
+* jouer la commande `score-write <nom_de_mon_image>`
+* régler la configuration de l’image (portées, métrique, tonalité, disposition de l’interface, etc.),
+* produire le code pseudo-lily,
+* cliquer sur le bouton “Build” pour produire l’image et l’enregistrer.
 
 ## L'interface
 
@@ -37,3 +57,30 @@ On peut régler les portées (leur nom, leur clé, etc.) dans le panneau `Option
 * régler les valeurs pour quelles soient définies dans le code,
 * demander la production du code pour voir le résultat.
 
+## Notes
+
+### Hauteur relative
+
+Par défaut, l’écriture des notes se fait en position relative. Cf. ci-dessous pour passer en version fixe.
+
+### Hauteur absolue
+
+Pour passer en hauteur des notes absolue :
+
+* ouvrir l’onglet OPTIONS,
+* cocher la case “Hauteur des notes en valeur absolue (fixed)”
+
+> Note : le mode `fixed` est indispensable si l’on doit faire une sortie sous forme de [donnée pour extraction](#data-for-extraction).
+
+
+
+## Sortie du code
+
+<a name="data-for-extraction"></a>
+
+### Données pour extraction
+
+C’est un format de sortie qui permet ensuite d’extraire des mesures du code. C’est la sortie idéale pour une partition complète étudiée, afin de sortir ensuite des extraits les plus divers à l’aide de la commande `score-extract` (programme **ScoreExtraction**).
+
+* ouvrir l’onglet OUTILS,
+* choisir le format “Table des données des mesures”

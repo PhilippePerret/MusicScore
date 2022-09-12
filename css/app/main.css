@@ -10,6 +10,9 @@ section#score_container {
   border: 1px dashed red;
   overflow: auto;
 }
+section#score_container img {
+  display: block;
+}
 
 img#score {
   width: 100%;
@@ -31,7 +34,7 @@ div#bloc_tools_right {
   background-color: white;
   right: 0;
   top: 1em;
-  width: 140px;
+  width: 150px;
   overflow: hidden;
   height: calc(100% - 2em);
   min-height: calc(100% - 2em);
@@ -62,12 +65,15 @@ div#main_onglets {
   Les boutons d'onglet (pour activer les panneaux)
 */
 div#main_onglets button {
-  width: 120px;
+  font-variant: all-small-caps;
+  margin-top: 4px;
+  background-color: aquamarine;
+  width: 130px;
   border: none;
   cursor: pointer;
 }
 div#main_onglets button.activated {
-  background-color: rgb(56, 171, 51);
+  background-color: rgb(74, 111, 73);
   color: white;
 }
 

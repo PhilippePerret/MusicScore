@@ -20,25 +20,40 @@ class MesureCode {
  * @param params {Hash}
  *      :from         Première mesure (première, par défaut)
  *      :to           Dernière mesure (fin, par défaut)
- *      :variables    Si true, utiliser des variables (globales)
+ *      :variables    OBSOLÈTE Si true, utiliser des variables (globales)
  *      :image_name   Si défini, c'est le nom de l'image finale
+ *      :outputFormat   'normal', 'variables' ou 'data'
  */
 static getFullCode(params){
   var c = []
   params = params || {}
+  const outputFormat = params.outputFormat || 'normal'
   if ( undefined == params.from ) params.from = 1;
   if ( undefined == params.to   ) params.to   = this.count;
-  console.info("Export du code de la mesure %i à la mesure %i", params.from, params.to)
   const nombrePortees = Score.nombrePortees
+  console.info("Export du code de la mesure %i à la mesure %i", params.from, params.to)
   for(var xportee = 0; xportee < nombrePortees; ++xportee){
     c.push([])
     for(var imesure = params.from - 1; imesure < params.to; ++ imesure){
       const mes = this.table_mesures[imesure]
       if (!mes) break ; // Numéro de dernière mesure trop grand
       var code = mes.getPorteeCode(parseInt(xportee,10) + 1).trim()
+      if ( code == "" ) {
+        // Ne rien faire
+      } else if ( code.replace(/[0-9]/g) == '' ) {
+        // <= le code est seulement un nombre, et que ce nombre est
+        //    inférieur à la mesure courante, 
+        // => Copie d'une autre mesure
+        var imesure_copie = parseInt(code, 10) - params.from
+        if ( imesure_copie < 0 ) {
+          code = c[xportee][imesure_copie]
+        } else {
+          console.error("Impossible de faire une copie de la mesure %i. Elle se trouve après la mesure %i…", imesure_copie, imesure)
+        }
+      }
       c[xportee].push(code)
     }
-    if ( !params.variables ) {
+    if ( outputFormat == 'normal' ) {
       // 
       // Si on ne doit pas utiliser des variables (cas normal), on
       // "compile" les messures
@@ -52,28 +67,120 @@ static getFullCode(params){
       }
     }
   }
-  if ( !params.variables ) {
-    // 
-    // Si on ne doit pas utiliser de variable (donc le cas normal),
-    // on peut tout rassembler et retourner.
-    c = c.join("\n")
-    if ( params.image_name ) {
-      c = "-> " + params.image_name + "\n" + c
-    }
-    return c
+  //
+  // Retour en fonction du format de sortie
+  // 
+  switch(outputFormat){
+    case 'normal':
+      return this.getFullCodeNormal(params, c)
+    case 'data':
+      return this.getFullCodeInTableData(params, c)
+    case 'variables':
+      return this.getFullCodeInVariables(params, c)
   }
+}
+
+static getFullCodeNormal(params, portees){
+  if ( Options.note_tune_fixed ) {
+    console.info("Hauteur note en valeur absolue")
+    const nombrePortees = Score.nombrePortees
+    var portees_finales = []
+    for (var xportee = 0; xportee < nombrePortees; ++xportee) {
+      var iportee = parseInt(xportee,10) + 1
+      var dataPortee = Staff.get(iportee)
+      console.log("Data de portée %i : ", iportee, dataPortee)
+      var hauteur = dataPortee.data.key == 'F' ? "c" : "c'";
+      console.info("Hauteur fixe de portée %i : ", iportee, hauteur)
+      portees_finales.push(`\\fixed ${hauteur} { ${portees[xportee]} }`)
+    }
+    portees = portees_finales;
+  }
+  portees = portees.join("\n")
+  return portees
+}
+
+/**
+ * Méthode utilisée pour retourne une version "table de données des
+ * mesures" de la partition, pour une utilisation avec score-extract
+ * (extraction de n'importe quelle mesure)
+ * 
+ * @param params  Cf. getFullCode ci-dessus
+ * @param c       Liste du code par portée (c[portée 1], c[portée 2] 
+ *                etc.). Construit dans la méthode getFullCode
+ * 
+ * @return Retourne une table ruby (en string) de la forme :
+ *          ««««««««««««««««
+ *          DATA_MESURES = {
+ *            1 => ["main droite", "main gauche"], // ou + si + de portée
+ *            2 => ["main droite", "main gauche"],
+ *            3 => ["main droite", "main gauche"],
+ *            4 => ["main droite", "main gauche"],
+ *          }
+ *          »»»»»»»»»»»»»»»»
+ */
+static getFullCodeInTableData(params, portees){
+  const nombrePortees = Score.nombrePortees
+  // 
+  // Pour construire la table finale
+  // 
+  var table = []
+  table.push('# encoding: UTF-8')
+  table.push('# Il faut copier ce code dans un fichier "data_mesures.rb" dans un')
+  table.push('# dossier dédié. Ensuite, il suffit d’ouvrir un terminal à ce dossier')
+  table.push('# et de lancer "score-extract <from mesure> <to mesure> [options]"')
+  table.push("# pour obtenir un extrait des mesures voulues.\n\n")
+  table.push('DATA_MESURES = {')
+  // 
+  // Pour pour obtenir chaque mesure
+  // 
+  for(var xmesure = params.from; xmesure <= params.to; ++xmesure){
+    const imesure = xmesure - params.from
+    var portees_mesure = []
+    portees.forEach(mesures => {
+      portees_mesure.push(mesures[imesure])
+    })
+    table.push( '  ' + xmesure + ' => ["' + portees_mesure.join('", "').replace(/\\/g,'__DBLSLASH__') + '"],')
+  }
+  
+  // 
+  // Fin de la table
+  // 
+  table.push('}')
 
   // 
-  // On passe par ici quand il faut renvoyer le code sous forme de
-  // variables.
-  //
+  // On ajoute en dessous le code pour pouvoir le rééditer dans
+  // cette application
+  // 
+  table.push("\n\n\n")
+  table.push("=begin\nCe code permettra de ré-éditer la partition\ndans MusicScoreWriter\n")
+  table.push("Il suffit de le copier dans le panneau OUTILS, champ CODE INITIAL.\n\n")
+  table.push(Score.getEnteteCodeMus().join("\n"))
+  const params_for_full_code = Object.assign({}, params)
+  params_for_full_code.outputFormat = 'normal'
+  table.push(this.getFullCode(params_for_full_code))
+  table.push("\n\n=end")
+
+  // 
+  // Finaliser la table
+  // 
+  table = table.join("\n").replace(/\\/g, '__SLASH__')
+
+  return table
+}
+
+/**
+ * Méthode utilisée pour retourner tout le code avec chaque mesure
+ * dans une variable
+ */
+static getFullCodeInVariables(params, portees){
+  const nombrePortees = Score.nombrePortees
   var vars = []
   for(var xmesure = params.from; xmesure <= params.to; ++xmesure){
     const varName = 'mesure' + String(xmesure)
     const imesure = xmesure - params.from
     vars.push([varName])
     for(var xportee = 0; xportee < nombrePortees; ++xportee){
-      vars[imesure].push(c[xportee][imesure])
+      vars[imesure].push(portees[xportee][imesure])
     }
   }
 
@@ -87,10 +194,14 @@ static getFullCode(params){
   })
   codevar = codevar.join("\n")
   // console.log("vars: ", vars)
+
+  // 
+  // Pour rassembler les portées
+  // 
   const lineScore = codescore.join(' ')
   codescore = []
   for(var xportee = 0; xportee < nombrePortees; ++xportee){
-    codescore.push(lineScore)
+    codescore.push("\\fixed c' { " + lineScore + ' }')
   }
 
   if ( params.image_name ) {
@@ -399,20 +510,28 @@ build(){
   // On met le champ pour le numéro de mesure
   // 
   o.appendChild(DCreate('DIV', {class:'mesure_number', text: this.number}))
+  this.obj = o
   /**
    * 
    * On ajoute autant de systèmes qu'il en faut
    * 
    */
-  for (var isys = 0; isys < Score.nombrePortees; ++isys) {
-    o.appendChild(DCreate('INPUT', {type:'text', 'data-portee': (isys + 1), class:'mesure_code portee' + (isys + 1)}))
+  for (var isys = 1; isys <= Score.nombrePortees; ++isys) {
+    this.createPortee(isys)
   }
-  this.obj = o
 
   this.constructor.container.appendChild(this.obj)
 
   this.observe()
 
+}
+
+/**
+ * Méthode ajoutant la portée d'index 1-start iPortee
+ * 
+ */
+createPortee(iPortee){
+  this.obj.appendChild(DCreate('INPUT', {type:'text', 'data-portee': iPortee, class:'mesure_code portee' + iPortee}))  
 }
 
 observe(){
@@ -460,15 +579,17 @@ focusNextField(){
   if ( !isLastPortee ) {
     // 
     // <= Ce n'est pas la dernière portée 
-    // => On focusse dans la portée suivante
+    // => On focusse dans la portée suivante (en dessous)
     // 
     this.focus(indexPorteeCourante + 1)
+
   } else if ( isLastMesure ) {
     // 
     // <= Dernière portée de dernière mesure
     // => On doit créer une nouvelle mesure
     // 
-    MesureCode.createNew()    
+    MesureCode.createNew()
+
   } else {
     // 
     // <= Dernière portée de non dernière mesure
@@ -514,6 +635,20 @@ onChangeMesure(mesure, ev){
 }
 
 /**
+ * Méthode permettant de détruire +nombre+ portées dans la mesure
+ * courante (changement de configuration).
+ */
+removeSystems(nombre){
+  var portees = Array.from(this.portees)
+  console.log("portées : ", portees)
+  for(var i = 0; i < nombre; ++i){ portees.pop().remove() }
+  this._nbstaves = null
+  delete this._nbstaves
+  this._portees = null
+  delete this._portees
+}
+
+/**
  * @return TRUE Si la mesure est "complète", c'est-à-dire si toutes
  * ses portées contiennent du code.
  * 
@@ -530,19 +665,18 @@ isComplete(){
   console.info("isComplete ?", oui)
   return oui
 }
+// Nombre de portées réellement affichées
 get nombrePortees(){
-  return this._nbstaves || (this._nbstaves = Score.nombrePortees)
+  return this._nbstaves || (this._nbstaves = this.portees.length)
 }
+// Les objets DOM de chaque portée
 get portees(){
   return this._portees || (this._portees = this.getPortees())
 }
 getPortees(){
-  var lesportees = []
-  for (var iportee = 1; iportee <= this.nombrePortees; ++iportee) {
-    lesportees.push(this.obj.querySelector('.mesure_code.portee' + iportee))
-  }
-  return lesportees
+  return DGetAll('.mesure_code', this.obj)
 }
+
 
 /**
  * Pour mettre cette mesure (et ce champ en courant)

@@ -3,8 +3,15 @@
 
   MÉTHODES PRATIQUES
   ------------------
-  Version 1.3.0
+  Version 1.4.0
 
+# 1.4.0
+  Ajout de la méthode 'confirm' en remplacement de la
+  méthode originale (qui ne fonctionne pas, en WAA)
+
+# 1.3.1
+  Ajout de l'alias erreur() pour error()
+  
 # 1.3.0
   Ajout de la méthode unpx() qui fait l'inverse de px()
 
@@ -90,15 +97,6 @@ function unpx(valeur){
   return Number(valeur.substring(0, valeur.length - 2))
 }
 
-/**
-  Méthode à appeler lorsque c'est un retourn ajax qui ne doit pas faire,
-  dans un `catch`. La donnée retournée par le script ajax ruby doit contenir
-  `error` pour signaler une erreur et/ou `message` pour afficher un message.
-**/
-function onAjaxSuccess(ret){
-  if ( ret.error ) return erreur(ret.error)
-  if (ret.message) message(ret.message)
-}
 
 function raise(msg){
   erreur(msg)
@@ -159,5 +157,60 @@ function error(err, options){
   //console.log("-> error(%s)", err)
   UISystem.showError(err, options)
   return false
+}
+function erreur(err,options){
+  return error(err,options)
+}
+
+class BoiteConfirmation {
+  confirm(question, method_ok, method_cancel){
+    this.obj || this.build_and_observe()
+    this.boiteMessage.innerHTML = question
+    this.method_ok      = method_ok
+    this.method_cancel  = method_cancel
+    this.show()
+  }
+
+  onOK(){
+    this.hide()
+    this.method_ok && this.method_ok()
+  }
+  onCancel(){
+    this.hide()
+    this.method_cancel && this.method_cancel()
+  }
+
+  show(){this.obj.classList.remove('hidden')}
+  hide(){this.obj.classList.add('hidden')}
+  
+  build_and_observe(){
+    this.build()
+    this.observe()
+  }
+
+  build(){
+    const div = DCreate('DIV', {id:'boite_confirmation', class:'hidden'})
+    this.boiteMessage = DCreate('DIV', {class:'message'})
+    div.appendChild(this.boiteMessage)
+    const divBoutons = DCreate('DIV', {class:'buttons'})
+    div.appendChild(divBoutons)
+    this.btnOK = DCreate('BUTTON', {text:'OK', class:'btn-ok'})
+    this.btnCancel = DCreate('BUTTON', {text:'Renoncer', class:'btn-cancel'})
+    divBoutons.appendChild(this.btnCancel)
+    divBoutons.appendChild(this.btnOK)
+    this.obj = div
+    document.body.appendChild(this.obj)
+  }
+  observe(){
+    this.btnOK.addEventListener('click', this.onOK.bind(this))
+    this.btnCancel.addEventListener('click', this.onCancel.bind(this))
+  }
+
+}
+function confirm(msg, method_ok, method_cancel){
+  if (undefined == window.boite_confirmation) {
+    window.boite_confirmation = new BoiteConfirmation()
+  }
+  window.boite_confirmation.confirm(msg, method_ok, method_cancel)
 }
 

@@ -1,15 +1,19 @@
-# WebSiteSimpleScaffold
+# ScoreWriter
 
-L’idée de ce scaffold de site est de proposer un truc encore plus simple que WebAppScaffold, avec un script PHP qui reçoit les requêtes Ajax et appelle des scripts binaire (comme par le Terminal) pour exécuter les actions.
+Version WAA de l'application MusicScoreWriter qui ne travaillait que sur le dossier site. Maintenant, en version WAA, elle peut être lancée de n'importe où, et notamment d'un dossier contenant la partition à faire.
 
-Noter à la base qu’on ne peut pas passer de grands textes, a priori, par ce moyen.
+## Utilisation
 
-## Processus
+* ouvrir un Terminal au dossier où l'on veut enregistrer la partition
+* taper `score-writer path/to/affixe/partition [<options>]`
 
-* on tape un code "music-score" (lilypond simplifié)
-* quand on clique "Visualiser" (ou raccourci à définir), le code est envoyé côté serveur
-* il est transformé en code "music-score complet"
-* il est interprêté par 'iced mus' (ou scorize)
-* la commande produit l'image svg
-* on remettre le résultat
-* le programme actualise l'image SVG
+La partition se met en édition.
+
+## Obtenir les options
+
+Jouer `score-writer options`
+
+## Obtenir l'aide de la commande
+
+
+Jouer `score-writer aide|help` ou l'appeler depuis l'application lancée.

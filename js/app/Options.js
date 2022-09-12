@@ -18,10 +18,11 @@ const DATA_OPTIONS = {
   , 'time'    :       {type:'select'}
   , 'auto_update_after_change': {type:'checkbox'}
   , 'staves_vspace':  {type:'text'}
-  , 'staves'        : {type:'method', setter:'setStaves'}
+  , 'staves'        : {type:'method', getter:'getStaves', setter:'setStaves'}
   , 'staves_names'  : {type:'none'}
   , 'staves_keys'   : {type:'none'}
   , 'disposition':    {type:'select'}
+  , 'note_tune_fixed':{type:'checkbox'}
 }
 
 class OptionsClass {
@@ -33,6 +34,11 @@ class OptionsClass {
  */
 get auto_update_after_change(){
   return this.getProperty('auto_update_after_change')
+}
+
+// Pour pouvoir faire Options.note_tune_fixed
+get note_tune_fixed(){
+  return this.getProperty('note_tune_fixed') 
 }
 
 /**
@@ -48,6 +54,105 @@ init(){
   // On applique les réglages par défaut
   // 
   this.applique(CONFIG.default_options)
+}
+
+/**
+ * Sauver les options
+ * 
+ */
+save(){
+  WAA.send({
+    class:  'ScoreWriter::App',
+    method: 'saveConfig',
+    data:   {
+        path:   Score.path
+      , config: this.getAllValues()
+    }
+  })
+}
+
+/**
+ * Méthode appelée par le bouton "Tout effacer et appliquer ces 
+ * options"
+ * Applique la configuration choisie.
+ */
+apply(reset){
+  if (reset) {
+    MesureCode.resetAll.call(MesureCode)
+  } else {
+    // Nombre de portées avant changement
+    const mesun = MesureCode.table_mesures[0]
+    const oldPorteesCount = mesun.nombrePortees
+    console.log("Nombre de portées courant : ", oldPorteesCount)
+    // Nombre de portées après changement
+    const newPorteesCount = Score.nombrePortees
+    console.log("Nouveau nombre de portées", newPorteesCount)
+    if ( newPorteesCount != oldPorteesCount ) {
+      console.log("Le nombre de portées a changé (%i -> %i). Il faut actualiser l'affichage.", oldPorteesCount, newPorteesCount)
+      // TODO : il faut aussi ajouter une ligne avec du code (vide) dans
+      // les mesures
+      if ( newPorteesCount  < oldPorteesCount ) {
+        /**
+         * Si le nouveau nombre de portées est inférieur au nombre
+         * actuel, il suffit de retirer le nombre voulu
+         */
+        // confirmation
+        const methodOK = this.removeSystems.bind(this, oldPorteesCount - newPorteesCount)
+        confirm("Cette opération détruit le code des portées supprimées. Êtes-vous sûr de vouloir procéder à cette opération ?", methodOK)
+      } else /**/ {
+        /**
+         * 
+         * Construction des nouvelles portées/systèmes
+         * 
+         * Si le nouveau nombre de portées est supérieur au nombre
+         * actuel, il faut construire de nouvelles portées. 
+         * Noter que dans ce cas, il est inutile de mettre un message
+         * d'alerte de suppression comme dans l'autre cas
+         */
+        const firstPortee = oldPorteesCount + 1
+        MesureCode.each(mescode => {
+          for(var i = firstPortee; i <= newPorteesCount; ++i) {
+            mescode.createPortee(i)
+          }
+        })
+      }
+    }
+  }
+  // console.log("table_mesures :", MesureCode.table_mesures)
+}
+
+/**
+ * Méthode générale pour supprimer +nombre+ systèmes dans chaque
+ * mesure.
+ */
+removeSystems(nombre){
+  MesureCode.each(mescode => {
+    mescode.removeSystems(nombre)
+  })
+
+}
+
+getAllValues(){
+  var actualData = {}
+  for(const key in DATA_OPTIONS){
+    Object.assign(actualData, {[key]: this.getProperty(key)})
+  }
+  console.info("this.actualData = ", actualData)
+  return actualData
+}
+
+/**
+ * Retourne TRUE si les données ont changé
+ */
+hasChangedFrom(oldData){
+  var newData = this.getAllValues()
+  for(const key in newData){
+    if ( newData[key] != oldData[key] ){ 
+      console.info("L'option de configuration %s a changé", key, oldData[key], newData[key])
+      return true
+    }
+  }
+  return false
 }
 
 /**
@@ -70,27 +175,40 @@ setProperty(property, value){
       // 
       break
     case 'checkbox':
-      document.querySelector('#cb_'+property).checked = value
+      // 
+      // Une configuration par CHECKBOX
+      // 
+      DGet('#cb_'+property).checked = value
       break
     case 'method':
+      // 
+      // Une configuration par MÉTHODE
+      // 
       this[dataProperty.setter](value)
       break
     case 'select_or_other':
-      var menu = document.querySelector('#'+property)
+      // 
+      // Une configuration par MENU ou CHAMP
+      // 
+      var menu = DGet('#'+property)
       if ( menu.querySelector(`option[value="${value}"]`) ) {
         menu.value = value
       } else {
         console.info("Le menu #%s n'a pas de valeur %s. Je mets other", property, value)
         menu.value = 'xxx'
-        document.querySelector('#other_'+property).value = value
+        DGet('#other_'+property).value = value
       }
       break
     default:
+      // 
+      // Une configuration par autre type de champ
+      // 
       value = value || ''
       console.log("Mettre le champ #%s à la valeur '%s'", property, value)
-      document.querySelector('#'+property).value = value    
+      DGet('#'+property).value = value    
   }
 }
+
 getProperty(property){
   const dataProperty = DATA_OPTIONS[property]
   if (undefined == dataProperty){
@@ -103,49 +221,51 @@ getProperty(property){
       // La propriété est récupérée par un autre moyen
       break
     case 'checkbox':
-      return document.querySelector('#cb_'+property).checked
+      return DGet('#cb_'+property).checked
     case 'method':
       return this[dataProperty.getter]()
     case 'select_or_other':
-      var value = document.querySelector('#'+property).value
+      var value = DGet('#'+property).value
       if ( value == 'xxx') {
-        value = document.querySelector('#other_'+property).value.trim()
+        value = DGet('#other_'+property).value.trim()
       }
       if ( value == '' ) value = null
       return value
     default:
-      var value = document.querySelector('#'+property).value    
+      var value = DGet('#'+property).value    
       if ( value == '' ) value = null
       return value
   }
 }
 
 /**
+ * Application des options
+ * ------------------------
+ * En règle générale, ce sont les options remontées de la partition
+ * éditée en ce moment.
+ * 
  * Pour appliquer les options +opts+ (par exemple récupérées d'un
  * code fourni par les outils)
  * 
  * @param opts {Hash} Avec en clé l'option et en valeur sa valeur
  */
 applique(opts){
-  console.log("-> Options.applique(opts=)", opts)
+  console.info("* Application des options :", opts)
   var allOptions = {}
   for(var keyOption in opts){
     const datOption = DATA_OPTIONS[keyOption]
     const valOption = opts[keyOption]
     this.setProperty(keyOption, valOption)
-    // 
-    // Traitement particulier de certaines options qui doivent 
-    // s'appliquer tout de suite
-    // 
+    /*
+    * Certaines options doivent s'appliquer tout de suite
+    */ 
     switch(keyOption){
       case 'disposition':
         UI.setDisposition.call(UI, valOption)
         break
       case 'systeme':
       case 'staves':
-        Score.reset()
         this.setSysteme(valOption)
-        this.setStavesData()
         break
     }
   }
@@ -164,7 +284,7 @@ setImageName(imgName){
   this.imageNameField.value = imgName
 }
 get imageNameField(){
-  return this._imgnamefield || (this._imgnamefield = document.querySelector('#image_name'))
+  return this._imgnamefield || (this._imgnamefield = DGet('#image_name'))
 }
 
 /**
@@ -209,8 +329,8 @@ setTune(tune){
 getTune(){
   return this.menuTuneNote.value + this.menuTuneAlt.value
 }
-get menuTuneNote(){return document.querySelector('select#tune_note')}
-get menuTuneAlt (){return document.querySelector('select#tune_alteration')}
+get menuTuneNote(){return DGet('select#tune_note')}
+get menuTuneAlt (){return DGet('select#tune_alteration')}
 
 
 /**
@@ -221,7 +341,10 @@ get menuTuneAlt (){return document.querySelector('select#tune_alteration')}
  */
 setStaves(staves){
   console.log("staves reçu par la méthode Options.setStaves :", staves)
-  // this.setStavesData()
+  // this.setSystemsData()
+}
+getStaves(){
+  console.warn("On doit implémenter la méthode getStaves")
 }
 
 
@@ -234,27 +357,37 @@ setStaves(staves){
  */
 setSysteme(sys){
   console.log("-> setSysteme(%s)", sys)
-  const menuSysteme = document.querySelector('#systeme')
+  Score.reset()
+  const menuSysteme = DGet('#systeme')
   if ( isNaN(sys) ) {
+    /*
+    | Un type de système connu
+    */
     menuSysteme.value = sys
   } else {
-    const otreSysteme = document.querySelector('#other_systeme')
+    /*
+    | Un type de système personnalisé
+    */
+    const otreSysteme = DGet('#other_systeme')
     menuSysteme.value = 'xxx'
     otreSysteme.value = sys
   }
+  this.setSystemsData()
 }
 
-setStavesData(){
-  // console.log("-> setStavesData")
-  // 
-  // On détruit les rangées de définition de portée, à part la
-  // première, qui servira de modèle
-  // 
+setSystemsData(){
+  // console.log("-> setSystemsData")
+  /*
+  | On détruit les rangées de définition de portée, à part la
+  | première, qui servira de modèle
+  | Note : ça détruit la définition dans le panneau d'option et
+  | toutes les portées actuelles.
+  */ 
   Staff.removeStaves()
 
-  // 
-  // Construction des portées en options en fonction des données
-  // 
+  /*
+  | Construction des portées en options en fonction des données
+  */ 
   Staff.buildStavesInOptions()
 
 }

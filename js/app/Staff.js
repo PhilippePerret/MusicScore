@@ -44,6 +44,11 @@ static removeStaves(){
   }
 }
 
+/**
+ * Méthode qui construit, dans le panneau des options, les lignes qui
+ * définissent chaque portée (pour connaitre sa clé et son nom).
+ * 
+ */
 static buildStavesInOptions(){
   let nombrePortees = Score.nombrePortees
   console.info("[setStavesData] Nombre de portées définies : %i", nombrePortees)
@@ -61,11 +66,11 @@ static buildStavesInOptions(){
 }
 
 /**
- * Retourne la donnée (name et key) pour la portée +staff_id+
+ * Retourne la donnée (:id, :name et :key) pour la portée +staff_id+
  * 
  */
 static dataForStaff(staff_id){
-  // console.log("-> dataForStaff(%i)", staff_id, this.data)
+  // console.log("***** -> dataForStaff(%i)", staff_id, this.data)
   const idx = staff_id - 1
   return {id:staff_id, name:this.data.names[idx], key:this.data.keys[idx]}
 }
@@ -77,9 +82,9 @@ static get data(){
   return this._data || (this._data = this.getData())
 }
 static getData(){
-  // console.log("options initiales dans Staff.getData : ", Options.data_ini)
+  // console.log("***** options initiales dans Staff.getData : ", Options.data_ini)
   let dataIni ;
-  if ( Options.data_ini ) {
+  if ( Options.data_ini && Options.data_ini.staves_keys && Options.data_ini.staves_names) {
     dataIni = Options.data_ini
   } else if ( Staff.DATA[Score.systeme] ){
     return Staff.DATA[Score.systeme]
@@ -109,7 +114,7 @@ constructor(id){
 }
 
 buildInOptions(){
-  this._node  = this.constructor.firstStaff.node.cloneNode(true)
+  this._node  = Staff.firstStaff.node.cloneNode(true)
   const prevStaff = Staff.get(this.id - 1)
   prevStaff.node.parentNode.insertBefore(this.node, prevStaff.node.nextSibling)
   this.node.querySelector('.staff_number').innerHTML = this.id

@@ -11,6 +11,7 @@ div.mesure_code input[type="text"].mesure_code {
   color: white;
   width: 180px;
   border: none;
+  margin-top: 2px;
   font-size: 16pt;
 }
 div.mesure_code div.mesure_number {

@@ -13,17 +13,21 @@ class UIClass {
  * 
  */
 prepare(){
-  // 
-  // Préparation de l'interface
-  // 
+  /*
+   | Position des messages
+   */
+  Message.position = 'bottom-left'
+  /* 
+   | Préparation de l'interface
+   */ 
   Onglet.prepare()
-  // 
-  // Réglage des options
-  // 
+  /* 
+   | Réglage des options
+   */ 
   Options.init()
-  // 
-  // Observation de certains champs
-  // 
+  /* 
+   | Observation de certains champs
+   */ 
   this.observeSpecialFields()
 }
 
