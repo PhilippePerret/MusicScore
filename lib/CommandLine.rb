@@ -48,7 +48,8 @@ module ScoreWriter
         when '--cote','-cl','cr'then 
           valu ||= argv == '-cl' ? 'left' : 'right'
           @@options.merge!(cote:   true)
-        when '-prefix' then @@options.merge!(prefix: valu)
+        when '-prefix'  then @@options.merge!(prefix: valu)
+        when '--path'   then @@options.merge!(path: valu)
         end
       end
     end
@@ -64,6 +65,9 @@ module ScoreWriter
         end
         afp
       end
+    end
+    def self.affixe_partition=(value)
+      @@affixe_partition = value
     end
 
     def self.options

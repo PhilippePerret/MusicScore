@@ -1,16 +1,4 @@
 ---
-:path: "/Users/philippeperret/Library/Mobile Documents/com~apple~CloudDocs/ICARE_EDITIONS/_LIVRES_/Musique/_Analyses_/BEETHOVEN_Clair_de_Lune/Images/Par_mesure/par_mesure"
-:config:
-  page: a4
-  mesure: 
-  systeme: piano
-  proximity: 
-  barres: true
-  stems: true
-  tune: E
-  time: 2/2
-  auto_update_after_change: false
-  staves_vspace: 
-  disposition: left_right
-  note_tune_fixed: true
-:used_at: 1662969680
+:path: "/Users/philippeperret/Library/Mobile Documents/com~apple~CloudDocs/ICARE_EDITIONS/_LIVRES_/Musique/_Analyses_/SATIE_Gymnopedie/Images/Essai/essai.mus"
+:config: {}
+:used_at: 1662971372
